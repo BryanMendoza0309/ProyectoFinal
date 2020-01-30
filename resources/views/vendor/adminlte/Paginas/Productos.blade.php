@@ -66,11 +66,21 @@
                 <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
                 <input type="text" class="col-xs-1" name="descuento" placeholder="Decuento">
               </div>
-        <br>
+              <br>
         <br>
         <div class="col-xs-2">
+                  <label>Seleccionar Categoria</label>
+                  <select class="" name="Cate1">
+                    @foreach($categoria as $item)
+                    <option value="{{$item->id}}">{{$item->nombreTipoProducto}}</option>
+                    @endforeach
+                  </select>
+                </div>
+        <br>
+
+        <div class="col-xs-2">
                   <label>Seleccionar Proveedor</label>
-                  <select class="form-control" name="proveedor">
+                  <select class="" name="proveedor2">
                     @foreach($proveedor as $item)
                     <option value="{{$item->id}}">{{$item->nombreProvedor}}</option>
                     @endforeach

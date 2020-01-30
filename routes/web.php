@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('InsertProducto','ProductoController');
+Route::resource('Categoria','CategoriaController');
 Route::resource('InsertProveedor','ProveedorController');
 Route::group(['middleware' => 'auth'], function () {
     //    Route::get('/link1', function ()    {

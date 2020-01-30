@@ -17,21 +17,18 @@ class CreateProductosTable extends Migration
             $table->bigIncrements('id');
             $table->String('codigoProducto');
             $table->String('nombreProducto');
-<<<<<<< HEAD
-            $table->String('descipcionProducto');
-=======
+
+      
             $table->mediumText('descipcionProducto');
->>>>>>> origin/master
+
             $table->String('marcaProducto');
             $table->String('modeloProducto');
             $table->String('imagenProducto');
             $table->String('fecha_caducidadProducto');
             $table->unsignedInteger('categoriaproducto_id');
-<<<<<<< HEAD
-            $table->unsignedInteger('stock_id');
-=======
 
->>>>>>> origin/master
+            $table->unsignedInteger('stock_id');
+
         });
     }
 

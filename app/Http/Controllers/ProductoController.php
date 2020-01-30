@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Producto;
 use App\Stock;
 use App\Provedor;
-
+use App\CategoriaProducto;
 class ProductoController extends Controller
 {
     /**
@@ -18,7 +18,8 @@ class ProductoController extends Controller
     public function index()
     {
         $proveedor=Provedor::all();
-        return view('adminlte::Paginas.Productos',compact('proveedor'));
+        $categoria=CategoriaProducto::all();
+        return view('adminlte::Paginas.Productos',compact('proveedor','categoria'));
     }
 
     /**
@@ -39,6 +40,7 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
+        
         $tipo2=new Stock();
         $tipo=new Producto();
         $tipo->codigoProducto=$request->codigo;
@@ -48,19 +50,20 @@ class ProductoController extends Controller
         $tipo->modeloProducto=$request->modelo;
         $tipo->imagenProducto='imagen';  
         $tipo->fecha_caducidadProducto=$request->fecha;
-        $tipo->categoriaproducto_id='1';
+        $tipo->categoriaproducto_id=$request->Cate1;
         $tipo2->cantidadProducto=$request->cantidad;
         $tipo2->precioVentaPublico=$request->precioP;
         $tipo2->precioAdministrador=$request->precioA;
         $tipo2->gananciaUnidad='100';
         $tipo2->descuentoPublico=$request->descuento;
-        $tipo2->provedor_id=$request->proveedor;
+        $tipo2->provedor_id=$request->proveedor2;
         $tipo->stock_id='1';
         
         $tipo2->save();
         $tipo->save();
         $proveedor=Provedor::all();
-        return view('adminlte::Paginas.Productos',compact('proveedor')); 
+        $categoria=CategoriaProducto::all();
+        return view('adminlte::Paginas.Productos',compact('proveedor','categoria')); 
     }
 
     /**

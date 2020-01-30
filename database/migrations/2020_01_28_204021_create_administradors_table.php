@@ -15,13 +15,11 @@ class CreateAdministradorsTable extends Migration
     {
         Schema::create('administradors', function (Blueprint $table) {
             $table->bigIncrements('id');
-<<<<<<< HEAD
+
             $table->string('nombre');
             $table->string('apellido');
             $table->string('email')->unique();             
             $table->string('password');
-=======
->>>>>>> origin/master
             $table->timestamps();
         });
     }
