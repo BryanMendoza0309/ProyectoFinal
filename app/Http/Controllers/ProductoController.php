@@ -1,0 +1,110 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Producto;
+use App\Stock;
+use App\Provedor;
+
+class ProductoController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
+    public function index()
+    {
+        $proveedor=Provedor::all();
+        return view('adminlte::Paginas.Productos',compact('proveedor'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $tipo2=new Stock();
+        $tipo=new Producto();
+        $tipo->codigoProducto=$request->codigo;
+        $tipo->nombreProducto=$request->nombre;
+        $tipo->descipcionProducto=$request->descripcion;
+        $tipo->marcaProducto=$request->marca;
+        $tipo->modeloProducto=$request->modelo;
+        $tipo->imagenProducto='imagen';  
+        $tipo->fecha_caducidadProducto=$request->fecha;
+        $tipo->categoriaproducto_id='1';
+        $tipo2->cantidadProducto=$request->cantidad;
+        $tipo2->precioVentaPublico=$request->precioP;
+        $tipo2->precioAdministrador=$request->precioA;
+        $tipo2->gananciaUnidad='100';
+        $tipo2->descuentoPublico=$request->descuento;
+        $tipo2->provedor_id=$request->proveedor;
+        $tipo->stock_id='1';
+        
+        $tipo2->save();
+        $tipo->save();
+        $proveedor=Provedor::all();
+        return view('adminlte::Paginas.Productos',compact('proveedor')); 
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+    }
+}
