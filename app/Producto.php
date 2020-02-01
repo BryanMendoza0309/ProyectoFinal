@@ -11,4 +11,9 @@ class Producto extends Model
     protected $fillable = [
         'codigoProducto', 'nombreProducto', 'descripcioProducto','marcaProducto','modeloProducto','imagenProducto','fecha_caducidadProducto'
     ];
+
+    public function relacionStock()
+    {
+        return $this->hasOne(Stock::class);
+    }
 }

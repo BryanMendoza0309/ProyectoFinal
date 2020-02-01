@@ -12,4 +12,5 @@ class Stock extends Model
         'cantidadProducto', 'precioVentaPublico', 'precioAdministrador','descuentoPublico'
     ];
 
+    
 }

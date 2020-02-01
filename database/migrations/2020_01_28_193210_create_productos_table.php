@@ -13,22 +13,33 @@ class CreateProductosTable extends Migration
      */
     public function up()
     {
+
+        Schema::create('stocks', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->Integer('cantidadProducto');
+            $table->decimal('precioVentaPublico');
+            $table->decimal('precioAdministrador');
+            $table->decimal('descuentoPublico');
+            $table->decimal('gananciaUnidad');
+            $table->decimal('gananciaTotal');
+            $table->decimal('totalVentas');
+            $table->Integer('totalProductosVentas');
+            $table->unsignedBigInteger('provedor_id');
+            $table->unsignedBigInteger('producto_id');
+        });
+
         Schema::create('productos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->String('codigoProducto');
             $table->String('nombreProducto');
-
-      
             $table->mediumText('descipcionProducto');
-
             $table->String('marcaProducto');
             $table->String('modeloProducto');
             $table->String('imagenProducto');
             $table->String('fecha_caducidadProducto');
-            $table->unsignedInteger('categoriaproducto_id');
-
-            $table->unsignedInteger('stock_id');
-
+            $table->unsignedBigInteger('categoriaproducto_id');
+            $table->unsignedBigInteger('stock_id');
+            $table->foreign('stock_id')->references('id')->on('stocks'); 
         });
     }
 
@@ -39,6 +50,7 @@ class CreateProductosTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('stocks');
         Schema::dropIfExists('productos');
     }
 }

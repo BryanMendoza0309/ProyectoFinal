@@ -16,8 +16,6 @@ class CreateCategoriaProductosTable extends Migration
         Schema::create('categoria_productos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->String('nombreTipoProducto');
-
-
         });
     }
 
