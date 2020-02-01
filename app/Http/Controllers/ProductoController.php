@@ -40,7 +40,12 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
-        
+
+        $cont=1;
+        $stock=Stock::all();
+        foreach ($stock as $item) {
+            $cont++;
+        }
         $tipo2=new Stock();
         $tipo=new Producto();
         $tipo->codigoProducto=$request->codigo;
@@ -54,11 +59,13 @@ class ProductoController extends Controller
         $tipo2->cantidadProducto=$request->cantidad;
         $tipo2->precioVentaPublico=$request->precioP;
         $tipo2->precioAdministrador=$request->precioA;
-        $tipo2->gananciaUnidad='100';
         $tipo2->descuentoPublico=$request->descuento;
+        $tipo2->gananciaUnidad=(($request->precioP-($request->descuento))-($request->precioA));
+        $tipo2->gananciaTotal=($request->cantidad*(($request->precioP-($request->descuento))-($request->precioA)));
+                $tipo2->totalVentas='1';
         $tipo2->provedor_id=$request->proveedor2;
-        $tipo->stock_id='1';
-        
+        $tipo->stock_id=$cont;
+        $tipo2->totalProductosVentas='1';
         $tipo2->save();
         $tipo->save();
         $proveedor=Provedor::all();

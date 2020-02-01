@@ -17,6 +17,7 @@ Route::get('/', function () {
 Route::resource('InsertProducto','ProductoController');
 Route::resource('Categoria','CategoriaController');
 Route::resource('InsertProveedor','ProveedorController');
+Route::resource('TablaProductos','TablaproductoController');
 Route::group(['middleware' => 'auth'], function () {
     //    Route::get('/link1', function ()    {
 //        // Uses Auth Middleware

@@ -9,27 +9,27 @@
 	<form action="{{route('InsertProducto.store')}}" method="post">
 		 <input type="hidden" name="_token" value="{{csrf_token() }}">
 		<div class="col-xs-2">
-                  <input type="text" class="form-control" placeholder="Codigo del Producto" name="codigo">
+                  <input type="text" class="form-control" placeholder="Codigo del Producto" name="codigo" autocomplete="off">
         </div>
         <br>
         <br>
         <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Nombre del Producto" name="nombre">
+                  <input type="text" class="form-control" placeholder="Nombre del Producto" name="nombre" autocomplete="off">
         </div>
         <br>
         <br>
         <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Descripcion del Producto" name="descripcion">
+                  <input type="text" class="form-control" placeholder="Descripcion del Producto" name="descripcion" autocomplete="off">
         </div>
         <br>
         <br>   
 		<div class="col-xs-2">
-                  <input type="text" class="form-control" placeholder="Marca del Producto" name="marca">
+                  <input type="text" class="form-control" placeholder="Marca del Producto" name="marca" autocomplete="off">
         </div>
       	<br>
         <br>   
 		<div class="col-xs-2">
-                  <input type="text" class="form-control" placeholder="Modelo del Producto" name="modelo">
+                  <input type="text" class="form-control" placeholder="Modelo del Producto" name="modelo" autocomplete="off">
         </div>
         <br>
         <br>   
@@ -39,7 +39,7 @@
                   <div class="input-group-addon">
                     <i class="fa fa-calendar"></i>
                   </div>
-                  <input type="text" class="form-control pull-right" id="datepicker" name="fecha">
+                  <input type="text" class="form-control pull-right" id="datepicker" name="fecha" autocomplete="off">
                 </div>
                 <!-- /.input group -->
               </div>
@@ -48,7 +48,7 @@
         <br>
         <br>   
 		<div class="col-xs-2">
-                  <input type="text" class="form-control" placeholder="Cantidad de Producto" name="cantidad">
+                  <input type="text" class="form-control" placeholder="Cantidad de Producto" name="cantidad" autocomplete="off">
         </div>
         <br>
         <br>   
@@ -76,8 +76,6 @@
                     @endforeach
                   </select>
                 </div>
-        <br>
-
         <div class="col-xs-2">
                   <label>Seleccionar Proveedor</label>
                   <select class="" name="proveedor2">

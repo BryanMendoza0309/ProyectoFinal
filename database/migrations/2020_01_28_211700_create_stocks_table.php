@@ -18,8 +18,11 @@ class CreateStocksTable extends Migration
             $table->Integer('cantidadProducto');
             $table->decimal('precioVentaPublico');
             $table->decimal('precioAdministrador');
+            $table->decimal('descuentoPublico');
             $table->decimal('gananciaUnidad');
-            $table->decimal('descuentoPublico')->nullable;
+            $table->decimal('gananciaTotal');
+            $table->decimal('totalVentas');
+            $table->Integer('totalProductosVentas');
             $table->unsignedInteger('provedor_id');
         });
     }
