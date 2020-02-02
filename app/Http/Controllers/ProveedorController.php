@@ -13,7 +13,8 @@ class ProveedorController extends Controller
      */
     public function index()
     {
-        return view('adminlte::Paginas.Proveedores');
+        $ListaProvedor=Provedor::all();
+        return view('adminlte::Paginas.Proveedores',compact('ListaProvedor'));
     }
 
     /**
@@ -40,7 +41,7 @@ class ProveedorController extends Controller
         $tipo->Dirección=$request->direccion;
         $tipo->caracteristicaProvedor=$request->caracteristicas;
         $tipo->save();
-        return view('adminlte::Paginas.Proveedores');
+        return redirect()->action('ProveedorController@index');
     }
 
     /**
@@ -62,7 +63,8 @@ class ProveedorController extends Controller
      */
     public function edit($id)
     {
-        //
+        $provedoredit=Provedor::find($id);
+        return view('adminlte::Paginas.EditarProvedor', compact('provedoredit'));
     }
 
     /**
@@ -74,7 +76,13 @@ class ProveedorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $provedoredit=Provedor::find($id);
+        $provedoredit->nombreProvedor=$request->nombre;
+        $provedoredit->tlfProvedor=$request->tlf;
+        $provedoredit->Dirección=$request->direccion;
+        $provedoredit->caracteristicaProvedor=$request->caracteristicas;
+        $provedoredit->save();
+        return redirect()->action('ProveedorController@index');
     }
 
     /**
