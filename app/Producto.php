@@ -12,8 +12,8 @@ class Producto extends Model
         'codigoProducto', 'nombreProducto', 'descripcioProducto','marcaProducto','modeloProducto','imagenProducto','fecha_caducidadProducto'
     ];
 
-    public function relacionStock()
+    public function stock()
     {
-        return $this->hasOne(Stock::class);
+        return $this->belongsTo(Stock::class);
     }
 }

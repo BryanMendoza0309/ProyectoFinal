@@ -26,8 +26,9 @@
                             <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">PvP</th>
                             <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">PvA</th>
                             <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Descuento</th>
-                            <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Descuento</th>Total de Ventas
-                            <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Provedor</th>
+                            <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending"> Total de Ventas</th>
+                            <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Numero Total de Ventas</th>
+                            <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Proveedor</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,12 +42,13 @@
                             <td>{{$item->modeloProducto}}</td>
                             <td>{{$item->fecha_caducidadProducto}}</td>
                             <td>{{$item->imagenProducto}}</td>
-                            <td>{{$item->relacionStock->cantidadProducto}}</td>
-                            <td></td> 
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>{{$item->stock->cantidadProducto}}</td>
+                            <td>{{$item->stock->precioVentaPublico}}</td> 
+                            <td>{{$item->stock->precioAdministrador}}</td>
+                            <td>{{$item->stock->descuentoPublico}}</td>
+                            <td>{{$item->stock->totalVentas}}</td>
+                            <td>{{$item->stock->totalProductosVentas}}</td>
+                            <td>{{$item->stock->provedor->nombreProvedor}}</td>
                         </tr>
                         @endforeach
                     </tbody>
@@ -55,9 +57,6 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5">
-                <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
-            </div>
             <div class="col-md-7">
                 <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
                     <ul class="pagination">

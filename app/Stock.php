@@ -12,5 +12,8 @@ class Stock extends Model
         'cantidadProducto', 'precioVentaPublico', 'precioAdministrador','descuentoPublico'
     ];
 
-    
+    public function provedor()
+    {
+        return $this->belongsTo(Provedor::class);
+    }
 }
