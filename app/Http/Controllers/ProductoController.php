@@ -41,6 +41,15 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
+        $Tipo=CategoriaProducto::find($request->Cate1);
+        $file=$request->file('imagen');
+       $name=$file->getClientMimeType();
+       
+       $TipoImagen=uniqid();
+       $FileName=$Tipo->nombreTipoProducto.'/'.$TipoImagen;
+       
+       $path=public_path().'/imagen/'.$Tipo->nombreTipoProducto;
+       $file->move($path,$FileName);
 
         $cont=1;
         $stock=Stock::all();
@@ -54,7 +63,7 @@ class ProductoController extends Controller
         $tipo->descipcionProducto=$request->descripcion;
         $tipo->marcaProducto=$request->marca;
         $tipo->modeloProducto=$request->modelo;
-        $tipo->imagenProducto='imagen';  
+        $tipo->imagenProducto=$FileName;  
         $tipo->fecha_caducidadProducto=$request->fecha;
         $tipo->categoriaproducto_id=$request->Cate1;
         $tipo2->cantidadProducto=$request->cantidad;
@@ -65,8 +74,9 @@ class ProductoController extends Controller
         $tipo2->gananciaTotal=($request->cantidad*$tipo2->gananciaUnidad);
                 $tipo2->totalVentas='0';
         $tipo2->provedor_id=$request->proveedor2;
+        $tipo2->producto_id=$cont;
         $tipo->stock_id=$cont;
-        $tipo2->totalProductosVentas='1';
+        $tipo2->totalProductosVentas='0';
         $tipo2->save();
         $tipo->save();
         return redirect()->action('ProductoController@index');
@@ -121,6 +131,7 @@ class ProductoController extends Controller
         $tipo2->gananciaUnidad=($tipo2->precioVentaPublico-($tipo2->precioVentaPublico*$tipo2->descuentoPublico)-$tipo2->precioAdministrador);
         $tipo2->gananciaTotal=($request->cantidad*$tipo2->gananciaUnidad);
                 $tipo2->totalVentas='0';
+        
         $tipo2->provedor_id=$request->proveedor2;
         $tipo2->totalProductosVentas='0';
         $tipo2->save();
