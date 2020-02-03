@@ -41,7 +41,7 @@
                             <td>{{$item->marcaProducto}}</td>
                             <td>{{$item->modeloProducto}}</td>
                             <td>{{$item->fecha_caducidadProducto}}</td>
-                            <td><img src="imagen\{{$item->imagenProducto}}" alt=""></td>
+                            <td><img width= 200px; height= 200px; src="imagen\{{$item->imagenProducto}}" alt=""></td>
                             <td>{{$item->stock->cantidadProducto}}</td>
                             <td>{{$item->stock->precioVentaPublico}}</td> 
                             <td>{{$item->stock->precioAdministrador}}</td>
