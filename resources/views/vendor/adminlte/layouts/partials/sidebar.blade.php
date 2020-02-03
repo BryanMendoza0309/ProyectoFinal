@@ -40,11 +40,11 @@
             
             <li class="treeview">
                 <a href=""><i class='fa fa-link'></i> <span>Vistas CLiente</span> <i class="fa fa-angle-left pull-right"></i></a>
-                
                 <ul class="treeview-menu">
-                   <li><a href="{{route('vistaComprador.index')}}"><i class='fa fa-link'></i> <span>Vista Principa</span></a></li>
-                </ul>
-                
+                   <li><a href="{{route('vistaComprador.index')}}"><i class='fa fa-link'></i> <span>Vista Principal</span></a></li>
+                   <li><a href="{{route('vistaContacto.index')}}"><i class='fa fa-link'></i> <span>Vista Contacto</span></a></li>
+                </ul
+
             </li>
         </ul><!-- /.sidebar-menu -->
     </section>

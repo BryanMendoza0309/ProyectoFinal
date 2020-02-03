@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Producto;
-use App\Provedor;
-class VistaCompradorController extends Controller
+use App\Contacto;
+class VistaContactoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +13,8 @@ class VistaCompradorController extends Controller
      */
     public function index()
     {
-        $producto=Producto::all();
-        $provedor=Provedor::all();
-        return view('adminlte::Paginas.MostrarProductos',compact('producto','provedor'));    
+        $contacto=Contacto::all();
+        return view('adminlte::Paginas.VistaContacto',compact('contacto'));
     }
 
     /**

@@ -19,6 +19,7 @@ Route::resource('Categoria','CategoriaController');
 Route::resource('InsertProveedor','ProveedorController');
 Route::resource('TablaProductos','TablaproductoController');
 Route::resource('vistaComprador','VistaCompradorController');
+Route::resource('vistaContacto','VistaContactoController');
 Route::group(['middleware' => 'auth'], function () {
     //    Route::get('/link1', function ()    {
 //        // Uses Auth Middleware
