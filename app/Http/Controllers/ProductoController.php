@@ -46,9 +46,9 @@ class ProductoController extends Controller
        $name=$file->getClientMimeType();
        
        $TipoImagen=uniqid();
-       $FileName=$Tipo->nombreTipoProducto.'/'.$TipoImagen;
+       $FileName=$Tipo->id.'/'.$TipoImagen;
        
-       $path=public_path().'/imagen/'.$Tipo->nombreTipoProducto;
+       $path=public_path().'/imagen/'.$Tipo->id;
        $file->move($path,$FileName);
 
         $cont=1;
