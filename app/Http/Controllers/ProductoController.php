@@ -74,7 +74,6 @@ class ProductoController extends Controller
         $tipo2->gananciaTotal=($request->cantidad*$tipo2->gananciaUnidad);
                 $tipo2->totalVentas='0';
         $tipo2->provedor_id=$request->proveedor2;
-        $tipo2->producto_id=$cont;
         $tipo->stock_id=$cont;
         $tipo2->totalProductosVentas='0';
         $tipo2->save();
