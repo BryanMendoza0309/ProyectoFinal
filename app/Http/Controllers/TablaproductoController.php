@@ -16,9 +16,9 @@ class TablaproductoController extends Controller
     public function index()
     {
         
-        $producto=Producto::all();
-        $provedor=Provedor::all();
-        return view('adminlte::Paginas.TablaProductos',compact('producto','provedor'));
+        $producto=Producto::orderBy('id','asc')->paginate(3);
+        
+        return view('adminlte::Paginas.TablaProductos',compact('producto'));
     }
 
     /**

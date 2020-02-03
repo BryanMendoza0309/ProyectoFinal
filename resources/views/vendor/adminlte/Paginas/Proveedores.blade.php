@@ -65,6 +65,8 @@
             <tfoot>
                
             </tfoot>
+
     </table>
+    {{$ListaProvedor->render()}}
 </section>
 @endsection

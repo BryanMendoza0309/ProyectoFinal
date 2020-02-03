@@ -13,7 +13,7 @@ class ProveedorController extends Controller
      */
     public function index()
     {
-        $ListaProvedor=Provedor::all();
+        $ListaProvedor=Provedor::orderBy('id','asc')->paginate(5);
         return view('adminlte::Paginas.Proveedores',compact('ListaProvedor'));
     }
 
