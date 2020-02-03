@@ -8,7 +8,8 @@ class CategoriaController extends Controller
 {
     public function index()
     {
-        return view('adminlte::Paginas.Categoria');
+        $categoria=CategoriaProducto::orderBy('id','asc')->paginate(5);
+        return view('adminlte::Paginas.Categoria',compact('categoria'));
     }
 
     /**
@@ -18,8 +19,7 @@ class CategoriaController extends Controller
      */
     public function create()
     {
-        $categoria=CategoriaProducto::orderBy('id','asc')->paginate(5);
-        return view('adminlte::layouts.partials.sidebar',compact('categoria'));
+       
     }
 
     /**
@@ -33,7 +33,7 @@ class CategoriaController extends Controller
         $tipo=new CategoriaProducto();
         $tipo->nombreTipoProducto=$request->Categoria;
         $tipo->save();
-        return view('adminlte::Paginas.Categoria');
+       return redirect()->action('CategoriaController@index');
     }
 
     /**
@@ -55,8 +55,8 @@ class CategoriaController extends Controller
      */
     public function edit($id)
     {
-        $CategoriaProducto=CategoriaProducto::find($id);
-        return view('adminlte::Paginas.EditarProvedor', compact('provedoredit'));
+        $categoriaetid=CategoriaProducto::find($id);
+        return view('adminlte::Paginas.EditarCategoria', compact('categoriaetid'));
     }
 
     /**
@@ -68,10 +68,10 @@ class CategoriaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $tipo=new CategoriaProducto();
-        $tipo->nombreTipoProducto=$request->Categoria;
+        $tipo=CategoriaProducto::find($id);
+        $tipo->nombreTipoProducto=$request->categoria;
         $tipo->save();
-        return view('adminlte::Paginas.Categoria');
+       return redirect()->action('CategoriaController@index');
     }
 
     /**

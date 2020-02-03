@@ -26,18 +26,18 @@
             </tr>
         </thead>
         <tbody>
-                @foreach ($ListaProvedor as $item)
+                @foreach ($categoria as $item)
                 <tr>
                     <td>{{$item->id}}</td>
-                    <td>{{$item->nombreProvedor}}</td>
+                    <td>{{$item->nombreTipoProducto}}</td>
                     
                     <td>
-                        <form action="{{ route('InsertProveedor.destroy',$item->id) }}" method="POST">
+                        <form action="{{ route('Categoria.destroy',$item->id) }}" method="POST">
                           
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Eliminar</button>
-                        </form><a href="{{ route('InsertProveedor.edit',$item->id) }}">Editar</a>
+                        </form><a href="{{ route('Categoria.edit',$item->id) }}">Editar</a>
                     </td>
                     @endforeach
             </tbody>
@@ -46,6 +46,6 @@
             </tfoot>
 
     </table>
-    {{$ListaProvedor->render()}}	
+    {{$categoria->render()}}	
 	</section>
 @endsection

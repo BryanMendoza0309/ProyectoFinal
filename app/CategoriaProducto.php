@@ -12,8 +12,5 @@ class CategoriaProducto extends Model
         'nombreTipoProducto'
     ];
 
-    public function productos()
-    {
-        return $this->hasMany(Producto::class);
-    }
+    
 }
