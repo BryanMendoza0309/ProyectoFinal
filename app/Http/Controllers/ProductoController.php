@@ -52,8 +52,8 @@ class ProductoController extends Controller
        $file->move($path,$FileName);
 
         $cont=1;
-        $stock=Stock::all();
-        foreach ($stock as $item) {
+        $stock2=Stock::all();
+        foreach ($stock2 as $item) {
             $cont++;
         }
         $tipo2=new Stock();

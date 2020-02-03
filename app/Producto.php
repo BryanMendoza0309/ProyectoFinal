@@ -16,4 +16,8 @@ class Producto extends Model
     {
         return $this->belongsTo(Stock::class);
     }
+    public function cateproducto()
+    {
+        return $this->belongsTo(CategoriaProducto::class);
+    }
 }

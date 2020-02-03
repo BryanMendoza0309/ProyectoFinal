@@ -35,6 +35,13 @@ class CreateProductosTable extends Migration
             $table->foreign('provedor_id')->references('id')->on('provedors'); 
         });
 
+
+
+        Schema::create('categoria_productos', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->String('nombreTipoProducto');
+             
+        });
         Schema::create('productos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->String('codigoProducto');
@@ -47,13 +54,7 @@ class CreateProductosTable extends Migration
             $table->unsignedBigInteger('stock_id');
             $table->unsignedBigInteger('categoriaproducto_id');
             $table->foreign('stock_id')->references('id')->on('stocks'); 
-        });
-
-        Schema::create('categoria_productos', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->String('nombreTipoProducto');
-            $table->unsignedBigInteger('producto_id');
-            $table->foreign('producto_id')->references('id')->on('productos'); 
+            $table->foreign('categoriaproducto_id')->references('id')->on('categoria_productos'); 
         });
     }
 

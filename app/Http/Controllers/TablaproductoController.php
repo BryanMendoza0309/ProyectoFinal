@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Producto;
-use App\Provedor;
+
 
 class TablaproductoController extends Controller
 {
@@ -15,20 +15,17 @@ class TablaproductoController extends Controller
      */
     public function index()
     {
-        
         $producto=Producto::orderBy('id','asc')->paginate(3);
-        
         return view('adminlte::Paginas.TablaProductos',compact('producto'));
     }
 
-    /**
+   /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+     public function create()
     {
-        //
     }
 
     /**
@@ -39,7 +36,6 @@ class TablaproductoController extends Controller
      */
     public function store(Request $request)
     {
-        //
     }
 
     /**
