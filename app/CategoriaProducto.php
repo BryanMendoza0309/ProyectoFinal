@@ -6,5 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class CategoriaProducto extends Model
 {
+	protected $table='categoria_productos';
     public $timestamps=false;
+    protected $fillable = [
+        'nombreTipoProducto'
+    ];
+
+    public function productos()
+    {
+        return $this->hasMany(Producto::class);
+    }
 }

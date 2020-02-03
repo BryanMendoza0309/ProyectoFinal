@@ -3,13 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\CategoriaProducto;
-class CategoriaController extends Controller
+use App\Producto;
+use App\Provedor;
+class VistaCompradorController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        return view('adminlte::Paginas.Categoria');
-    }
+        $producto=Producto::all();
+        $provedor=Provedor::all();
+        return view('adminlte::Paginas.MostrarProductos',compact('producto','provedor'));    }
 
     /**
      * Show the form for creating a new resource.
@@ -18,8 +25,7 @@ class CategoriaController extends Controller
      */
     public function create()
     {
-        $categoria=CategoriaProducto::all();
-        return view('adminlte::layouts.partials.sidebar',compact('categoria'));
+        //
     }
 
     /**
@@ -30,10 +36,7 @@ class CategoriaController extends Controller
      */
     public function store(Request $request)
     {
-        $tipo=new CategoriaProducto();
-        $tipo->nombreTipoProducto=$request->Categoria;
-        $tipo->save();
-        return view('adminlte::Paginas.Categoria');
+        //
     }
 
     /**
@@ -44,7 +47,7 @@ class CategoriaController extends Controller
      */
     public function show($id)
     {
-        
+        //
     }
 
     /**
