@@ -18,6 +18,7 @@ class CreateProductosTable extends Migration
             $table->String('nombreProvedor');
             $table->String('tlfProvedor');
             $table->String('Dirección');
+             $table->boolean('eliminadolog');
             $table->String('caracteristicaProvedor');
         });
 
@@ -30,6 +31,7 @@ class CreateProductosTable extends Migration
             $table->decimal('gananciaUnidad');
             $table->decimal('gananciaTotal');
             $table->decimal('totalVentas');
+            $table->boolean('eliminadolog');
             $table->Integer('totalProductosVentas');
             $table->unsignedBigInteger('provedor_id');
             $table->foreign('provedor_id')->references('id')->on('provedors'); 
@@ -39,6 +41,7 @@ class CreateProductosTable extends Migration
 
         Schema::create('categoria_productos', function (Blueprint $table) {
             $table->bigIncrements('id');
+             $table->boolean('eliminadolog');
             $table->String('nombreTipoProducto');
              
         });
@@ -51,6 +54,7 @@ class CreateProductosTable extends Migration
             $table->String('modeloProducto');
             $table->String('imagenProducto');
             $table->String('fecha_caducidadProducto');
+            $table->boolean('eliminadolog');
             $table->unsignedBigInteger('stock_id');
             $table->unsignedBigInteger('categoriaproducto_id');
             $table->foreign('stock_id')->references('id')->on('stocks'); 

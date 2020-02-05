@@ -17,7 +17,7 @@ class ProductoController extends Controller
     
     public function index()
     {
-        $ListaProducto=Producto::all();
+        $ListaProducto=Producto::all()->where('eliminadolog','1');
         $proveedor=Provedor::all();
         $categoria=CategoriaProducto::all();
         return view('adminlte::Paginas.Productos',compact('proveedor','categoria','ListaProducto'));
@@ -63,12 +63,14 @@ class ProductoController extends Controller
         $tipo->descipcionProducto=$request->descripcion;
         $tipo->marcaProducto=$request->marca;
         $tipo->modeloProducto=$request->modelo;
+        $tipo->eliminadolog=true;
         $tipo->imagenProducto=$FileName;  
         $tipo->fecha_caducidadProducto=$request->fecha;
         $tipo->categoriaproducto_id=$request->Cate1;
         $tipo2->cantidadProducto=$request->cantidad;
         $tipo2->precioVentaPublico=$request->precioP;
         $tipo2->precioAdministrador=$request->precioA;
+        $tipo2->eliminadolog=true;
         $tipo2->descuentoPublico=$request->descuento/100;
         $tipo2->gananciaUnidad=($tipo2->precioVentaPublico-($tipo2->precioVentaPublico*$tipo2->descuentoPublico)-$tipo2->precioAdministrador);
         $tipo2->gananciaTotal=($request->cantidad*$tipo2->gananciaUnidad);
@@ -146,6 +148,10 @@ class ProductoController extends Controller
      */
     public function destroy($id)
     {
-        //
+       $ListaProducto=Producto::find($id);
+       $stock=Stock::find($id);
+        $ListaProducto->eliminadolog=false;
+        $stock->eliminadolog=false;
+        return redirect()->action('ProductoController@index');
     }
 }

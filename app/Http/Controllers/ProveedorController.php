@@ -13,7 +13,7 @@ class ProveedorController extends Controller
      */
     public function index()
     {
-        $ListaProvedor=Provedor::orderBy('id','asc')->paginate(5);
+        $ListaProvedor=Provedor::orderBy('id','asc')->where('eliminadolog','1')->paginate(5);
         return view('adminlte::Paginas.Proveedores',compact('ListaProvedor'));
     }
 
@@ -40,6 +40,7 @@ class ProveedorController extends Controller
         $tipo->tlfProvedor=$request->tlf;
         $tipo->Dirección=$request->direccion;
         $tipo->caracteristicaProvedor=$request->caracteristicas;
+        $tipo->eliminadolog=true;
         $tipo->save();
         return redirect()->action('ProveedorController@index');
     }
@@ -93,6 +94,10 @@ class ProveedorController extends Controller
      */
     public function destroy($id)
     {
-        //
+       $ListaProvedor=Provedor::find($id);
+    
+        $ListaProvedor->eliminadolog=false;
+      
+        return redirect()->action('ProveedorController@index');
     }
 }

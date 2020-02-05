@@ -8,7 +8,7 @@ class CategoriaController extends Controller
 {
     public function index()
     {
-        $categoria=CategoriaProducto::orderBy('id','asc')->paginate(5);
+        $categoria=CategoriaProducto::orderBy('id','asc')->where('eliminadolog','1')->paginate(5);
         return view('adminlte::Paginas.Categoria',compact('categoria'));
     }
 
@@ -32,6 +32,7 @@ class CategoriaController extends Controller
     {
         $tipo=new CategoriaProducto();
         $tipo->nombreTipoProducto=$request->Categoria;
+         $tipo->eliminadolog=true;
         $tipo->save();
        return redirect()->action('CategoriaController@index');
     }
@@ -82,6 +83,10 @@ class CategoriaController extends Controller
      */
     public function destroy($id)
     {
-        //
+       $ListaCategoria=CategoriaProducto::find($id);
+    
+        $ListaCategoria->eliminadolog=false;
+      
+        return redirect()->action('CategoriaController@index');
     }
 }
