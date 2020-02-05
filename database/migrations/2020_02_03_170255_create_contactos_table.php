@@ -18,11 +18,6 @@ class CreateContactosTable extends Migration
             $table->String('ubicacion');
             $table->String('telefono');
             $table->String('correoAdmin');
-            $table->String('Nombre');
-            $table->String('Apellido');
-            $table->String('Correo');
-            $table->String('tlf');
-            $table->String('Mensaje');
         });
     }
 
