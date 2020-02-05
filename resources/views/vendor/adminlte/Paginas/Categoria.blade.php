@@ -38,7 +38,7 @@
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Eliminar</button>
                         </form><a href="{{ route('Categoria.edit',$item->id) }}">Editar</a>
-                    </td>
+                    </td><tr>
                     @endforeach
             </tbody>
             <tfoot>

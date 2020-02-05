@@ -54,12 +54,12 @@
                     <td>{{$item->caracteristicaProvedor}}</td>
                     <td>
                         <form action="{{ route('InsertProveedor.destroy',$item->id) }}" method="POST">
-                          
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                            <button  type="submit" class="btn btn-danger">Eliminar</button>
                         </form><a href="{{ route('InsertProveedor.edit',$item->id) }}">Editar</a>
                     </td>
+                </tr>
                     @endforeach
             </tbody>
             <tfoot>

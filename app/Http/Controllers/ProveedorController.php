@@ -97,7 +97,7 @@ class ProveedorController extends Controller
        $ListaProvedor=Provedor::find($id);
     
         $ListaProvedor->eliminadolog=false;
-      
+      $ListaProvedor->save();
         return redirect()->action('ProveedorController@index');
     }
 }
