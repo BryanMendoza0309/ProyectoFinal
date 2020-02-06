@@ -29,6 +29,7 @@
                             <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending"> Total de Ventas</th>
                             <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Numero Total de Ventas</th>
                             <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Proveedor</th>
+                            <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Accion</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -49,6 +50,14 @@
                             <td>{{$item->stock->totalVentas}}</td>
                             <td>{{$item->stock->totalProductosVentas}}</td>
                             <td>{{$item->stock->provedor->nombreProvedor}}</td>
+                            <td>
+                        <form action="{{ route('TablaProductos.destroy',$item->id) }}" method="POST">
+                          
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                        </form><a href="{{ route('TablaProductos.edit',$item->id) }}">Editar</a>
+                    </td><tr>
                         </tr>
                         @endforeach
                     </tbody>
