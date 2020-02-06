@@ -18,8 +18,8 @@ class ProductoController extends Controller
     public function index()
     {
         $ListaProducto=Producto::all()->where('eliminadolog','1');
-        $proveedor=Provedor::all();
-        $categoria=CategoriaProducto::all();
+        $proveedor=Provedor::all()->where('eliminadolog','1');;
+        $categoria=CategoriaProducto::all()->where('eliminadolog','1');;
         return view('adminlte::Paginas.Productos',compact('proveedor','categoria','ListaProducto'));
     }
 
