@@ -48,7 +48,8 @@ class VistaContactoController extends Controller
         $tipo->correoAdmin =$request->correoAdmin;
          $tipo->eliminadolog=true;
         $tipo->save();
-        return response()->json(['mensaje'=>'Datos Ingresados Correctamente']);
+        $id=$tipo->id;
+        return response()->json(['mensaje'=>'Datos Ingresados Correctamente','id'=>$id]);
         }
         
     }

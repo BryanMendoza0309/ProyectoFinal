@@ -26,7 +26,7 @@
     </div>
 </form>
 
-<table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info" id="tabla">
+<table  class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info" id="tabla">
         <thead>
             <tr role="row">
                 <th class="col-sm-1" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">#</th>
@@ -45,8 +45,8 @@
                     <td style="width: 8%">
                         <form action="{{ route('vistaContacto.destroy',$item->id) }}" method="POST">
                           
-                            @csrf
-                            @method('DELETE')
+                            {!! method_field('delete') !!}
+    {!! csrf_field() !!}
                             <button type="submit" class="btn btn-danger">Eliminar</button>
                         </form><a style="text-decoration: none" href="{{  route('vistaContacto.edit',$item->id) }}"><button class="btn btn-danger">Editar</button></a>
                     </td>
