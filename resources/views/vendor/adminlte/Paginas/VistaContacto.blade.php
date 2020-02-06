@@ -46,7 +46,7 @@
                         <form action="{{ route('vistaContacto.destroy',$item->id) }}" method="POST">
                           
                             {!! method_field('delete') !!}
-    {!! csrf_field() !!}
+                            {!! csrf_field() !!}
                             <button type="submit" class="btn btn-danger">Eliminar</button>
                         </form><a style="text-decoration: none" href="{{  route('vistaContacto.edit',$item->id) }}"><button class="btn btn-danger">Editar</button></a>
                     </td>
