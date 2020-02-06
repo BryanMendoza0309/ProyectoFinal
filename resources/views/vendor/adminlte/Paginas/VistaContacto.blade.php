@@ -53,10 +53,10 @@
                 </tr>
                     @endforeach
             </tbody>
-            
-
+             
+    
     </table>
-</div>
+</div> 
 <script src="../js/jquery.js"></script>
 <script src="../js/stv.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>

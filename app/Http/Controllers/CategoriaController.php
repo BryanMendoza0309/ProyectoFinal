@@ -6,10 +6,18 @@ use Illuminate\Http\Request;
 use App\CategoriaProducto;
 class CategoriaController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $categoria=CategoriaProducto::orderBy('id','asc')->where('eliminadolog','1')->paginate(5);
-        return view('adminlte::Paginas.Categoria',compact('categoria'));
+        if ($request->ajax()) {
+                 return response()->json(['users'=>$categoria]);
+        }else{
+             return view('adminlte::Paginas.Categoria',compact('categoria'));
+        }
+
+
+         
+        
     }
 
     /**
@@ -17,7 +25,7 @@ class CategoriaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create()    
     {
        
     }
@@ -30,11 +38,16 @@ class CategoriaController extends Controller
      */
     public function store(Request $request)
     {
+        if ($request->ajax()) {
         $tipo=new CategoriaProducto();
-        $tipo->nombreTipoProducto=$request->Categoria;
+        $tipo->nombreTipoProducto=$request->categoria;
          $tipo->eliminadolog=true;
         $tipo->save();
-       return redirect()->action('CategoriaController@index');
+        return response()->json(['mensaje'=>'Datos Ingresados Correctamente']);
+        }
+
+        
+       
     }
 
     /**

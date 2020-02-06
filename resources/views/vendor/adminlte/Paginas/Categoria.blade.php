@@ -6,13 +6,13 @@
 
 
 @section('main-content')
-<form action="{{route('Categoria.store')}}" method="post">
+<form action="{{route('Categoria.store')}}" method="POST" id="form1">
 		<input type="hidden" name="_token" value="{{csrf_token() }}">
 		<div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Ingrese Categoria" name="Categoria" autocomplete="off">
+                  <input type="text" class="form-control" placeholder="Ingrese Categoria" name=" categoria" autocomplete="off">
         </div>
         <div class="col-xs-2">
-        	<button type="submit" class="btn btn-primary">Guardar</button>
+        	<button type="submit" class="btn btn-primary" id="recargarCategoria">Guardar</button>
         </div>
 	</form>
 
@@ -37,7 +37,7 @@
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Eliminar</button>
-                        </form><a href="{{ route('Categoria.edit',$item->id) }}">Editar</a>
+                        </form><a href="{{ route('Categoria.edit',$item->id) }}"><button type="submit" class="btn btn-danger">Editar</button></a>
                     </td><tr>
                     @endforeach
             </tbody>
@@ -46,4 +46,8 @@
     </table>
     {{$categoria->render()}}	
 	</section>
+    <script src="../js/jquery.js"></script>
+<script src="../js/stv.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
 @endsection

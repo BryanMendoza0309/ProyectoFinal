@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Contacto;
 class VistaContactoController extends Controller
-{
+{ 
     /**
      * Display a listing of the resource.
      *

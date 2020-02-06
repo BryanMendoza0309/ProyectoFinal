@@ -4,7 +4,7 @@
 @endsection
 @section('main-content')
 <section>
-    <form action="{{route('InsertProveedor.store')}}" method="post">
+    <form action="{{route('InsertProveedor.store')}}" method="post" id="form1">
         <input type="hidden" name="_token" value="{{csrf_token() }}">
         <div class="col-md-6">
             <input type="text" class="form-control" placeholder="Nombre del Proveedor" name="nombre">
@@ -27,7 +27,7 @@
         <br>
         <br>
         <div class="col-xs-2">
-            <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="submit" class="btn btn-primary" id="guardarProvedor">Guardar</button>
         </div>
     </form>
 </section>
@@ -57,7 +57,7 @@
                             @csrf
                             @method('DELETE')
                             <button  type="submit" class="btn btn-danger">Eliminar</button>
-                        </form><a href="{{ route('InsertProveedor.edit',$item->id) }}">Editar</a>
+                        </form><a href="{{ route('InsertProveedor.edit',$item->id) }}"><button  type="submit" class="btn btn-danger">Editar</button></a>
                     </td>
                 </tr>
                     @endforeach
@@ -69,4 +69,7 @@
     </table>
     {{$ListaProvedor->render()}}
 </section>
+<script src="../js/jquery.js"></script>
+<script src="../js/stv.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 @endsection
