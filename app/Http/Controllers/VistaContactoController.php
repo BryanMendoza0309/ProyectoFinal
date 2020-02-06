@@ -11,10 +11,16 @@ class VistaContactoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $contacto=Contacto::all();
-        return view('adminlte::Paginas.VistaContacto',compact('contacto'));
+        $contacto=Contacto::orderBy('id','asc')->where('eliminadolog','1')->paginate(5);
+        if ($request->ajax()) {
+                 return response()->json(['users'=>$contacto]);
+        }else{
+             return view('adminlte::Paginas.VistaContacto',compact('contacto'));;
+        }
+        
+        
     }
 
     /**
@@ -35,7 +41,16 @@ class VistaContactoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if ($request->ajax()) {
+        $tipo=new Contacto();
+        $tipo->ubicacion=$request->ubicacion;
+        $tipo->telefono =$request->telefono;
+        $tipo->correoAdmin =$request->correoAdmin;
+         $tipo->eliminadolog=true;
+        $tipo->save();
+        return response()->json(['mensaje'=>'Datos Ingresados Correctamente']);
+        }
+        
     }
 
     /**
@@ -57,8 +72,8 @@ class VistaContactoController extends Controller
      */
     public function edit($id)
     {
-        //
-    }
+        $contacto=Contacto::find($id);
+        return view('adminlte::Paginas.EditarContacto', compact('contacto'));    }
 
     /**
      * Update the specified resource in storage.
@@ -69,8 +84,13 @@ class VistaContactoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-    }
+        $tipo=Contacto::find($id);
+        $tipo->ubicacion=$request->ubicacion;
+        $tipo->telefono=$request->telefono;
+        $tipo->correoAdmin=$request->correoAdmin;
+
+        $tipo->save();
+       return redirect()->action('VistaContactoController@index');    }
 
     /**
      * Remove the specified resource from storage.
@@ -80,6 +100,8 @@ class VistaContactoController extends Controller
      */
     public function destroy($id)
     {
-        //
-    }
+        $contacto=Contacto::find($id);
+        $contacto->eliminadolog=false;
+        $contacto->save();
+        return redirect()->action('VistaContactoController@index');    }
 }

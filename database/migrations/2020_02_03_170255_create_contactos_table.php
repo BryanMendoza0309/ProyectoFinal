@@ -18,6 +18,7 @@ class CreateContactosTable extends Migration
             $table->String('ubicacion');
             $table->String('telefono');
             $table->String('correoAdmin');
+            $table->boolean('eliminadolog');
         });
     }
 

@@ -8,7 +8,7 @@ class CategoriaController extends Controller
 {
     public function index()
     {
-        $categoria=CategoriaProducto::orderBy('id','asc')->where('eliminadolog','1');->paginate(5);
+        $categoria=CategoriaProducto::orderBy('id','asc')->where('eliminadolog','1')->paginate(5);
         return view('adminlte::Paginas.Categoria',compact('categoria'));
     }
 

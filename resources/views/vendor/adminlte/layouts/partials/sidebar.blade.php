@@ -19,19 +19,12 @@
         @endif
 
         <!-- search form (Optional) -->
-        <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-                <input type="text" name="q" class="form-control" placeholder="{{ trans('adminlte_lang::message.search') }}..."/>
-              <span class="input-group-btn">
-                <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-              </span>
-            </div>
-        </form>
+        
         <!-- /.search form -->
 
         <!-- Sidebar Menu -->
         <ul class="sidebar-menu">
-            <li class="header">{{ trans('adminlte_lang::message.header') }}</li>
+            <li class="header">Opciones del Administrador</li>
             <!-- Optionally, you can add icons to the links -->
             <li class="active"><a href="{{route('InsertProveedor.index') }}"><i class='fa fa-link'></i><span>Proveedor</span></a></li>
             <li><a href="{{route('InsertProducto.index')}}"><i class='fa fa-link'></i> <span>Productos</span></a></li>

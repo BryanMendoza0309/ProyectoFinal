@@ -3,99 +3,62 @@
 {{ trans('adminlte_lang::message.home') }}
 @endsection
 @section('main-content')
-
-<form action="{{route('vistaContacto.store')}}" method="post" enctype="multipart/form-data">
+<div class="col-md-12">
+<form action="{{route('vistaContacto.store')}}" method="post" enctype="multipart/form-data" id="form1">
     <input type="hidden" name="_token" value="{{csrf_token() }}">
     <div class="col-xs-6">
-        <input type="text" class="form-control" placeholder="Codigo del Producto" name="ubicacion" autocomplete="off">
+        <input type="text" class="form-control" placeholder="Ubicacion" name="ubicacion" autocomplete="off">
     </div>
     <br>
     <br>
     <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Nombre del Producto" name="telefono" autocomplete="off">
+        <input type="text" class="form-control" placeholder="Telefono" name="telefono" autocomplete="off">
     </div>
     <br>
     <br>
     <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Descripcion del Producto" name="correoAdmin" autocomplete="off">
+        <input type="text" class="form-control" placeholder="Correo del Administrador" name="correoAdmin" autocomplete="off">
     </div>
     <br>
-    <br>
-    <div class="col-xs-6">
-        <input type="text" class="form-control" placeholder="Marca del Producto" name="marca" autocomplete="off">
-    </div>
-    <br>
-    <br>
-    <div class="col-xs-6">
-        <input type="text" class="form-control" placeholder="Modelo del Producto" name="modelo" autocomplete="off">
-    </div>
-    <br>
-    <br>
-    <div class="col-xs-6">
-        <input type="file" class="form-control" placeholder="imagen" name="imagen" />
-    </div>
-    <br>
-    <br>
-    <div class="col-xs-6">
-        <input type="text" class="form-control" placeholder="Cantidad de Producto" name="cantidad" autocomplete="off">
-    </div>
-    <br>
-    <br>
-    <div class="col-xs-6">
-        <label>Fecha de Caducidad:</label>
-        <div class="input-group date">
-            <div class="input-group-addon">
-                <i class="fa fa-calendar"></i>
-            </div>
-            <input type="date" class="form-control pull-right" id="datepicker" name="fecha" autocomplete="off">
-        </div>
-        <!-- /.input group -->
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="input-group">
-        <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-        <input type="text" class="col-xs-1" name="precioP" placeholder="PvP">
-    </div>
-    <br>
-    <div class="input-group">
-        <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-        <input type="text" class="col-xs-1" name="precioA" placeholder="PvA">
-    </div>
-    <br>
-    <div class="input-group">
-        <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-        <input type="text" class="col-xs-1" name="descuento" placeholder="Decuento">
-    </div>
-    <br>
-
-
-    <div class="col-xs-2">
-        <label>Seleccionar Categoria</label>
-        <select class="" name="Cate1">
-            @foreach($categoria as $item)
-            <option value="{{$item->id}}">{{$item->nombreTipoProducto}}</option>
-            @endforeach
-        </select>
-    </div>
-    <br>
-        <br>
-        <br>
-
-    <div class="col-xs-2">
-        <label>Seleccionar Proveedor</label>
-        <select class="" name="proveedor2">
-            @foreach($proveedor as $item)
-            <option value="{{$item->id}}">{{$item->nombreProvedor}}</option>
-            @endforeach
-        </select>
-    </div>
     <br>
     <div class="col-xs-2">
-        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="submit" class="btn btn-primary" id="recargar">Guardar</button>
     </div>
 </form>
+
+<table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info" id="tabla">
+        <thead>
+            <tr role="row">
+                <th class="col-sm-1" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">#</th>
+                <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Ubicacion</th>
+                <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Telefono</th> 
+                <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Correo del Administrador</th> 
+            </tr>
+        </thead>
+        <tbody>
+                @foreach ($contacto as $item)
+                <tr>
+                    <td>{{$item->id}}</td>
+                    <td>{{$item->ubicacion}}</td>
+                    <td>{{$item->telefono}}</td>
+                    <td>{{$item->correoAdmin}}</td>
+                    <td style="width: 8%">
+                        <form action="{{ route('vistaContacto.destroy',$item->id) }}" method="POST">
+                          
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">Eliminar</button>
+                        </form><a style="text-decoration: none" href="{{  route('vistaContacto.edit',$item->id) }}"><button class="btn btn-danger">Editar</button></a>
+                    </td>
+                </tr>
+                    @endforeach
+            </tbody>
+            
+
+    </table>
+</div>
+<script src="../js/jquery.js"></script>
+<script src="../js/stv.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 @endsection
 

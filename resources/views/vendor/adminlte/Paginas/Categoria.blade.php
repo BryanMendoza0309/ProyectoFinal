@@ -41,9 +41,7 @@
                     </td><tr>
                     @endforeach
             </tbody>
-            <tfoot>
-               
-            </tfoot>
+            
 
     </table>
     {{$categoria->render()}}	
