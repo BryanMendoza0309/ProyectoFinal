@@ -79,7 +79,7 @@
     </div>
   </div>
 </div></section>
-
+{!!$contacto->render()!!}
 <script src="../js/jquery.js"></script>
 <script src="../js/contacto.js"></script>
 <script src="{{ asset('/js/bootstrap.min.js') }}" type="text/javascript"></script>

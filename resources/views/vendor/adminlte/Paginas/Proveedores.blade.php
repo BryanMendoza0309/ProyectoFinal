@@ -5,24 +5,24 @@
 @section('main-content')
 <section>
     <form action="{{route('InsertProveedor.store')}}" method="post" id="form1">
-        <input type="hidden" name="_token" value="{{csrf_token() }}">
+        <input type="hidden" name="_token" id="token" value="{{csrf_token() }}">
         <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Nombre del Proveedor" name="nombre">
+            <input type="text" class="form-control" placeholder="Nombre del Proveedor" name="nombre" id="nombre">
         </div>
         <br>
         <br>
         <div class="col-md-4">
-            <input type="text" class="form-control" placeholder="Telefono del Proveedor" name="tlf">
+            <input type="text" class="form-control" placeholder="Telefono del Proveedor" name="tlf" id="telefono">
         </div>
         <br>
         <br>
         <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Direccion del Proveedor" name="direccion">
+            <input type="text" class="form-control" placeholder="Direccion del Proveedor" name="direccion" id="direccion">
         </div>
         <br>
         <br>
         <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Caracteristicas del Proveedor" name="caracteristicas">
+            <input type="text" class="form-control" placeholder="Caracteristicas del Proveedor" name="caracteristicas" id="caracteristicas">
         </div>
         <br>
         <br>
@@ -36,40 +36,71 @@
         <thead>
             <tr role="row">
                 <th class="col-sm-1" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">#</th>
-                <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Id Provedor</th>
+                
                 <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Nombre Porvedor</th>
+                <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Telefono</th>
                 <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Direccion Provedor</th>
                 <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Caracteristicas provedor</th>
                 <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Opciones</th>
                 
             </tr>
         </thead>
-        <tbody>
-                @foreach ($ListaProvedor as $item)
-                <tr>
-                    <td>{{$item->id}}</td>
-                    <td>{{$item->nombreProvedor}}</td>
-                    <td>{{$item->tlfProvedor}}</td>
-                    <td>{{$item->Dirección}}</td>
-                    <td>{{$item->caracteristicaProvedor}}</td>
-                    <td>
-                        <form action="{{ route('InsertProveedor.destroy',$item->id) }}" method="POST">
-                            @csrf
-                            @method('DELETE')
-                            <button  type="submit" class="btn btn-danger">Eliminar</button>
-                        </form><a href="{{ route('InsertProveedor.edit',$item->id) }}"><button  type="submit" class="btn btn-danger">Editar</button></a>
-                    </td>
-                </tr>
-                    @endforeach
+        <tbody id="tablaprovedor">
+                
             </tbody>
             <tfoot>
                
             </tfoot>
 
     </table>
-    {{$ListaProvedor->render()}}
 </section>
+
+<section>
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar Provedor</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="idprovedor" id="idmodal">
+                    <div class="col-md-6">
+                        <input type="text" id="nombremdl" class="form-control" name="nombremodal">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-md-6">
+                        <input type="text" id="telefonomdl" class="form-control"  name="ubicacion">
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="col-md-6">
+                        <input type="text" id="ubicacionmdl" class="form-control" placeholder="Ubicacion" name="ubicacionmdl">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-md-6">
+                        <input type="text" id="caracteristicasmdl" class="form-control" placeholder="Nombre" name="caracteristicasmdl">
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <a type="button" id="actualizarprove" class="btn btn-primary">Guardar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script src="../js/jquery.js"></script>
-<script src="../js/stv.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+<script src="../js/provedor.js"></script>
+<script src="{{ asset('/js/bootstrap.min.js') }}" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script><script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 @endsection

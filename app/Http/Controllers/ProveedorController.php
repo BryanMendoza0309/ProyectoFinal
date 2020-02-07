@@ -14,9 +14,9 @@ class ProveedorController extends Controller
     public function index(Request $request)
     {
 
-        $ListaProvedor=Provedor::orderBy('id','asc')->where('eliminadolog','1')->paginate(5);
+        $ListaProvedor=Provedor::paginate(3);
         if ($request->ajax()) {
-                 return response()->json(['users'=>$ListaProvedor]);
+                 return response()->json($ListaProvedor->toArray());
         }else{
              return view('adminlte::Paginas.Proveedores',compact('ListaProvedor'));
         }
@@ -49,7 +49,7 @@ class ProveedorController extends Controller
         $tipo->caracteristicaProvedor=$request->caracteristicas;
         $tipo->eliminadolog=true;
         $tipo->save();
-        return response()->json(['mensaje'=>'Datos Ingresados Correctamente']);
+        return response()->json(['mensaje'=>'Datos Ingresados Correctamente','id'=>$tipo->id]);
         }
     }
 

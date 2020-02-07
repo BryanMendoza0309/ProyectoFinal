@@ -13,10 +13,6 @@ function cargar(){
 	}
 $(document).ready(function() {
     cargar();
-
-	
-	
-
     $('#registrar').click(function() {
     	var request = {
             ubicacion: $('#ubicacionfm').val(),

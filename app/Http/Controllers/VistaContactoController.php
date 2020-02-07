@@ -26,7 +26,7 @@ class VistaContactoController extends Controller
 
     public function index(Request $request)
     {
-        $contacto=Contacto::all();
+        $contacto=Contacto::paginate(3);;
         if ($request->ajax()) {
                  return response()->json($contacto->toArray());
         }else{
