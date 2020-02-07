@@ -30,6 +30,10 @@ $(document).ready(function() {
                 data: request,
             })
             .done(function(data) {
+                 $('#nombre').val("");
+             $('#telefono').val("");
+             $('#direccion').val("");
+             $('#caracteristicas').val("");
                 cargar();
                 Swal.fire({
                     position: 'center',

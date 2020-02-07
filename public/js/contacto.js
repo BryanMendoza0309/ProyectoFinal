@@ -29,6 +29,12 @@ $(document).ready(function() {
             data: request,
         })
         .done(function(data) {
+ $('#ubicacionfm').val("");
+
+        $('#telefonofm').val("");
+
+        $('#correoadminfm').val("");
+
 			cargar();
 			Swal.fire({
   			position: 'center',
@@ -66,6 +72,8 @@ $(document).ready(function() {
             
         })
         .done(function(data) {
+         
+        $('#exampleModal').modal('toggle');
 			cargar();
 			Swal.fire({
   			position: 'center',

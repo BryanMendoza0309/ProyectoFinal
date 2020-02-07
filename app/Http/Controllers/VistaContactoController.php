@@ -59,7 +59,7 @@ class VistaContactoController extends Controller
         $tipo=new Contacto();
         $tipo->ubicacion=$request->ubicacion;
         $tipo->telefono =$request->telefono;
-        $tipo->correoAdmin =$request->correoadmin;
+        $tipo->correoAdmin =$request->correoAdmin;
          $tipo->eliminadolog=true;
         $tipo->save();
         $id=$tipo->id;

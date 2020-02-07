@@ -12,7 +12,7 @@
                   <input type="text" class="form-control" placeholder="Ingrese Categoria" id="categoria" name=" categoria" autocomplete="off">
         </div>
         <div class="col-xs-2">
-        	<a type="submit" class="btn btn-primary" id="recargarCategoria">Guardar</a>
+        	<a id="regiscate" type="submit" class="btn btn-primary" >Guardar</a>
         </div>
 	</form>
 
@@ -25,7 +25,7 @@
                 <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Nombre Tipo Producto</th> 
             </tr>
         </thead>
-        <tbody id="datostdb">
+        <tbody id="datoscatetdb">
              
         </tbody>
             
@@ -45,9 +45,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <input type="hidden" name="idcontacto" id="id">
+                    <input type="hidden" name="idmdl" id="id">
                     <div class="col-md-6">
-                        <input type="text" id="categoria" class="form-control" placeholder="categoria" name="categoria">
+                        <input type="text" id="categoriamdl" class="form-control" placeholder="categoria" name="categoria">
                     </div>
                     
                     <br>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <a type="button" id="actualizarcontac" class="btn btn-primary">Guardar</a>
+                    <a type="button" id="actualizarcate" class="btn btn-primary">Guardar</a>
                 </div>
             </div>
         </div>

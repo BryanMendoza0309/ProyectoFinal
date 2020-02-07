@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('loadCategoria', 'CategoriaController@load');
 Route::get('loadContactos', 'VistaContactoController@load');
 Route::get('loadProvedors', 'ProveedorController@load');
 Route::resource('InsertProducto','ProductoController');

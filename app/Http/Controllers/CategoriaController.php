@@ -6,17 +6,28 @@ use Illuminate\Http\Request;
 use App\CategoriaProducto;
 class CategoriaController extends Controller
 {
+      public function load(Request $request)
+    {
+        $categoria=CategoriaProducto::all();
+        if ($request->ajax()) {
+                 return response()->json($categoria->toArray());
+        }else{
+             return view('adminlte::Paginas.Categoria',compact('categoria'));;
+        }
+        
+        
+    }
+
+
+
     public function index(Request $request)
     {
-        $categoria=CategoriaProducto::orderBy('id','asc')->where('eliminadolog','1')->paginate(5);
+        $categoria=CategoriaProducto::paginate(3);
         if ($request->ajax()) {
-                 return response()->json(['users'=>$categoria]);
+                 return response()->json($categoria->toArray());
         }else{
-             return view('adminlte::Paginas.Categoria',compact('categoria'));
-        }
-
-
-         
+             return view('adminlte::Paginas.Categoria',compact('categoria'));;
+        } 
         
     }
 
@@ -69,8 +80,9 @@ class CategoriaController extends Controller
      */
     public function edit($id)
     {
-        $categoriaetid=CategoriaProducto::find($id);
-        return view('adminlte::Paginas.EditarCategoria', compact('categoriaetid'));
+        $categoria=CategoriaProducto::find($id);
+         return response()->json($categoria); 
+         
     }
 
     /**
@@ -85,7 +97,7 @@ class CategoriaController extends Controller
         $tipo=CategoriaProducto::find($id);
         $tipo->nombreTipoProducto=$request->categoria;
         $tipo->save();
-       return redirect()->action('CategoriaController@index');
+      return response()->json(["mensaje"=>"listo"]);
     }
 
     /**
@@ -96,9 +108,9 @@ class CategoriaController extends Controller
      */
     public function destroy($id)
     {
-       $ListaCategoria=CategoriaProducto::find($id);
-        $ListaCategoria->eliminadolog=false;
-        $ListaCategoria->save();
-        return redirect()->action('CategoriaController@index');
+       $categoria=CategoriaProducto::find($id);
+        $categoria->eliminadolog=false;
+        $categoria->save();
+        return response()->json(["mensaje"=>"listo"]); 
     }
 }
