@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('loadCategoria', 'CategoriaController@load');
+
 Route::get('loadContactos', 'VistaContactoController@load');
 Route::get('loadProvedors', 'ProveedorController@load');
 Route::resource('InsertProducto','ProductoController');
@@ -23,6 +23,7 @@ Route::resource('InsertProveedor','ProveedorController');
 Route::resource('TablaProductos','TablaproductoController');
 Route::resource('vistaComprador','VistaCompradorController');
 Route::resource('vistaContacto','VistaContactoController');
+Route::resource('principalComprador','VistaPrincipalCompradorController');
 Route::group(['middleware' => 'auth'], function () {
     //    Route::get('/link1', function ()    {
 //        // Uses Auth Middleware
