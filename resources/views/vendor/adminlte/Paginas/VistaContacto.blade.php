@@ -61,7 +61,7 @@
                     <br>
                     <br>
                     <div class="col-md-6">
-                        <input type="text" id="correoadmin" class="form-control" placeholder="Nombre" name="correoAdmin">
+                        <input type="text" id="correoAdmin" class="form-control" placeholder="correo" name="correoAdmin">
                     </div>
                     <br>
                     <br>

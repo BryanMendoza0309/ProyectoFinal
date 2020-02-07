@@ -55,7 +55,7 @@ $(document).ready(function() {
         var request = {
             ubicacion: $('#ubicacion').val(),
             telefono: $('#telefono').val(),
-            caracteristicaProvedor: $('#correoadmin').val()
+            correoAdmin: $('#correoAdmin').val()
         }
         $.ajax({
             url: route,
@@ -96,7 +96,7 @@ function Mostrar(btn) {
 
         $('#telefono').val(res.telefono);
 
-        $('#correoadmin').val(res.correoAdmin);
+        $('#correoAdmin').val(res.correoAdmin);
 
         $('#id').val(res.id);
 debugger

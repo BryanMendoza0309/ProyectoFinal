@@ -25,7 +25,7 @@
                 <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Nombre Tipo Producto</th> 
             </tr>
         </thead>
-        <tbody>
+        <tbody id="datostdb">
              
         </tbody>
             
@@ -39,7 +39,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Editar Contacto</h5>
+                    <h5 class="modal-title">Editar Categoria</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -47,13 +47,9 @@
                 <div class="modal-body">
                     <input type="hidden" name="idcontacto" id="id">
                     <div class="col-md-6">
-                        <input type="text" id="ubicacion" class="form-control" placeholder="Ubicacion" name="ubicacion">
+                        <input type="text" id="categoria" class="form-control" placeholder="categoria" name="categoria">
                     </div>
-                    <br>
-                    <br>
-                    <div class="col-md-6">
-                        <input type="text" id="telefono" class="form-control" placeholder="Telefono" name="telefono">
-                    </div>
+                    
                     <br>
                     <br>
                 </div>
@@ -66,7 +62,8 @@
     </div>
 </section>
     <script src="../js/jquery.js"></script>
-<script src="../js/stv.js"></script>
+    <script src="{{ asset('/js/bootstrap.min.js') }}" type="text/javascript"></script>
+<script src="../js/categoriajs.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 @endsection
