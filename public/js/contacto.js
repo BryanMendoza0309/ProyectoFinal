@@ -3,13 +3,13 @@ function cargar(){
 	var ruta='http://127.0.0.1:8000/loadContactos';
 	$('#datostdb').empty();
 	$.get(ruta,function(res){
+
 		$(res).each(function(key,valor) {
 			 
 			 if(valor.eliminadolog==1)
 			datosTabla.append("<tr><td>"+valor.id+"</td><td>"+valor.ubicacion+"</td><td>"+valor.telefono+"</td><td>"+valor.correoAdmin+'</td><td style="width: 8%"><button OnClick="Eliminar(this);" value="'+valor.id+'" type="submit" class="btn btn-danger"> Eliminar</button><button OnClick="Mostrar(this);" style="text-decoration: none" data-toggle="modal" href="#" data-target="#exampleModal" class="btn btn-danger" value="'+valor.id+'" >Editar</button></td></tr>')
 		});
 	})
-
 	}
 $(document).ready(function() {
     cargar();
@@ -21,8 +21,6 @@ $(document).ready(function() {
         }
         var token = $('#token').val();
         var route='http://127.0.0.1:8000/vistaContacto';
-
-         debugger
         $.ajax({
             url: route,
             headers: { 'X-CSRF-TOKEN': token },
@@ -40,7 +38,6 @@ $(document).ready(function() {
   			timer: 1500
 			})
 		})
-
 		.fail(function(error){
 			Swal.fire({
   			icon: 'error',
@@ -53,12 +50,12 @@ $(document).ready(function() {
 
     $('#actualizarcontac').click(function() {
         var value = $('#id').val();
-        var route = 'http://127.0.0.1:8000/vistaContacto/' + value;
+        var route = 'http://127.0.0.1:8000/vistaContacto/'+value;
         var token = $('#token').val();
         var request = {
             ubicacion: $('#ubicacion').val(),
             telefono: $('#telefono').val(),
-            correoAdmin: $('#correoadmin').val()
+            caracteristicaProvedor: $('#correoadmin').val()
         }
         $.ajax({
             url: route,
@@ -102,7 +99,7 @@ function Mostrar(btn) {
         $('#correoadmin').val(res.correoAdmin);
 
         $('#id').val(res.id);
-
+debugger
     })
 }
 

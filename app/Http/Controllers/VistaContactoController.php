@@ -26,7 +26,7 @@ class VistaContactoController extends Controller
 
     public function index(Request $request)
     {
-        $contacto=Contacto::paginate(3);;
+        $contacto=Contacto::paginate(3);
         if ($request->ajax()) {
                  return response()->json($contacto->toArray());
         }else{
@@ -88,7 +88,7 @@ class VistaContactoController extends Controller
     public function edit($id)
     {
         $contacto=Contacto::find($id);
-        return response()->json($contacto);
+         return response()->json($contacto); 
          }
     /**
      * Update the specified resource in storage.

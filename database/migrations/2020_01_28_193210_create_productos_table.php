@@ -17,7 +17,7 @@ class CreateProductosTable extends Migration
             $table->bigIncrements('id');
             $table->String('nombreProvedor');
             $table->String('tlfProvedor');
-            $table->String('Dirección');
+            $table->String('direccion');
              $table->boolean('eliminadolog');
             $table->String('caracteristicaProvedor');
         });

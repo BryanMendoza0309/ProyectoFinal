@@ -6,6 +6,18 @@ use Illuminate\Http\Request;
 use App\Provedor;
 class ProveedorController extends Controller
 {
+
+    public function load(Request $request)
+    {
+        $ListaProvedor=Provedor::all();
+        if ($request->ajax()) {
+                 return response()->json($ListaProvedor->toArray());
+        }else{
+             return view('adminlte::Paginas.Proveedores',compact('ListaProvedor'));;
+        }
+        
+        
+    }
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +26,7 @@ class ProveedorController extends Controller
     public function index(Request $request)
     {
 
-        $ListaProvedor=Provedor::paginate(3);
+        $ListaProvedor=Provedor::all();
         if ($request->ajax()) {
                  return response()->json($ListaProvedor->toArray());
         }else{
@@ -39,18 +51,22 @@ class ProveedorController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
+
     {
+        
 
         if ($request->ajax()) {
         $tipo=new Provedor();
-        $tipo->nombreProvedor=$request->nombre;
-        $tipo->tlfProvedor=$request->tlf;
-        $tipo->Dirección=$request->direccion;
-        $tipo->caracteristicaProvedor=$request->caracteristicas;
+        $tipo->nombreProvedor=$request->nombreProvedor;
+        $tipo->tlfProvedor=$request->tlfProvedor;
+        $tipo->direccion=$request->direccion;
+        $tipo->caracteristicaProvedor=$request->caracteristicaProvedor;
         $tipo->eliminadolog=true;
         $tipo->save();
-        return response()->json(['mensaje'=>'Datos Ingresados Correctamente','id'=>$tipo->id]);
+        $id=$tipo->id;
+        return response()->json(['mensaje'=>'Datos Ingresados Correctamente','id'=>$id]);
         }
+       // return response()->json(['mensaje'=>'Datos Ingresados Correctamente','id'=>$tipo->id]);
     }
 
     /**
@@ -73,7 +89,7 @@ class ProveedorController extends Controller
     public function edit($id)
     {
         $provedoredit=Provedor::find($id);
-        return view('adminlte::Paginas.EditarProvedor', compact('provedoredit'));
+         return response()->json($provedoredit); 
     }
 
     /**
@@ -86,12 +102,12 @@ class ProveedorController extends Controller
     public function update(Request $request, $id)
     {
         $provedoredit=Provedor::find($id);
-        $provedoredit->nombreProvedor=$request->nombre;
-        $provedoredit->tlfProvedor=$request->tlf;
-        $provedoredit->Dirección=$request->direccion;
-        $provedoredit->caracteristicaProvedor=$request->caracteristicas;
+        $provedoredit->nombreProvedor=$request->nombreProvedor;
+        $provedoredit->tlfProvedor=$request->tlfProvedor;
+        $provedoredit->direccion=$request->direccion;
+        $provedoredit->caracteristicaProvedor=$request->caracteristicaProvedor;
         $provedoredit->save();
-        return redirect()->action('ProveedorController@index');
+        return response()->json(["mensaje"=>"listo"]); 
     }
 
     /**
@@ -106,6 +122,6 @@ class ProveedorController extends Controller
     
         $ListaProvedor->eliminadolog=false;
       $ListaProvedor->save();
-        return redirect()->action('ProveedorController@index');
+         return response()->json(["mensaje"=>"listo"]); 
     }
 }

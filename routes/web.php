@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('loadContactos', 'VistaContactoController@load');
+Route::get('loadProvedors', 'ProveedorController@load');
 Route::resource('InsertProducto','ProductoController');
 Route::resource('Categoria','CategoriaController');
 Route::resource('InsertProveedor','ProveedorController');

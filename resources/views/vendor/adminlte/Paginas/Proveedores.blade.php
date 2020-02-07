@@ -3,8 +3,8 @@
 {{ trans('adminlte_lang::message.home') }}
 @endsection
 @section('main-content')
-<section>
-    <form action="{{route('InsertProveedor.store')}}" method="post" id="form1">
+
+    <form  method="post" enctype="multipart/form-data" id="form2">
         <input type="hidden" name="_token" id="token" value="{{csrf_token() }}">
         <div class="col-md-6">
             <input type="text" class="form-control" placeholder="Nombre del Proveedor" name="nombre" id="nombre">
@@ -27,11 +27,11 @@
         <br>
         <br>
         <div class="col-xs-2">
-            <button type="submit" class="btn btn-primary" id="guardarProvedor">Guardar</button>
+            <a type="submit" class="btn btn-primary" id="guardarProvedor">Guardar</a>
         </div>
     </form>
-</section>
-<section>
+
+
     <table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info">
         <thead>
             <tr role="row">
@@ -53,7 +53,7 @@
             </tfoot>
 
     </table>
-</section>
+
 
 <section>
     <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
@@ -66,7 +66,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <input type="hidden" name="idprovedor" id="idmodal">
+                    <input type="hidden" name="idprovedor" id="idprovedor">
                     <div class="col-md-6">
                         <input type="text" id="nombremdl" class="form-control" name="nombremodal">
                     </div>
@@ -98,9 +98,8 @@
     </div>
 </section>
 
-<script src="../js/jquery.js"></script>
-
-<script src="../js/provedor.js"></script>
+<script src="../js/jquery.js" type="text/javascript"></script>
+<script  src="../js/Provedor.js" type="text/javascript"></script>
 <script src="{{ asset('/js/bootstrap.min.js') }}" type="text/javascript"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script><script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 @endsection
