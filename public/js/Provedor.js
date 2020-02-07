@@ -90,11 +90,11 @@ $(document).ready(function() {
 });
 
 function Mostrar(btn) {
-          debugger
+          
     var route = 'http://127.0.0.1:8000/InsertProveedor/'+btn.value+'/edit';
     $.get(route, function(res) {
         $('#nombremdl').val(res.nombreProvedor);
-debugger
+
         $('#telefonomdl').val(res.tlfProvedor);
 
         $('#ubicacionmdl').val(res.direccion);
