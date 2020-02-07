@@ -30,6 +30,24 @@ $(document).ready(function() {
             dataType: 'json',
             data: request,
         })
+        .done(function(data) {
+			cargar();
+			Swal.fire({
+  			position: 'center',
+  			icon: 'success',
+  			title: 'Datos Guardados',
+  			showConfirmButton: false,
+  			timer: 1500
+			})
+		})
+
+		.fail(function(error){
+			Swal.fire({
+  			icon: 'error',
+  			title: 'Oops...',
+  			text: 'Erro al Guardar los Datos!',
+			})		
+		})
     });
 
 
