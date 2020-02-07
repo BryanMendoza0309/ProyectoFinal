@@ -1,10 +1,12 @@
+var row;
 $(document).ready(function(){
 	$('#recargar').click(function(e){
 		e.preventDefault();
 		var form=$(this);
 		var ruta=form[0].form.action;
 		var datos=new FormData($('#form1')[0]);
-		var token=$('input[name=_token]').val();
+		
+		var token=$('#token').val();
 		debugger
 		$.ajax({
 			url: ruta,
@@ -17,8 +19,7 @@ $(document).ready(function(){
 		})
 		.done(function(data) {
 			debugger
-			var aux='@csrf @method('+"'DELETE'"+')';
-			aux2="<tr><td>"+data.id+"</td><td>"+$('input[name=ubicacion]').val()+"</td><td>"+$('input[name=telefono]').val()+"</td><td>"+$('input[name=correoAdmin]').val()+'</td><td style="width: 8%"><form action='+'"{{route('+"'vistaContacto.destroy',"+data.id+') }}"'+'  method="POST">'+aux+' <button type="submit" class="btn btn-danger">Eliminar</button></form><a style="text-decoration: none" href="http://127.0.0.1:8000/vistaContacto/'+data.id+'/edit"><button class="btn btn-danger">Editar</button></a></td></tr>';
+			aux2="<tr><td>"+data.id+"</td><td>"+$('input[name=ubicacion]').val()+"</td><td>"+$('input[name=telefono]').val()+"</td><td>"+$('input[name=correoAdmin]').val()+'</td><td style="width: 8%"><form method="POST">'+ "@csrf @method('DELETE')"+' <button OnClick="Eliminar(this);" value="'+data.id+'" type="submit" class="btn btn-danger"> Eliminar</button></form><a style="text-decoration: none" data-toggle="modal" href="#" data-target="#exampleModal" class="btn btn-danger">Editar</a></td></tr>';
 			$('#tabla').append(aux2);
 			$('input[name=ubicacion]').val("");
 			$('input[name=telefono]').val("");
@@ -32,6 +33,32 @@ $(document).ready(function(){
   		showConfirmButton: false,
   		timer: 1500
 			})
+			 $('[data-id]').off();
+			$('[data-id]').click(function(){     
+        row= $(this).parents("tr");
+        var ruta2="http://127.0.0.1:8000/eliminarcontacto/"+$(this).parents("tr").find("td").eq(0).html();
+
+		$.ajax({
+			url: ruta2,
+			headers:{'X-CSRF-TOKEN': token},
+			type: 'DELETE',
+			dataType: 'json',
+			contentType:false,
+			processData:false,
+			data: datos,
+
+		})
+		.done(function() {
+			console.log("success");
+		})
+		.fail(function() {
+			console.log("error");
+		})	
+        debugger
+        })
+
+
+
 		})
 
 		.fail(function(error) {
@@ -41,6 +68,10 @@ $(document).ready(function(){
   		text: 'Error al Ingresar los Datos!',
 			})
 		})
+	})
+
+	$('#btnEliminar').click(function(e){
+		debugger    
 	})
 
 	$('#recargarCategoria').click(function(e){
@@ -128,7 +159,12 @@ $(document).ready(function(){
 		})
 	})
 
+
+
 });
+
+
+
 
 function cargarDatos(){
 		debugger

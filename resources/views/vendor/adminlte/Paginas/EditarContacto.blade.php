@@ -6,7 +6,7 @@
 @section('main-content')
 <form action="{{ route('vistaContacto.update',$contacto->id) }}" method="post">
         @method ('PATCH')
-            @csrf
+        @csrf
         <div class="col-md-6">
             <input type="text" class="form-control" placeholder="{{$contacto->ubicacion}}" name="ubicacion">
         </div>

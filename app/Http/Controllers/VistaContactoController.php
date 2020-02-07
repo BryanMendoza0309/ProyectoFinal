@@ -11,11 +11,24 @@ class VistaContactoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
+    public function load(Request $request)
+    {
+        $contacto=Contacto::all();
+        if ($request->ajax()) {
+                 return response()->json($contacto->toArray());
+        }else{
+             return view('adminlte::Paginas.VistaContacto',compact('contacto'));;
+        }
+        
+        
+    }
+
     public function index(Request $request)
     {
-        $contacto=Contacto::orderBy('id','asc')->where('eliminadolog','1')->paginate(5);
+        $contacto=Contacto::all();
         if ($request->ajax()) {
-                 return response()->json(['users'=>$contacto]);
+                 return response()->json($contacto->toArray());
         }else{
              return view('adminlte::Paginas.VistaContacto',compact('contacto'));;
         }
@@ -30,7 +43,8 @@ class VistaContactoController extends Controller
      */
     public function create()
     {
-        //
+        $contacto=Contacto::all();
+         return view('adminlte::Paginas.VistaContacto',compact('contacto'));;
     }
 
     /**
@@ -74,8 +88,8 @@ class VistaContactoController extends Controller
     public function edit($id)
     {
         $contacto=Contacto::find($id);
-        return view('adminlte::Paginas.EditarContacto', compact('contacto'));    }
-
+        return response()->json($contacto);
+         }
     /**
      * Update the specified resource in storage.
      *
@@ -91,7 +105,8 @@ class VistaContactoController extends Controller
         $tipo->correoAdmin=$request->correoAdmin;
 
         $tipo->save();
-       return redirect()->action('VistaContactoController@index');    }
+      return response()->json(["mensaje"=>"listo"]);    
+  }
 
     /**
      * Remove the specified resource from storage.
@@ -104,5 +119,6 @@ class VistaContactoController extends Controller
         $contacto=Contacto::find($id);
         $contacto->eliminadolog=false;
         $contacto->save();
-        return redirect()->action('VistaContactoController@index');    }
+        return response()->json(["mensaje"=>"listo"]); 
+    }
 }
