@@ -1,0 +1,281 @@
+[33mcommit 22c52dc894403c31bbe7ec0f794a32300edbed27[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Fri Feb 7 17:56:08 2020 -0500
+
+    Ajasx Casi COmpleto
+
+[33mcommit b4b66cc4653242e8f04c83e70e4ac02291c1ba6c[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Fri Feb 7 16:37:44 2020 -0500
+
+    arreglado
+
+[33mcommit 84540e931925ea0210912e52fe47976884f0ddba[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Fri Feb 7 15:50:51 2020 -0500
+
+    commitdescarga
+
+[33mcommit 9c2765b58b7f5608b12a33e22460c47b1eb76c1c[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Fri Feb 7 14:29:46 2020 -0500
+
+    ajax Provedor
+
+[33mcommit dec1b4276f76828eaf34539d446c967dbc78223c[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Fri Feb 7 09:24:13 2020 -0500
+
+    areglado
+
+[33mcommit 4233291e4a8284a78e51d84dec32b617a868f642[m
+Merge: 28d3fc6 dcdad73
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Fri Feb 7 09:19:59 2020 -0500
+
+    Merge branch 'master' of https://github.com/BryanMendoza0309/ProyectoFinal
+
+[33mcommit 28d3fc6cd0c6549887407a89903db3e93195f730[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Fri Feb 7 09:18:52 2020 -0500
+
+    editandoajax
+
+[33mcommit dcdad738e1e885718d73b66aff6f051b925b44a4[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Fri Feb 7 02:32:57 2020 -0500
+
+    Elementos de la Tabla Usuario
+
+[33mcommit 8012565c19ab2c32d0843dbe90fcdd80f39b9f4d[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Fri Feb 7 02:28:22 2020 -0500
+
+    Se Borro
+
+[33mcommit 8cf44acda566d11f12a7bcfc3182de0730c03e36[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Fri Feb 7 01:15:36 2020 -0500
+
+    ajax full
+
+[33mcommit ce2229d912857adeb466c8a393a3617edad583be[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Thu Feb 6 12:42:00 2020 -0500
+
+    Ajax 3.1
+
+[33mcommit 6a5748d1b67554ef0f5bb6ec78a57253c1020b01[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Thu Feb 6 12:25:09 2020 -0500
+
+    Ajax 3.0
+
+[33mcommit dc77409ca8c7f7ccb3381ae78499bdb01bc0066a[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Thu Feb 6 04:34:42 2020 -0500
+
+    fila ajax
+
+[33mcommit af301761b0fcf87cb89381db170c3d683b81fbb4[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Thu Feb 6 02:32:19 2020 -0500
+
+    Ajax 2.0
+
+[33mcommit 1f510a462b6df62399b8a751528c98e5fe9f3380[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Thu Feb 6 01:08:06 2020 -0500
+
+    Error logico
+
+[33mcommit 5fb0aac1c787633af8390ad09ab11b884d0a33e6[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Thu Feb 6 01:02:45 2020 -0500
+
+    Ajax Contacto 1.1
+
+[33mcommit 687ed99565f6da644e8ed4ae444e9fec3b940e89[m
+Merge: 4ce16b3 86c21c9
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Thu Feb 6 01:00:28 2020 -0500
+
+    Merge branch 'master' of https://github.com/BryanMendoza0309/ProyectoFinal
+
+[33mcommit 4ce16b3481feedd7b74eb33d8c2a8654e7e80293[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Thu Feb 6 00:56:52 2020 -0500
+
+    Ajax Contacto
+
+[33mcommit 86c21c9634ffee81e778d84d9345085f200f724d[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Thu Feb 6 00:53:36 2020 -0500
+
+    CRUDPRODUCTO
+
+[33mcommit 34f937ed327c74ab7e4e7f05499629623fc47703[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Wed Feb 5 00:59:51 2020 -0500
+
+    Eliminado Logico
+
+[33mcommit 08075c569743ac158c3ace2521dffd19320de7dd[m
+Merge: a80287e 271c304
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Wed Feb 5 00:44:58 2020 -0500
+
+    Merge branch 'master' of https://github.com/BryanMendoza0309/ProyectoFinal
+
+[33mcommit 271c304ebf84164f08475aae672d6e23fd251791[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Wed Feb 5 00:43:53 2020 -0500
+
+    Arreglo de la tabla Contacto
+
+[33mcommit a80287eb35a918c1a41ce3ff39cd44fa62cf4e18[m
+Merge: a02af1f 74fb51f
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Wed Feb 5 00:24:32 2020 -0500
+
+    Merge branch 'master' of https://github.com/BryanMendoza0309/ProyectoFinal
+
+[33mcommit a02af1f935da325e68968a27947e219b980642d3[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Wed Feb 5 00:23:45 2020 -0500
+
+    eliminadologico
+
+[33mcommit 74fb51f76830ff6fe3ee7a6c203e0ae9818e6149[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Mon Feb 3 17:40:12 2020 -0500
+
+    Tabla Contactos
+
+[33mcommit 61fd2f74a36dabcb5539b37a55e130df2d723388[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Mon Feb 3 10:33:20 2020 -0500
+
+    SIn Modificar
+
+[33mcommit c5741e3f882cf59bc76329303f9a1e1ffebd0ace[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Mon Feb 3 10:14:30 2020 -0500
+
+    Crud Tipo
+
+[33mcommit 5ba2c59c4c5d858bfea6fd9017c00aab6abfffce[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Mon Feb 3 09:07:18 2020 -0500
+
+    Cambio Pequeño
+
+[33mcommit 8abe67df6119e648fdbd1f585d40f01b5dd9a827[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Mon Feb 3 08:13:28 2020 -0500
+
+    RelacionNueva
+
+[33mcommit c57bb52b4d3db0410db81453c4dcbf08cf77cbb4[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Mon Feb 3 01:11:10 2020 -0500
+
+    Relacion Categorias
+
+[33mcommit 6e6af1abea13026a4c905ec0e4c21c51d9d55e65[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Mon Feb 3 00:28:04 2020 -0500
+
+    Paginado
+
+[33mcommit d18709c5205a953179a8c4d3142e742df290d722[m
+Merge: 29d8acb 7ee9bc9
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Sun Feb 2 22:23:50 2020 -0500
+
+    Merge branch 'master' of https://github.com/BryanMendoza0309/ProyectoFinal
+
+[33mcommit 29d8acbbcc9837d0ba1318b8491a632f38f1695e[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Sun Feb 2 22:22:12 2020 -0500
+
+    TamañoImagenProducto
+
+[33mcommit 7ee9bc9f094bb317c90d4c815aa4938e0c9fb164[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Sun Feb 2 20:53:00 2020 -0500
+
+    Arreglo Minimo
+
+[33mcommit ebcc9ce7c3604a63c1f1d691a514ad1f683e8613[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Sun Feb 2 03:01:07 2020 -0500
+
+    Ingreso de Imagen Producto
+
+[33mcommit 078f6d53411af9f0baa697a10aa12d76f9d203d1[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Sat Feb 1 22:55:09 2020 -0500
+
+    Relacion Administrador
+
+[33mcommit c967d4043c7b871803fdb4bc0b1a3371554b7fde[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Sat Feb 1 22:07:38 2020 -0500
+
+    cruct provedor
+
+[33mcommit 58cf19e939851adfa7c3cd23166189a2f2cf4041[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Sat Feb 1 18:40:38 2020 -0500
+
+    Relaciones
+
+[33mcommit fc0017fde71ac45a61a36c07c761e7df2e056cfe[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Sat Feb 1 16:45:00 2020 -0500
+
+    Tabla Productos
+
+[33mcommit 74ca3273aa33ced289b7de1ef1c29d16ae7fdbd9[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Sat Feb 1 15:45:08 2020 -0500
+
+    Tabla De Productos
+
+[33mcommit 361789ffcccf96597d5696b377174eed232241d8[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Thu Jan 30 04:25:52 2020 -0500
+
+    CategoriaProducto
+
+[33mcommit c093e6acf01fdb94f51315e80195999a53a3fcc5[m
+Merge: a156d53 5cde037
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Thu Jan 30 00:16:37 2020 -0500
+
+    administrador
+
+[33mcommit a156d537928c52e1408e4bca241cba9d0bed3a18[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Wed Jan 29 23:58:41 2020 -0500
+
+    Administrador
+
+[33mcommit 5cde037e55a24155829a3f70b9b60ac2e63399e0[m
+Author: guidoadrian97 <guidoadrian97@hotmail.com>
+Date:   Wed Jan 29 01:27:26 2020 -0500
+
+    AdminLte
+
+[33mcommit 30c5f7900f0b90bb452c64b4e21969bb3c05657f[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Mon Jan 27 10:51:11 2020 -0500
+
+    Plantilla
+
+[33mcommit 3461f5ce37094eba6ce56aeb12ee784c268c6f08[m
+Author: BryanMendoza0309 <andyloor0309@gmail.com>
+Date:   Mon Jan 27 09:23:32 2020 -0500
+
+    Primero

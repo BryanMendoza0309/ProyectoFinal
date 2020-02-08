@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\CategoriaProducto;
+use App\Categoria;
 class CategoriaController extends Controller
 {
       public function load(Request $request)
     {
-        $categoria=CategoriaProducto::all();
+        $categoria=Categoria::all();
         if ($request->ajax()) {
                  return response()->json($categoria->toArray());
         }else{
@@ -22,7 +22,7 @@ class CategoriaController extends Controller
 
     public function index(Request $request)
     {
-        $categoria=CategoriaProducto::paginate(3);
+        $categoria=Categoria::paginate(3);
         if ($request->ajax()) {
                  return response()->json($categoria->toArray());
         }else{
@@ -50,7 +50,7 @@ class CategoriaController extends Controller
     public function store(Request $request)
     {
         if ($request->ajax()) {
-        $tipo=new CategoriaProducto();
+        $tipo=new Categoria();
         $tipo->nombreTipoProducto=$request->categoria;
          $tipo->eliminadolog=true;
         $tipo->save();
@@ -80,7 +80,7 @@ class CategoriaController extends Controller
      */
     public function edit($id)
     {
-        $categoria=CategoriaProducto::find($id);
+        $categoria=Categoria::find($id);
          return response()->json($categoria); 
          
     }
@@ -94,7 +94,7 @@ class CategoriaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $tipo=CategoriaProducto::find($id);
+        $tipo=Categoria::find($id);
         $tipo->nombreTipoProducto=$request->categoria;
         $tipo->save();
       return response()->json(["mensaje"=>"listo"]);
@@ -108,7 +108,7 @@ class CategoriaController extends Controller
      */
     public function destroy($id)
     {
-       $categoria=CategoriaProducto::find($id);
+       $categoria=Categoria::find($id);
         $categoria->eliminadolog=false;
         $categoria->save();
         return response()->json(["mensaje"=>"listo"]); 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Producto;
-use App\CategoriaProducto;
+use App\Categoria;
 
 class TablaproductoController extends Controller
 {
@@ -15,7 +15,7 @@ class TablaproductoController extends Controller
      */
     public function index()
     {
-        $categoria=CategoriaProducto::all();
+        $categoria=Categoria::all();
         $producto=Producto::orderBy('id','asc')->where('eliminadolog','1')->paginate(3);
         return view('adminlte::Paginas.TablaProductos',compact('producto','categoria'));
     }
@@ -37,7 +37,7 @@ class TablaproductoController extends Controller
      */
     public function store(Request $request)
     {
-        $Tipo=CategoriaProducto::find($request->Cate1);
+        $Tipo=Categoria::find($request->Cate1);
        $file=$request->file('imagen2');
        $name=$file->getClientMimeType();
        $tipoimg=str_replace('image/','.',$name);
@@ -58,7 +58,7 @@ $aux=$tipo->imagenProducto;
         
         $tipo->imagenProducto=$FileName;  
         $tipo->fecha_caducidadProducto=$request->fecha;
-        $tipo->categoriaproducto_id=$request->Cate1;
+        $tipo->categoria_id=$request->Cate1;
         
 
         
@@ -85,7 +85,7 @@ $aux=$tipo->imagenProducto;
      */
     public function edit($id)
     {
-        $categoria=CategoriaProducto::all();
+        $categoria=Categoria::all();
         $ProducEdit=Producto::find($id);
         return view('adminlte::Paginas.EditarProducto', compact('ProducEdit','categoria'));
     }

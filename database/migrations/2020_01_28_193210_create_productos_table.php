@@ -39,11 +39,10 @@ class CreateProductosTable extends Migration
 
 
 
-        Schema::create('categoria_productos', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('categorias', function (Blueprint $table) {
+             $table->bigIncrements('id');
              $table->boolean('eliminadolog');
             $table->String('nombreTipoProducto');
-             
         });
         Schema::create('productos', function (Blueprint $table) {
             $table->bigIncrements('id');
@@ -56,9 +55,9 @@ class CreateProductosTable extends Migration
             $table->String('fecha_caducidadProducto');
             $table->boolean('eliminadolog');
             $table->unsignedBigInteger('stock_id');
-            $table->unsignedBigInteger('categoriaproducto_id');
+            $table->unsignedBigInteger('categoria_id');
             $table->foreign('stock_id')->references('id')->on('stocks'); 
-            $table->foreign('categoriaproducto_id')->references('id')->on('categoria_productos'); 
+            $table->foreign('categoria_id')->references('id')->on('categorias'); 
         });
     }
 
@@ -71,7 +70,8 @@ class CreateProductosTable extends Migration
     {
         Schema::dropIfExists('provedors');
         Schema::dropIfExists('stocks');
+         Schema::dropIfExists('categorias');
         Schema::dropIfExists('productos');
-        Schema::dropIfExists('categoria_productos');
+       
     }
 }

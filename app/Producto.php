@@ -11,13 +11,13 @@ class Producto extends Model
     protected $fillable = [
         'codigoProducto', 'nombreProducto', 'descripcioProducto','marcaProducto','modeloProducto','imagenProducto','fecha_caducidadProducto'
     ];
-
+public function categoria()
+    {
+        return $this->belongsTo(CategoriaProducto::class);
+    }
     public function stock()
     {
         return $this->belongsTo(Stock::class);
     }
-    public function cateproducto()
-    {
-        return $this->belongsTo(CategoriaProducto::class);
-    }
+    
 }
