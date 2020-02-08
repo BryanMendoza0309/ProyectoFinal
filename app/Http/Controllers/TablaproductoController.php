@@ -15,7 +15,7 @@ class TablaproductoController extends Controller
      */
     public function index()
     {
-        $categoria=Categoria::all();
+       
         $producto=Producto::orderBy('id','asc')->where('eliminadolog','1')->paginate(3);
         return view('adminlte::Paginas.TablaProductos',compact('producto','categoria'));
     }

@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Producto;
+use App\Stock;
 use App\Provedor;
+
 class ProveedorController extends Controller
 {
 
@@ -119,9 +122,23 @@ class ProveedorController extends Controller
     public function destroy($id)
     {
        $ListaProvedor=Provedor::find($id);
-    
         $ListaProvedor->eliminadolog=false;
-      $ListaProvedor->save();
+      
+      $producto=Producto::all();  
+        $stock2=Stock::all()->where('provedor_id',$id); 
+        foreach ( $stock2 as &$valor) {
+            foreach ($producto as &$valor2) {
+                if($valor2->stock_id==$valor->id){
+                $valor2->eliminadolog = false;
+                $valor2->save();
+                }
+            }
+        $valor->eliminadolog = false;
+        $valor->save();
+        
+        }
+
+$ListaProvedor->save();
          return response()->json(["mensaje"=>"listo"]); 
     }
 }

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Categoria;
+use App\Producto;
+use App\Stock;
 class CategoriaController extends Controller
 {
       public function load(Request $request)
@@ -108,8 +110,27 @@ class CategoriaController extends Controller
      */
     public function destroy($id)
     {
+
        $categoria=Categoria::find($id);
         $categoria->eliminadolog=false;
+
+        $producto=Producto::all()->where('categoria_id',$id);  
+        $stock2=Stock::all(); 
+        foreach ($producto as &$valor) {
+            foreach ($stock2 as &$valor2) {
+                if($valor2->id==$valor->stock_id){
+                $valor2->eliminadolog = false;
+                $valor2->save();
+                }
+            }
+        $valor->eliminadolog = false;
+        $valor->save();
+        
+        }
+        
+
+        
+
         $categoria->save();
         return response()->json(["mensaje"=>"listo"]); 
     }
