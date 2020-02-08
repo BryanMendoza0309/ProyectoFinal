@@ -13,7 +13,7 @@ class VistaPrincipalCompradorController extends Controller
      */
     public function index()
     {
-        $categoria= Categoria::all();
+        $categoria= Categoria::all()->where('eliminadolog','1');
         return view('adminlte::PaginaComprador.PrincipalComprador',compact('categoria'));
     }
 
