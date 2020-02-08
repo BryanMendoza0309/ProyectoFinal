@@ -47,7 +47,7 @@
                             <td>{{$item->stock->totalVentas}}</td>
                             <td>{{$item->stock->totalProductosVentas}}</td>
                             <td>{{$item->stock->provedor->nombreProvedor}}</td>
-                            <td>{{$item->categoria->nombreTipoProducto}}</td>
+                            
 
                             <td>
                         <form action="{{ route('TablaProductos.destroy',$item->id) }}" method="POST">
