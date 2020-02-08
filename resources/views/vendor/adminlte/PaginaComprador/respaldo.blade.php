@@ -3,7 +3,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shopylu - Tienda de Moda y Belleza Ecuador - Cosméticos y Maquillajes</title>
-
+ 
 <!-- This site is optimized with the Yoast SEO plugin v9.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
 <meta name="description" content="Shopylu es una Tienda de Cosméticos y Moda de venta online de productos Cosméticos, Maquillaje, Moda y más con servicio a domicilio para Ecuador ¡Visítanos!">
 <link rel="canonical" href="https://shopylu.com/">

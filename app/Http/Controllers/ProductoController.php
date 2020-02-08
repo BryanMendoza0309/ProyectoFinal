@@ -57,7 +57,7 @@ class ProductoController extends Controller
         }
         $tipo2=new Stock();
         $tipo=new Producto();
-
+ 
         $tipo->codigoProducto=$request->codigo;
         $tipo->nombreProducto=$request->nombre;
         $tipo->descipcionProducto=$request->descripcion;

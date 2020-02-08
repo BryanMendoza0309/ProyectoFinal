@@ -36,7 +36,7 @@
                 <ul class="treeview-menu">
                    <li><a href="{{route('vistaComprador.index')}}"><i class='fa fa-link'></i> <span>Vista Principal</span></a></li>
                    <li><a href="{{route('vistaContacto.index')}}"><i class='fa fa-link'></i> <span>Vista Contacto</span></a></li>
-                </ul
+                </ul>
 
             </li>
         </ul><!-- /.sidebar-menu -->

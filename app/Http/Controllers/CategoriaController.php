@@ -12,7 +12,7 @@ class CategoriaController extends Controller
         if ($request->ajax()) {
                  return response()->json($categoria->toArray());
         }else{
-             return view('adminlte::Paginas.Categoria',compact('categoria'));;
+             return view('adminlte::Paginas.Categoria',compact('categoria'));
         }
         
         
@@ -26,7 +26,7 @@ class CategoriaController extends Controller
         if ($request->ajax()) {
                  return response()->json($categoria->toArray());
         }else{
-             return view('adminlte::Paginas.Categoria',compact('categoria'));;
+             return view('adminlte::Paginas.Categoria',compact('categoria'));
         } 
         
     }

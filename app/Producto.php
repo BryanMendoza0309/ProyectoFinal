@@ -11,9 +11,9 @@ class Producto extends Model
     protected $fillable = [
         'codigoProducto', 'nombreProducto', 'descripcioProducto','marcaProducto','modeloProducto','imagenProducto','fecha_caducidadProducto'
     ];
-public function categoria()
+    public function categoria()
     {
-        return $this->belongsTo(CategoriaProducto::class);
+        return $this->belongsTo(Categoria::class);
     }
     public function stock()
     {

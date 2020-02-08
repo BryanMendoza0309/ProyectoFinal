@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Categoria extends Model
 {
     protected $table='categorias';
-    public $timestamps=true;
+    public $timestamps=false;
     protected $fillable = [
         'nombreTipoProducto'
     ];
 }
+ 

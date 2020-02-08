@@ -36,9 +36,6 @@ class CreateProductosTable extends Migration
             $table->unsignedBigInteger('provedor_id');
             $table->foreign('provedor_id')->references('id')->on('provedors'); 
         });
-
-
-
         Schema::create('categorias', function (Blueprint $table) {
              $table->bigIncrements('id');
              $table->boolean('eliminadolog');
@@ -70,7 +67,7 @@ class CreateProductosTable extends Migration
     {
         Schema::dropIfExists('provedors');
         Schema::dropIfExists('stocks');
-         Schema::dropIfExists('categorias');
+        Schema::dropIfExists('categorias');
         Schema::dropIfExists('productos');
        
     }

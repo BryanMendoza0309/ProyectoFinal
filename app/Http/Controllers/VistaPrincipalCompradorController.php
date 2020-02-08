@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Categoria;
 class VistaPrincipalCompradorController extends Controller
 {
     /**
@@ -13,7 +13,8 @@ class VistaPrincipalCompradorController extends Controller
      */
     public function index()
     {
-        return view('adminlte::PaginaComprador.PrincipalComprador');
+        $categoria= Categoria::all();
+        return view('adminlte::PaginaComprador.PrincipalComprador',compact('categoria'));
     }
 
     /**
