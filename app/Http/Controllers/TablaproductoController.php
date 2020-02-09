@@ -27,6 +27,7 @@ class TablaproductoController extends Controller
 
     public function index(Request $request)
     {
+
        
          $producto=Producto::stock();
         if ($request->ajax()) {
@@ -34,6 +35,11 @@ class TablaproductoController extends Controller
         }else{
              return view('adminlte::Paginas.TablaProductos',compact('producto'));;
         }
+
+        
+        $producto=Producto::orderBy('id','asc')->where('eliminadolog','1')->paginate(3);
+        return view('adminlte::Paginas.TablaProductos',compact('producto'));
+
     }
 
    /**
