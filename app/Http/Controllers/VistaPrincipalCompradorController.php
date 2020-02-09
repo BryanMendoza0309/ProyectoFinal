@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Categoria;
+use App\Producto;
+use App\Contacto;
 class VistaPrincipalCompradorController extends Controller
 {
     /**
@@ -13,8 +15,11 @@ class VistaPrincipalCompradorController extends Controller
      */
     public function index()
     {
+
         $categoria= Categoria::all()->where('eliminadolog','1');
-        return view('adminlte::PaginaComprador.PrincipalComprador',compact('categoria'));
+        $producto= Producto::all();
+        $contacto=Contacto::all();
+        return view('adminlte::PaginaComprador.PrincipalComprador',compact('categoria','producto','contacto'));
     }
 
     /**
