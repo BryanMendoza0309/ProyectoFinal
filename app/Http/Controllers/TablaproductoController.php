@@ -13,11 +13,27 @@ class TablaproductoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function load(Request $request)
+    {
+        $producto=Producto::stock();
+        if ($request->ajax()) {
+                 return response()->json($producto->toArray());
+        }else{
+             return view('adminlte::Paginas.TablaProductos',compact('producto'));;
+        }
+        
+        
+    }
+
+    public function index(Request $request)
     {
        
-        $producto=Producto::orderBy('id','asc')->where('eliminadolog','1')->paginate(3);
-        return view('adminlte::Paginas.TablaProductos',compact('producto','categoria'));
+         $producto=Producto::stock();
+        if ($request->ajax()) {
+                 return response()->json($producto->toArray());
+        }else{
+             return view('adminlte::Paginas.TablaProductos',compact('producto'));;
+        }
     }
 
    /**
@@ -48,8 +64,7 @@ class TablaproductoController extends Controller
 $tipo=Producto::find($request->id2);
 $aux=$tipo->imagenProducto;
        unlink(public_path().'/imagen/'.$aux);
-       
-        
+   
         $tipo->codigoProducto=$request->codigo;
         $tipo->nombreProducto=$request->nombre;
         $tipo->descipcionProducto=$request->descripcion;
@@ -59,9 +74,7 @@ $aux=$tipo->imagenProducto;
         $tipo->imagenProducto=$FileName;  
         $tipo->fecha_caducidadProducto=$request->fecha;
         $tipo->categoria_id=$request->Cate1;
-        
 
-        
         $tipo->save();
         return redirect()->action('ProductoController@index');
     }

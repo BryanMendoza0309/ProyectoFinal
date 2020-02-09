@@ -15,9 +15,9 @@ class Producto extends Model
     {
         return $this->belongsTo(Categoria::class);
     }
-    public function stock()
+    public  function stock()
     {
-        return $this->belongsTo(Stock::class);
+        return  $this->belongsTo(Stock::class);
     }
     
 }

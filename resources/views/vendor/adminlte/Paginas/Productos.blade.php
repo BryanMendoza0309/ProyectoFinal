@@ -33,12 +33,7 @@
     <div class="col-xs-6">
         <input type="file" class="form-control" placeholder="imagen" name="imagen" />
     </div>
-    <br>
-    <br>
-    <div class="col-xs-6">
-        <input type="text" class="form-control" placeholder="Cantidad de Producto" name="cantidad" autocomplete="off">
-    </div>
-    <br>
+<br>
     <br>
     <div class="col-xs-6">
         <label>Fecha de Caducidad:</label>
@@ -51,6 +46,12 @@
         <!-- /.input group -->
     </div>
     <br>
+    <br>
+    <br>
+    <br>
+    <div class="col-xs-6">
+        <input type="text" class="form-control" placeholder="Cantidad de Producto" name="cantidad" autocomplete="off">
+    </div>
     <br>
     <br>
     <br>
@@ -69,8 +70,7 @@
         <input type="text" class="col-xs-1" name="descuento" placeholder="Decuento">
     </div>
     <br>
-
-
+    <br>
     <div class="col-xs-2">
         <label>Seleccionar Categoria</label>
         <select class="" name="Cate1">
@@ -79,7 +79,6 @@
             @endforeach
         </select>
     </div>
-    <br>
         <br>
         <br>
 
@@ -91,6 +90,8 @@
             @endforeach
         </select>
     </div>
+    <br><br>
+    <br>
     <br>
     <div class="col-xs-2">
         <button type="submit" class="btn btn-primary">Guardar</button>

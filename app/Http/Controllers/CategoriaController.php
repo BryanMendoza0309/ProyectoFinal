@@ -127,10 +127,6 @@ class CategoriaController extends Controller
         $valor->save();
         
         }
-        
-
-        
-
         $categoria->save();
         return response()->json(["mensaje"=>"listo"]); 
     }
