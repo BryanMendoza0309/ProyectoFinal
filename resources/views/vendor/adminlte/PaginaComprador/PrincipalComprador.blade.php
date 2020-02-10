@@ -268,15 +268,17 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body class="home page-template page-template-100-width page-template-100-width-php page page-id-16572 woocommerce-js fusion-image-hovers fusion-body ltr fusion-sticky-header no-tablet-sticky-header no-mobile-sticky-header no-mobile-slidingbar mobile-logo-pos-left layout-wide-mode fusion-top-header menu-text-align-left fusion-woo-product-design-classic mobile-menu-design-modern fusion-hide-pagination-text fusion-header-layout-v3 avada-responsive avada-footer-fx-none fusion-search-form-classic fusion-avatar-square do-animate" style="height: auto;">
+<body class="product-template-default single single-product postid-20221 woocommerce woocommerce-page woocommerce-js fusion-image-hovers fusion-body ltr fusion-sticky-header no-tablet-sticky-header no-mobile-sticky-header no-mobile-slidingbar mobile-logo-pos-left layout-wide-mode fusion-top-header menu-text-align-left fusion-woo-product-design-classic mobile-menu-design-modern fusion-hide-pagination-text fusion-header-layout-v3 avada-responsive avada-footer-fx-none fusion-search-form-classic fusion-avatar-square do-animate" style="height: auto;">
     <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-    <div id="wrapper" class="" style="height: auto;">
+                <div id="wrapper" class="" style="height: auto;">
         <div id="home" style="position:relative;top:-1px;"></div>
-        <header class="fusion-header-wrapper" style="">
-            <div class="fusion-header-v3 fusion-logo-left fusion-sticky-menu- fusion-sticky-logo- fusion-mobile-logo-  fusion-mobile-menu-design-modern">
-                <div class="fusion-secondary-header">
-                    <div class="fusion-row">
-                        <div class="fusion-alignleft">
+        
+            <header class="fusion-header-wrapper">
+                <div class="fusion-header-v3 fusion-logo-left fusion-sticky-menu- fusion-sticky-logo- fusion-mobile-logo-  fusion-mobile-menu-design-modern">
+                    
+<div class="fusion-secondary-header">
+    <div class="fusion-row">
+            <div class="fusion-alignleft">
                             <div class="fusion-social-links-header">
                                 <div class="fusion-social-networks"> 
                                     <a style="color:#ffe8e8; margin-right: 13px" href="https://www.facebook.com/Kasleglamstore/" target="_blank"> Facebook</a>
@@ -285,31 +287,68 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                 </div>
                             </div> 
                         </div>
-                        <div class="fusion-alignright">
-                            <nav class="fusion-secondary-menu" role="navigation" aria-label="Secondary Menu">
-                                <ul role="menubar" id="menu-classic-shop-top-secondary-menu" class="menu">
-                                    <li role="menuitem" id="menu-item-16571" class=""><a href="https://shopylu.com/carrito/" class=""><span class="fusion-megamenu-icon"><i class="glyphicon glyphicon-shopping-cart"></i></span><span class="menu-text">Carrito de compras</span></a></li>
-                                    <li role="menuitem" class=""><a href="https://shopylu.com/mi-cuenta/" aria-haspopup="true" class="fusion-bar-highlight"><span class="menu-text">Cuenta</span><span class="fusion-caret"><i class="glyphicon glyphicon-chevron-down"></i></span></a>
-                                        <div class="fusion-custom-menu-item-contents" style="left: auto; right: 0px;">
-                                            <form action="https://shopylu.com/wp-login.php" name="loginform" method="post">
-                                                <p><input type="text" class="input-text" name="log" id="username" value="" placeholder="Usuario"></p>
-                                                <p><input type="password" class="input-text" name="pwd" id="password" value="" placeholder="Contraseña"></p>
-                                                <p class="fusion-remember-checkbox"><label for="fusion-menu-login-box-rememberme"><input name="rememberme" type="checkbox" id="fusion-menu-login-box-rememberme" value="forever"> Recordarme</label></p><input type="hidden" name="fusion_woo_login_box" value="true">
-                                                <p class="fusion-login-box-submit"><input type="submit" name="wp-submit" id="wp-submit" class="button button-small default comment-submit" value="Ingresar"><input type="hidden" name="redirect" value="/"></p>
-                                            </form><a class="fusion-menu-login-box-register" href="https://shopylu.com/mi-cuenta/" title="Registro">Registro</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <nav class="fusion-mobile-nav-holder fusion-mobile-menu-text-align-left">
-                                <ul role="menubar" id="mobile-menu-classic-shop-top-secondary-menu" class="menu">
-                                    <li role="menuitem" id="mobile-menu-item-16571" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/carrito/" class="fusion-flex-link fusion-bar-highlight"><span class="fusion-megamenu-icon"><i class="glyphicon fa-shopping-cart fas"></i></span><span class="menu-text">Carrito de compras</span></a></li>
-                                    <li role="menuitem" class="fusion-mobile-nav-item menu-item-has-children" style=""><a href="https://shopylu.com/mi-cuenta/" aria-haspopup="true" class="fusion-bar-highlight"><span class="menu-text">Cuenta</span></a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+                <div class="fusion-alignright">
+                <nav class="fusion-secondary-menu" role="navigation" aria-label="Secondary Menu">
+                    <ul role="menubar" id="menu-classic-shop-top-secondary-menu" class="menu">
+                        <li role="menuitem" id="menu-item-16571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16571">
+                            <a href="https://shopylu.com/carrito/" class="fusion-flex-link fusion-bar-highlight">
+                                <span class="fusion-megamenu-icon">
+                                    <i class="glyphicon glyphicon-shopping-cart">
+                                        
+                                    </i>
+                                </span>
+                                <span class="menu-text">Carrito de compras</span>
+                            </a>
+                        </li>
+                        <li role="menuitem" class="menu-item fusion-dropdown-menu menu-item-has-children fusion-custom-menu-item fusion-menu-login-box">
+                            <a href="https://shopylu.com/mi-cuenta/" aria-haspopup="true" class="fusion-bar-highlight">
+                                <span class="menu-text">Cuenta
+                                </span>
+                            </a>
+                            <div class="fusion-custom-menu-item-contents" style="left: auto; right: 0px;">
+                                <form action="https://shopylu.com/wp-login.php" name="loginform" method="post">
+                                    <p>
+                                        <input type="text" class="input-text" name="log" id="username" value="" placeholder="Usuario">
+                                    </p>
+                                    <p><input type="password" class="input-text" name="pwd" id="password" value="" placeholder="Contraseña">
+                                    </p>
+                                    <p class="fusion-remember-checkbox">
+                                        <label for="fusion-menu-login-box-rememberme">
+                                            <input name="rememberme" type="checkbox" id="fusion-menu-login-box-rememberme" value="forever"> Recordarme
+                                        </label>
+                                    </p>
+                                        <input type="hidden" name="fusion_woo_login_box" value="true">
+                                        <p class="fusion-login-box-submit">
+                                            <input type="submit" name="wp-submit" id="wp-submit" class="button button-small default comment-submit" value="Ingresar">
+                                            <input type="hidden" name="redirect" value="/producto/set-de-10-brochas-oval/">
+                                        </p>
+                                    </form>
+                                    <a class="fusion-menu-login-box-register" href="https://shopylu.com/mi-cuenta/" title="Registro">Registro
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="fusion-mobile-nav-holder fusion-mobile-menu-text-align-left"><ul role="menubar" id="mobile-menu-classic-shop-top-secondary-menu" class="menu">
+                        <li role="menuitem" id="mobile-menu-item-16571" class="fusion-mobile-nav-item" style="">
+                            <a href="https://shopylu.com/carrito/" class="fusion-flex-link fusion-bar-highlight">
+                                <span class="fusion-megamenu-icon">
+                                    <i class="glyphicon fa-shopping-cart fas">
+                                        
+                                    </i>
+                                </span>
+                                <span class="menu-text">Carrito de compras</span>
+                            </a>
+                        </li>
+                        <li role="menuitem" class="fusion-mobile-nav-item menu-item-has-children" style="">
+                            <a href="https://shopylu.com/mi-cuenta/" aria-haspopup="true" class="fusion-bar-highlight"><span class="menu-text">Cuenta</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+</div>
                 <div class="fusion-header-sticky-height" style="height: 96px;"></div>
                 <div class="fusion-header" style="">
                     <div class="fusion-row">
@@ -726,17 +765,17 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                                                                                         </a>
                                                                                                     </div>
                                                                                                    <div >
-                                                                                                    <i class="glyphicon glyphicon-shopping-cart" ><a href="" data-quantity="1"> Añadir al carrito</a></i>
+                                                                                                    
                                                                                                         <span class="fusion-rollover-linebreak">
                                                                                                         </span>
                                                                                                     <i class="glyphicon glyphicon-copy">
-                                                                                                    <a href="https://shopylu.com/producto/secador-de-unas-monito/" class="">Detalles</a></i>
+                                                                                                    <a href="{{route('detalleComprador.index')}}" class="">Detalles</a></i>
                                                                                                     </div>
-                                                                                                    <a class="fusion-link-wrapper" href="https://shopylu.com/producto/secador-de-unas-monito/" aria-label="Secador de uñas – Monito"></a>
+                                                                                                    <a class="fusion-link-wrapper" href="{{route('detalleComprador.index')}}" aria-label="Secador de uñas – Monito"></a>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <h4 class="fusion-carousel-title" data-fontsize="15" data-lineheight="25"><a href="https://shopylu.com/producto/secador-de-unas-monito/" target="_self">{{$item->nombreProducto}}</a></h4>
+                                                                                        <h4 class="" data-fontsize="" data-lineheight="25"><a href="" target="_self">{{$item->nombreProducto}}</a></h4>
                                                                                         <div class="fusion-carousel-meta"><a href="https://shopylu.com/categorias/maquillaje/herramientas/" rel="tag">{{$item->categoria->nombreTipoProducto}}</a>
                                                                                             <div class="fusion-carousel-price">
                                                                                                 <span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{$item->stock->precioVentaPublico}}</span></span>
