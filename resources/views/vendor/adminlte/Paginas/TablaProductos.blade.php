@@ -36,11 +36,6 @@
         </table>
     </div>
 </div>
-
-
-
-
-
 <section>
     <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">

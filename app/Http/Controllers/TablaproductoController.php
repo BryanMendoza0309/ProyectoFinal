@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Producto;
 use App\Categoria;
-
+use App\Stock;
+use Illuminate\Support\Facades\DB;
 class TablaproductoController extends Controller
 {
     /**
@@ -15,32 +16,35 @@ class TablaproductoController extends Controller
      */
     public function load(Request $request)
     {
-        $producto=Producto::stock();
+        $product=DB::table('stocks')
+        ->join('productos','stocks.id','=','productos.stock_id')
+        ->join('provedors','provedors.id','=','stocks.provedor_id')
+        ->join('categorias','categorias.id','=','productos.categoria_id')
+        ->select('productos.id','productos.codigoProducto','productos.nombreProducto','productos.descipcionProducto','productos.marcaProducto','productos.modeloProducto','productos.fecha_caducidadProducto','productos.imagenProducto','productos.eliminadolog','stocks.cantidadProducto','stocks.precioVentaPublico','stocks.precioAdministrador','stocks.descuentoPublico','stocks.totalVentas','stocks.totalProductosVentas','provedors.nombreProvedor','categorias.nombreTipoProducto')->get();
+        //$producto);
+      //  $pro=$producto->stock;
         if ($request->ajax()) {
-                 return response()->json($producto->toArray());
-        }else{
-             return view('adminlte::Paginas.TablaProductos',compact('producto'));;
-        }
+                  return response()->json($product->toArray());
+         }else{
+              return view('adminlte::Paginas.TablaProductos',compact('producto'));;
+         }
         
         
     }
 
-    public function index(Request $request)
-    {
-
-       
-         $producto=Producto::stock();
+     public function index(Request $request)
+     {
+          $product=DB::table('stocks')
+        ->join('productos','stocks.id','=','productos.stock_id')
+        ->select('stocks.*','productos.*')->get();
+        //$producto);
+      //  $pro=$producto->stock;
         if ($request->ajax()) {
-                 return response()->json($producto->toArray());
-        }else{
-             return view('adminlte::Paginas.TablaProductos',compact('producto'));;
-        }
-
-        
-        $producto=Producto::orderBy('id','asc')->where('eliminadolog','1')->paginate(3);
-        return view('adminlte::Paginas.TablaProductos',compact('producto'));
-
-    }
+                  return response()->json($product->toArray());
+         }else{
+              return view('adminlte::Paginas.TablaProductos',compact('producto'));;
+         }
+     }
 
    /**
      * Show the form for creating a new resource.

@@ -29,7 +29,7 @@
             <li class="active"><a href="{{route('InsertProveedor.index') }}"><i class='fa fa-link'></i><span>Proveedor</span></a></li>
             <li><a href="{{route('InsertProducto.index')}}"><i class='fa fa-link'></i> <span>Productos</span></a></li>
             <li><a href="{{route('Categoria.index')}}"><i class='fa fa-link'></i> <span>Categoria</span></a></li>
-            <li><a href="{{route('TablaProductos.index')}}"><i class='fa fa-link'></i> <span>Prodctos en Venta</span></a></li>
+            <li><a href="{{route('TablaProductos.index')}}" ><i class='fa fa-link'></i> <span>Prodctos en Venta</span></a></li>
             
             <li class="treeview">
                 <a href=""><i class='fa fa-link'></i> <span>Vistas CLiente</span> <i class="fa fa-angle-left pull-right"></i></a>
