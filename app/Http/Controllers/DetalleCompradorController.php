@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Producto;
+use App\Categoria;
+use App\Contacto;
 class DetalleCompradorController extends Controller
 {
     /**
@@ -13,11 +15,15 @@ class DetalleCompradorController extends Controller
      */
     public function index()
     {
-       
-        return view('adminlte::PaginaComprador.DetallesComprador');
+        $categoria= Categoria::all()->where('eliminadolog','1');
+        $producto= Producto::all();
+        $contacto=Contacto::all();
+        $categoria=Categoria::all();
+        return view('adminlte::PaginaComprador.DetallesComprador',compact('categoria','producto','contacto'));
     }
 
     /**
+     * 
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -46,7 +52,7 @@ class DetalleCompradorController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**

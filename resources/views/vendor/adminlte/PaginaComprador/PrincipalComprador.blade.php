@@ -394,79 +394,12 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                             
                                 <li role="menuitem" id="menu-item-19736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19736"><a href="https://shopylu.com/blog/" class="fusion-bar-highlight"><span class="menu-text">Blog</span></a></li>
                                 <li role="menuitem" id="menu-item-19735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19735"><a href="https://shopylu.com/contacto/" class="fusion-bar-highlight"><span class="menu-text">Contacto</span></a></li>
-                                
                             </ul>
                         </nav>
                         <div class="fusion-mobile-menu-icons">
                             <a href="#" class="fusion-icon fusion-icon-bars" aria-label="Toggle mobile menu"></a>
                         </div>
                         <nav class="fusion-mobile-nav-holder fusion-mobile-menu-text-align-left" style="display: none;">
-                            <ul role="menubar" id="mobile-menu-classic-shop-main-menu" class="fusion-menu">
-                                <li role="menuitem" id="mobile-menu-item-16573" class="fusion-mobile-nav-item fusion-mobile-current-nav-item" style=""><a href="https://shopylu.com/" class="fusion-bar-highlight"><span class="menu-text">Inicio</span></a></li>
-                                <li role="menuitem" id="mobile-menu-item-19691" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="https://shopylu.com/categorias/maquillaje/" class="fusion-bar-highlight"><span class="menu-text">Maquillaje</span> </a>
-                                    <ul role="menu" class="sub-menu" style="display: none;">
-                                        <li role="menuitem" id="mobile-menu-item-19692" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="#" class="fusion-bar-highlight"><span>Categorías</span></a>
-                                            <ul role="menu" class="sub-menu" style="display: none;">
-                                                <li role="menuitem" id="mobile-menu-item-19694" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/labios" class="fusion-bar-highlight"><span>Labios</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19695" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/rostro" class="fusion-bar-highlight"><span>Rostro</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19696" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/ojos" class="fusion-bar-highlight"><span>Ojos</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19697" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/cejas" class="fusion-bar-highlight"><span>Cejas</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19698" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/uñas" class="fusion-bar-highlight"><span>Uñas</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19699" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/herramientas" class="fusion-bar-highlight"><span>Herramientas</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li role="menuitem" id="mobile-menu-item-19693" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="#" class="fusion-bar-highlight"><span>Marcas</span></a>
-                                            <ul role="menu" class="sub-menu" style="display: none;">
-                                                <li role="menuitem" id="mobile-menu-item-19701" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/beauty-creations" class="fusion-bar-highlight"><span>Beauty Creations</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19702" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/city-color" class="fusion-bar-highlight"><span>City Color</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19703" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/j-lash" class="fusion-bar-highlight"><span>J-Lash</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19704" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/la-girl" class="fusion-bar-highlight"><span>La-Girl</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19705" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/loreal" class="fusion-bar-highlight"><span>Loreal</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19706" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/maybelline" class="fusion-bar-highlight"><span>Maybelline</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19707" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/milani" class="fusion-bar-highlight"><span>Milani</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19708" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/physicians-formula" class="fusion-bar-highlight"><span>Physicians Fórmula</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19709" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/otras" class="fusion-bar-highlight"><span>Otras</span></a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li role="menuitem" id="mobile-menu-item-19710" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="https://shopylu.com/categorias/ropa/" class="fusion-bar-highlight"><span class="menu-text">Ropa</span> </a>
-                                    <ul role="menu" class="sub-menu" style="display: none;">
-                                        <li role="menuitem" id="mobile-menu-item-19711" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="#" class="fusion-bar-highlight"><span>Categorías</span></a>
-                                            <ul role="menu" class="sub-menu" style="display: none;">
-                                                <li role="menuitem" id="mobile-menu-item-19713" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/vestidos" class="fusion-bar-highlight"><span>Vestidos</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19714" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/blusas" class="fusion-bar-highlight"><span>Blusas</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19715" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/faldas" class="fusion-bar-highlight"><span>Faldas</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19716" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/pantalones" class="fusion-bar-highlight"><span>Pantalones</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19717" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/chaquetas-y-abrigos" class="fusion-bar-highlight"><span>Chaquetas y Abrigos</span></a></li>
-                                            </ul>
-                                        </li>
-                                        <li role="menuitem" id="mobile-menu-item-19712" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="#" class="fusion-bar-highlight"><span>Marcas</span></a>
-                                            <ul role="menu" class="sub-menu" style="display: none;">
-                                                <li role="menuitem" id="mobile-menu-item-19718" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/hechizhada" class="fusion-bar-highlight"><span>Hechizhada</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19719" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/jolie" class="fusion-bar-highlight"><span>Jolie</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19720" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/maximoda" class="fusion-bar-highlight"><span>Maximoda</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19721" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/mi-angel" class="fusion-bar-highlight"><span>Mi Angel</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19722" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/mistika" class="fusion-bar-highlight"><span>Mistika</span></a></li>
-                                                <li role="menuitem" id="mobile-menu-item-19723" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/nozztra" class="fusion-bar-highlight"><span>Nozztra</span></a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li role="menuitem" id="mobile-menu-item-19724" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="https://shopylu.com/categorias/accesorios/" class="fusion-bar-highlight"><span class="menu-text">Accesorios</span> </a>
-                                    <ul role="menu" class="sub-menu" style="display: none;">
-                                        <li role="menuitem" id="mobile-menu-item-19725" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/collares" class="fusion-bar-highlight"><span>Collares</span></a></li>
-                                        <li role="menuitem" id="mobile-menu-item-19726" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/aretes" class="fusion-bar-highlight"><span>Aretes</span></a></li>
-                                        <li role="menuitem" id="mobile-menu-item-19727" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/carteras" class="fusion-bar-highlight"><span>Carteras</span></a></li>
-                                        <li role="menuitem" id="mobile-menu-item-19728" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/billeteras" class="fusion-bar-highlight"><span>Billeteras</span></a></li>
-                                        <li role="menuitem" id="mobile-menu-item-19729" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/cosmetiqueras" class="fusion-bar-highlight"><span>Cosmetiqueras</span></a></li>
-                                        <li role="menuitem" id="mobile-menu-item-19730" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/otros" class="fusion-bar-highlight"><span>Otros</span></a></li>
-                                    </ul>
-                                </li>
-                                <li role="menuitem" id="mobile-menu-item-20257" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ofertas" class="fusion-bar-highlight"><span class="menu-text">Ofertas</span></a></li>
-                                <li role="menuitem" id="mobile-menu-item-19736" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/blog/" class="fusion-bar-highlight"><span class="menu-text">Blog</span></a></li>
-                                <li role="menuitem" id="mobile-menu-item-19735" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/contacto/" class="fusion-bar-highlight"><span class="menu-text">Contacto</span></a></li>
-                            </ul>
                         </nav>
                     </div>
                 </div>
@@ -751,21 +684,14 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                                                         <ul class="fusion-carousel-holder" style="text-align: left; float: none; position: absolute; top: auto; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2856px; height: 355px;">
                                                                             
                                                                             @foreach($producto as $item)
-                                                                            <li class="fusion-carousel-item" style="margin-left: 10px; width: 228px;">
+                                                                            <li class="fusion-carousel-item" style="margin-left: 10px; width: 200px;">
                                                                                 <div class="fusion-classic-product-image-wrapper">
                                                                                     <div class="fusion-carousel-item-wrapper" style="visibility: inherit;">
                                                                                         <div class="fusion-image-wrapper" aria-haspopup="true">
                                                                                             <img width="1058" height="1058" src="imagen\{{$item->imagenProducto}}" class="" alt="">
                                                                                             <div class="fusion-rollover">
                                                                                                 <div class="fusion-rollover-content">
-                                                                                                    <div class="cart-loading">
-                                                                                                        <a href="https://shopylu.com/carrito/">
-                                                                                                            <i class="glyphicon glyphicon-shopping-car"></i>
-                                                                                                            <div class="view-cart">Ver carrito</div>
-                                                                                                        </a>
-                                                                                                    </div>
                                                                                                    <div >
-                                                                                                    
                                                                                                         <span class="fusion-rollover-linebreak">
                                                                                                         </span>
                                                                                                     <i class="glyphicon glyphicon-copy">
@@ -793,7 +719,7 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="fusion-clearfix"></div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -809,17 +735,6 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                                 
                                                 <div class="title-sep-container title-sep-container-right">
                                                     <div class="title-sep sep-single sep-solid" style="border-color:#e0dede;"></div>
-                                                </div>
-                                            </div>
-                                            <div class="fusion-clearfix"></div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_1  fusion-one-full fusion-column-first fusion-column-last fusion-column-no-min-height 1_1" style="margin-top:0px;margin-bottom:0px;">
-                                        <div class="fusion-column-wrapper" style="padding: 0px; background-position: left top; background-repeat: no-repeat; background-size: cover; min-height: 264px; height: auto;" data-bg-url="">
-                                            <div class="fusion-woo-product-slider fusion-woo-slider">
-                                                <div class="fusion-carousel fusion-carousel-title-on-rollover" data-autoplay="no" data-columns="5" data-itemmargin="0" data-itemwidth="180" data-touchscroll="no" data-imagesize="auto" data-scrollitems="1">
-                                                    
                                                 </div>
                                             </div>
                                             <div class="fusion-clearfix"></div>

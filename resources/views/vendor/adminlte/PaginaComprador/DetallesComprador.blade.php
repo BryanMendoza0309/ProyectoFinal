@@ -1,47 +1,47 @@
-<html class="ua-windows_nt ua-windows_nt-10 ua-windows_nt-10-0 ua-chrome ua-chrome-80 ua-chrome-80-0 ua-chrome-80-0-3987 ua-chrome-80-0-3987-87 ua-desktop ua-desktop-windows ua-webkit ua-webkit-537 ua-webkit-537-36 js applicationcache geolocation history postmessage websockets localstorage sessionstorage websqldatabase webworkers hashchange audio canvas canvastext video webgl cssgradients multiplebgs opacity rgba inlinesvg hsla supports svgclippaths smil no-touchevents fontface generatedcontent textshadow cssanimations backgroundsize borderimage borderradius boxshadow flexbox cssreflections csstransforms csstransforms3d csstransitions" lang="es" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# og: http://ogp.me/ns#" data-useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36"><head>
+<html class="ua-windows_nt ua-windows_nt-10 ua-windows_nt-10-0 ua-chrome ua-chrome-80 ua-chrome-80-0 ua-chrome-80-0-3987 ua-chrome-80-0-3987-87 ua-desktop ua-desktop-windows ua-webkit ua-webkit-537 ua-webkit-537-36 js applicationcache geolocation history postmessage websockets localstorage sessionstorage websqldatabase webworkers hashchange audio canvas canvastext video webgl cssgradients multiplebgs opacity rgba inlinesvg hsla supports svgclippaths smil no-touchevents fontface generatedcontent textshadow cssanimations backgroundsize borderimage borderradius boxshadow flexbox cssreflections csstransforms csstransforms3d csstransitions" lang="es" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# og: http://ogp.me/ns#" data-useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36">
+<head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Set de 10 brochas Oval - Shopylu</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KasleGlam - Tienda de Cosmeticos Ecuador </title>
+    <!-- This site is optimized with the Yoast SEO plugin v9.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+    <meta name="description" content="KasleGlam es una Tienda de Cosméticos y Moda de venta online de productos Cosméticos, Maquillaje, Moda y más con servicio a domicilio para Ecuador ¡Visítanos!">
+    <link rel="canonical" href="{{route('detalleComprador.index')}}">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KasleGlam - Tienda de Moda y Belleza Ecuador - Cosméticos y Maquillajes">
+    <meta property="og:description" content="KasleGlam es una Tienda de Cosméticos y Moda de venta online de productos Cosméticos, Maquillaje, Moda y más con servicio a domicilio para Ecuador ¡Visítanos!">
+    <meta property="og:url" content="{{route('detalleComprador.index')}}">
+    <meta property="og:site_name" content="KasleGlam">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="KasleGlam es una Tienda de Cosméticos y Moda de venta online de productos Cosméticos, Maquillaje, Moda y más con servicio a domicilio para Ecuador ¡Visítanos!">
+    <meta name="twitter:title" content="KasleGlam - Tienda de Moda y Belleza Ecuador - Cosméticos y Maquillajes">
+    <script type="text/javascript" async="" src="../js/PaginaPrincipaljs/1Principal.js"></script>
+    <script type="text/javascript" async="" src="../js/PaginaPrincipaljs/2Principal.js"></script>
+    <script src="../js/PaginaPrincipaljs/3Principal.js" async=""></script>
+    <script src="../js/PaginaPrincipaljs/4Principal.js" async=""></script>
+    <script async="" src="../js/PaginaPrincipaljs/5Principal.js"></script>
+    <script type="application/ld+json">
+    { "@context": "https:\/\/schema.org", "@type": "WebSite", "@id": "#website", "url": "https:\/\/shopylu.com\/", "name": "KasleGlan", "potentialAction": { "@type": "SearchAction", "target": "https:\/\/shopylu.com\/?s={search_term_string}", "query-input": "required name=search_term_string" } }
 
-<!-- This site is optimized with the Yoast SEO plugin v9.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<link rel="canonical" href="https://shopylu.com/producto/set-de-10-brochas-oval/">
-<meta property="og:locale" content="es_ES">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Set de 10 brochas Oval - Shopylu">
-<meta property="og:description" content="Producto: Shopylu
-Descripción: Set de 10 brochas para una perfecta aplicación de tu maquillaje favorito
+    </script>
+    <meta name="google-site-verification" content="UA-129580236-1">
+    <!-- / Yoast SEO plugin. -->
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//s.w.org">
+    <link rel="alternate" type="application/rss+xml" title="Shopylu » Feed" href="{{route('principalComprador.index')}}">
+    <link rel="alternate" type="application/rss+xml" title="Shopylu » RSS de los comentarios" href="https://shopylu.com/comments/feed/">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <meta property="og:title" content="Inicio">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://shopylu.com/">
+    <meta property="og:site_name" content="Shopylu">
+    <meta property="og:description" content="Productos Destacados    
 
- Recibe tus compras en tu domicilio o donde solicites por solo $3.
- Tu información está totalmente protegida, sitio 100% seguro.">
-<meta property="og:url" content="https://shopylu.com/producto/set-de-10-brochas-oval/">
-<meta property="og:site_name" content="Shopylu">
-<meta property="og:image" content="https://shopylu.com/wp-content/uploads/2018/11/19.-Set-de-10-brochas-oval-1-PNG.jpg">
-<meta property="og:image:secure_url" content="https://shopylu.com/wp-content/uploads/2018/11/19.-Set-de-10-brochas-oval-1-PNG.jpg">
-<meta property="og:image:width" content="1100">
-<meta property="og:image:height" content="1100">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:description" content="Producto: Shopylu Descripción: Set de 10 brochas para una perfecta aplicación de tu maquillaje favorito  [icon name=&quot;truck&quot; class=&quot;&quot; unprefixed_class=&quot;&quot;] Recibe tus compras en tu domicilio o donde solicites por solo $3. [icon name=&quot;shield&quot; class=&quot;&quot; unprefixed_class=&quot;&quot;] Tu información está totalmente protegida, sitio 100% seguro.">
-<meta name="twitter:title" content="Set de 10 brochas Oval - Shopylu">
-<meta name="twitter:image" content="https://shopylu.com/wp-content/uploads/2018/11/19.-Set-de-10-brochas-oval-1-PNG.jpg">
-<!-- / Yoast SEO plugin. -->
+Más Vendidos  
+Debes tener nuestros productos Más Vendidos.       
 
-<link rel="dns-prefetch" href="//cdn.jsdelivr.net">
-<link rel="dns-prefetch" href="//s.w.org">
-<link rel="alternate" type="application/rss+xml" title="Shopylu » Feed" href="https://shopylu.com/feed/">
-<link rel="alternate" type="application/rss+xml" title="Shopylu » RSS de los comentarios" href="https://shopylu.com/comments/feed/">
-<link rel="shortcut icon" href="https://shopylu.com/wp-content/uploads/2018/10/favicon.png" type="image/x-icon">
-		
-		
-		
-		
-				<link rel="alternate" type="application/rss+xml" title="Shopylu » Set de 10 brochas Oval RSS de los comentarios" href="https://shopylu.com/producto/set-de-10-brochas-oval/feed/">
-
-		<meta property="og:title" content="Set de 10 brochas Oval">
-		<meta property="og:type" content="article">
-		<meta property="og:url" content="https://shopylu.com/producto/set-de-10-brochas-oval/">
-		<meta property="og:site_name" content="Shopylu">
-		<meta property="og:description" content="">
+Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda con servicio de">
 
 									<meta property="og:image" content="https://shopylu.com/wp-content/uploads/2018/11/19.-Set-de-10-brochas-oval-1-PNG.jpg">
 									<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/vJuUWXolyYJx1oqUVmpPuryQ/recaptcha__es.js"></script><script type="text/javascript" async="" src="https://stats.g.doubleclick.net/dc.js"></script><script src="https://connect.facebook.net/signals/config/259038528070179?v=2.9.15&amp;r=stable" async=""></script><script src="https://connect.facebook.net/signals/plugins/identity.js?v=2.9.15" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript">
@@ -252,41 +252,66 @@ img.emoji {
 			</div>
 		</div>
 </div>
-<div class="fusion-header-sticky-height" style="height: 118px; overflow: visible; display: none;"></div>
-<div class="fusion-header" style="height: 118px; overflow: visible; top: 0px;">
-	<div class="fusion-row">
-					<div class="fusion-logo" data-margin-top="31px" data-margin-bottom="31px" data-margin-left="0px" data-margin-right="0px">
-			<a class="fusion-logo-link" href="https://shopylu.com/">
-
-						<!-- standard logo -->
-			<img src="https://shopylu.com/wp-content/uploads/2018/10/Logotipo-isotipo.png" srcset="https://shopylu.com/wp-content/uploads/2018/10/Logotipo-isotipo.png 1x" width="164" height="55" alt="Shopylu Logo" retina_logo_url="" class="fusion-standard-logo">
-
-			
-					</a>
-		</div>		<nav class="fusion-main-menu" aria-label="Main Menu"><ul role="menubar" id="menu-classic-shop-main-menu" class="fusion-menu"><li role="menuitem" id="menu-item-16573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-16573"><a href="https://shopylu.com/" class="fusion-bar-highlight"><span class="menu-text">Inicio</span></a></li><li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a href="https://shopylu.com/categorias/maquillaje/" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Maquillaje</span> <span class="fusion-caret"><i class="fusion-dropdown-indicator"></i></span></a><ul role="menu" class="sub-menu"><li role="menuitem" id="menu-item-19692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19692 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a><ul role="menu" class="sub-menu"><li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694"><a href="https://shopylu.com/categorias/maquillaje/labios" class="fusion-bar-highlight"><span>Labios</span></a></li><li role="menuitem" id="menu-item-19695" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19695"><a href="https://shopylu.com/categorias/maquillaje/rostro" class="fusion-bar-highlight"><span>Rostro</span></a></li><li role="menuitem" id="menu-item-19696" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19696"><a href="https://shopylu.com/categorias/maquillaje/ojos" class="fusion-bar-highlight"><span>Ojos</span></a></li><li role="menuitem" id="menu-item-19697" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19697"><a href="https://shopylu.com/categorias/maquillaje/cejas" class="fusion-bar-highlight"><span>Cejas</span></a></li><li role="menuitem" id="menu-item-19698" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19698"><a href="https://shopylu.com/categorias/maquillaje/uñas" class="fusion-bar-highlight"><span>Uñas</span></a></li><li role="menuitem" id="menu-item-19699" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19699"><a href="https://shopylu.com/categorias/maquillaje/herramientas" class="fusion-bar-highlight"><span>Herramientas</span></a></li></ul></li><li role="menuitem" id="menu-item-19693" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19693 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Marcas</span></a><ul role="menu" class="sub-menu"><li role="menuitem" id="menu-item-19701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19701"><a href="https://shopylu.com/categorias/maquillaje/beauty-creations" class="fusion-bar-highlight"><span>Beauty Creations</span></a></li><li role="menuitem" id="menu-item-19702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19702"><a href="https://shopylu.com/categorias/maquillaje/city-color" class="fusion-bar-highlight"><span>City Color</span></a></li><li role="menuitem" id="menu-item-19703" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19703"><a href="https://shopylu.com/categorias/maquillaje/j-lash" class="fusion-bar-highlight"><span>J-Lash</span></a></li><li role="menuitem" id="menu-item-19704" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19704"><a href="https://shopylu.com/categorias/maquillaje/la-girl" class="fusion-bar-highlight"><span>La-Girl</span></a></li><li role="menuitem" id="menu-item-19705" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19705"><a href="https://shopylu.com/categorias/maquillaje/loreal" class="fusion-bar-highlight"><span>Loreal</span></a></li><li role="menuitem" id="menu-item-19706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19706"><a href="https://shopylu.com/categorias/maquillaje/maybelline" class="fusion-bar-highlight"><span>Maybelline</span></a></li><li role="menuitem" id="menu-item-19707" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19707"><a href="https://shopylu.com/categorias/maquillaje/milani" class="fusion-bar-highlight"><span>Milani</span></a></li><li role="menuitem" id="menu-item-19708" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19708"><a href="https://shopylu.com/categorias/maquillaje/physicians-formula" class="fusion-bar-highlight"><span>Physicians Fórmula</span></a></li><li role="menuitem" id="menu-item-19709" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19709"><a href="https://shopylu.com/categorias/maquillaje/otras" class="fusion-bar-highlight"><span>Otras</span></a></li></ul></li></ul></li><li role="menuitem" id="menu-item-19710" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19710 fusion-dropdown-menu" style=""><a href="https://shopylu.com/categorias/ropa/" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Ropa</span> <span class="fusion-caret"><i class="fusion-dropdown-indicator"></i></span></a><ul role="menu" class="sub-menu"><li role="menuitem" id="menu-item-19711" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19711 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a><ul role="menu" class="sub-menu"><li role="menuitem" id="menu-item-19713" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19713"><a href="https://shopylu.com/categorias/ropa/vestidos" class="fusion-bar-highlight"><span>Vestidos</span></a></li><li role="menuitem" id="menu-item-19714" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19714"><a href="https://shopylu.com/categorias/ropa/blusas" class="fusion-bar-highlight"><span>Blusas</span></a></li><li role="menuitem" id="menu-item-19715" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19715"><a href="https://shopylu.com/categorias/ropa/faldas" class="fusion-bar-highlight"><span>Faldas</span></a></li><li role="menuitem" id="menu-item-19716" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19716"><a href="https://shopylu.com/categorias/ropa/pantalones" class="fusion-bar-highlight"><span>Pantalones</span></a></li><li role="menuitem" id="menu-item-19717" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19717"><a href="https://shopylu.com/categorias/ropa/chaquetas-y-abrigos" class="fusion-bar-highlight"><span>Chaquetas y Abrigos</span></a></li></ul></li><li role="menuitem" id="menu-item-19712" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19712 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Marcas</span></a><ul role="menu" class="sub-menu"><li role="menuitem" id="menu-item-19718" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19718"><a href="https://shopylu.com/categorias/ropa/hechizhada" class="fusion-bar-highlight"><span>Hechizhada</span></a></li><li role="menuitem" id="menu-item-19719" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19719"><a href="https://shopylu.com/categorias/ropa/jolie" class="fusion-bar-highlight"><span>Jolie</span></a></li><li role="menuitem" id="menu-item-19720" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19720"><a href="https://shopylu.com/categorias/ropa/maximoda" class="fusion-bar-highlight"><span>Maximoda</span></a></li><li role="menuitem" id="menu-item-19721" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19721"><a href="https://shopylu.com/categorias/ropa/mi-angel" class="fusion-bar-highlight"><span>Mi Angel</span></a></li><li role="menuitem" id="menu-item-19722" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19722"><a href="https://shopylu.com/categorias/ropa/mistika" class="fusion-bar-highlight"><span>Mistika</span></a></li><li role="menuitem" id="menu-item-19723" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19723"><a href="https://shopylu.com/categorias/ropa/nozztra" class="fusion-bar-highlight"><span>Nozztra</span></a></li></ul></li></ul></li><li role="menuitem" id="menu-item-19724" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19724 fusion-dropdown-menu" style=""><a href="https://shopylu.com/categorias/accesorios/" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Accesorios</span> <span class="fusion-caret"><i class="fusion-dropdown-indicator"></i></span></a><ul role="menu" class="sub-menu"><li role="menuitem" id="menu-item-19725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19725 fusion-dropdown-submenu"><a href="https://shopylu.com/categorias/accesorios/collares" class="fusion-bar-highlight"><span>Collares</span></a></li><li role="menuitem" id="menu-item-19726" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19726 fusion-dropdown-submenu"><a href="https://shopylu.com/categorias/accesorios/aretes" class="fusion-bar-highlight"><span>Aretes</span></a></li><li role="menuitem" id="menu-item-19727" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19727 fusion-dropdown-submenu"><a href="https://shopylu.com/categorias/accesorios/carteras" class="fusion-bar-highlight"><span>Carteras</span></a></li><li role="menuitem" id="menu-item-19728" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19728 fusion-dropdown-submenu"><a href="https://shopylu.com/categorias/accesorios/billeteras" class="fusion-bar-highlight"><span>Billeteras</span></a></li><li role="menuitem" id="menu-item-19729" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19729 fusion-dropdown-submenu"><a href="https://shopylu.com/categorias/accesorios/cosmetiqueras" class="fusion-bar-highlight"><span>Cosmetiqueras</span></a></li><li role="menuitem" id="menu-item-19730" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19730 fusion-dropdown-submenu"><a href="https://shopylu.com/categorias/accesorios/otros" class="fusion-bar-highlight"><span>Otros</span></a></li></ul></li><li role="menuitem" id="menu-item-20257" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20257"><a href="https://shopylu.com/categorias/ofertas" class="fusion-bar-highlight"><span class="menu-text">Ofertas</span></a></li><li role="menuitem" id="menu-item-19736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19736"><a href="https://shopylu.com/blog/" class="fusion-bar-highlight"><span class="menu-text">Blog</span></a></li><li role="menuitem" id="menu-item-19735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19735"><a href="https://shopylu.com/contacto/" class="fusion-bar-highlight"><span class="menu-text">Contacto</span></a></li><li class="fusion-custom-menu-item fusion-main-menu-search fusion-last-menu-item"><a class="fusion-main-menu-icon fusion-bar-highlight" href="#" aria-label="Buscar" data-title="Buscar" title="Buscar"></a><div class="fusion-custom-menu-item-contents" style="display: none;"><form role="search" class="searchform fusion-search-form" method="get" action="https://shopylu.com/">
-	<div class="fusion-search-form-content">
-		<div class="fusion-search-field search-field">
-			<label class="screen-reader-text" for="s">Search for:</label>
-			<input type="text" value="" name="s" class="s" placeholder="Buscar ..." required="" aria-required="true" aria-label="Buscar ...">
-		</div>
-		<div class="fusion-search-button search-button">
-			<input type="submit" class="fusion-search-submit searchsubmit" value="">
-		</div>
-	</div>
-</form>
-</div></li></ul></nav>		<div class="fusion-mobile-menu-icons">
-							<a href="#" class="fusion-icon fusion-icon-bars" aria-label="Toggle mobile menu"></a>
-		
-		
-		
-			</div>
-
-<nav class="fusion-mobile-nav-holder fusion-mobile-menu-text-align-left" style="display: none;"><ul role="menubar" id="mobile-menu-classic-shop-main-menu" class="fusion-menu"><li role="menuitem" id="mobile-menu-item-16573" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/" class="fusion-bar-highlight"><span class="menu-text">Inicio</span></a></li><li role="menuitem" id="mobile-menu-item-19691" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="https://shopylu.com/categorias/maquillaje/" class="fusion-bar-highlight"><span class="menu-text">Maquillaje</span> </a><ul role="menu" class="sub-menu" style="display: none;"><li role="menuitem" id="mobile-menu-item-19692" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="#" class="fusion-bar-highlight"><span>Categorías</span></a><ul role="menu" class="sub-menu" style="display: none;"><li role="menuitem" id="mobile-menu-item-19694" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/labios" class="fusion-bar-highlight"><span>Labios</span></a></li><li role="menuitem" id="mobile-menu-item-19695" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/rostro" class="fusion-bar-highlight"><span>Rostro</span></a></li><li role="menuitem" id="mobile-menu-item-19696" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/ojos" class="fusion-bar-highlight"><span>Ojos</span></a></li><li role="menuitem" id="mobile-menu-item-19697" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/cejas" class="fusion-bar-highlight"><span>Cejas</span></a></li><li role="menuitem" id="mobile-menu-item-19698" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/uñas" class="fusion-bar-highlight"><span>Uñas</span></a></li><li role="menuitem" id="mobile-menu-item-19699" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/herramientas" class="fusion-bar-highlight"><span>Herramientas</span></a></li></ul></li><li role="menuitem" id="mobile-menu-item-19693" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="#" class="fusion-bar-highlight"><span>Marcas</span></a><ul role="menu" class="sub-menu" style="display: none;"><li role="menuitem" id="mobile-menu-item-19701" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/beauty-creations" class="fusion-bar-highlight"><span>Beauty Creations</span></a></li><li role="menuitem" id="mobile-menu-item-19702" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/city-color" class="fusion-bar-highlight"><span>City Color</span></a></li><li role="menuitem" id="mobile-menu-item-19703" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/j-lash" class="fusion-bar-highlight"><span>J-Lash</span></a></li><li role="menuitem" id="mobile-menu-item-19704" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/la-girl" class="fusion-bar-highlight"><span>La-Girl</span></a></li><li role="menuitem" id="mobile-menu-item-19705" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/loreal" class="fusion-bar-highlight"><span>Loreal</span></a></li><li role="menuitem" id="mobile-menu-item-19706" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/maybelline" class="fusion-bar-highlight"><span>Maybelline</span></a></li><li role="menuitem" id="mobile-menu-item-19707" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/milani" class="fusion-bar-highlight"><span>Milani</span></a></li><li role="menuitem" id="mobile-menu-item-19708" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/physicians-formula" class="fusion-bar-highlight"><span>Physicians Fórmula</span></a></li><li role="menuitem" id="mobile-menu-item-19709" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/maquillaje/otras" class="fusion-bar-highlight"><span>Otras</span></a></li></ul></li></ul></li><li role="menuitem" id="mobile-menu-item-19710" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="https://shopylu.com/categorias/ropa/" class="fusion-bar-highlight"><span class="menu-text">Ropa</span> </a><ul role="menu" class="sub-menu" style="display: none;"><li role="menuitem" id="mobile-menu-item-19711" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="#" class="fusion-bar-highlight"><span>Categorías</span></a><ul role="menu" class="sub-menu" style="display: none;"><li role="menuitem" id="mobile-menu-item-19713" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/vestidos" class="fusion-bar-highlight"><span>Vestidos</span></a></li><li role="menuitem" id="mobile-menu-item-19714" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/blusas" class="fusion-bar-highlight"><span>Blusas</span></a></li><li role="menuitem" id="mobile-menu-item-19715" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/faldas" class="fusion-bar-highlight"><span>Faldas</span></a></li><li role="menuitem" id="mobile-menu-item-19716" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/pantalones" class="fusion-bar-highlight"><span>Pantalones</span></a></li><li role="menuitem" id="mobile-menu-item-19717" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/chaquetas-y-abrigos" class="fusion-bar-highlight"><span>Chaquetas y Abrigos</span></a></li></ul></li><li role="menuitem" id="mobile-menu-item-19712" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="#" class="fusion-bar-highlight"><span>Marcas</span></a><ul role="menu" class="sub-menu" style="display: none;"><li role="menuitem" id="mobile-menu-item-19718" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/hechizhada" class="fusion-bar-highlight"><span>Hechizhada</span></a></li><li role="menuitem" id="mobile-menu-item-19719" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/jolie" class="fusion-bar-highlight"><span>Jolie</span></a></li><li role="menuitem" id="mobile-menu-item-19720" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/maximoda" class="fusion-bar-highlight"><span>Maximoda</span></a></li><li role="menuitem" id="mobile-menu-item-19721" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/mi-angel" class="fusion-bar-highlight"><span>Mi Angel</span></a></li><li role="menuitem" id="mobile-menu-item-19722" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/mistika" class="fusion-bar-highlight"><span>Mistika</span></a></li><li role="menuitem" id="mobile-menu-item-19723" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ropa/nozztra" class="fusion-bar-highlight"><span>Nozztra</span></a></li></ul></li></ul></li><li role="menuitem" id="mobile-menu-item-19724" class="fusion-mobile-nav-item menu-item-has-children" style=""><span href="#" aria-haspopup="true" class="fusion-open-submenu"></span><a href="https://shopylu.com/categorias/accesorios/" class="fusion-bar-highlight"><span class="menu-text">Accesorios</span> </a><ul role="menu" class="sub-menu" style="display: none;"><li role="menuitem" id="mobile-menu-item-19725" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/collares" class="fusion-bar-highlight"><span>Collares</span></a></li><li role="menuitem" id="mobile-menu-item-19726" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/aretes" class="fusion-bar-highlight"><span>Aretes</span></a></li><li role="menuitem" id="mobile-menu-item-19727" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/carteras" class="fusion-bar-highlight"><span>Carteras</span></a></li><li role="menuitem" id="mobile-menu-item-19728" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/billeteras" class="fusion-bar-highlight"><span>Billeteras</span></a></li><li role="menuitem" id="mobile-menu-item-19729" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/cosmetiqueras" class="fusion-bar-highlight"><span>Cosmetiqueras</span></a></li><li role="menuitem" id="mobile-menu-item-19730" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/accesorios/otros" class="fusion-bar-highlight"><span>Otros</span></a></li></ul></li><li role="menuitem" id="mobile-menu-item-20257" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/categorias/ofertas" class="fusion-bar-highlight"><span class="menu-text">Ofertas</span></a></li><li role="menuitem" id="mobile-menu-item-19736" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/blog/" class="fusion-bar-highlight"><span class="menu-text">Blog</span></a></li><li role="menuitem" id="mobile-menu-item-19735" class="fusion-mobile-nav-item" style=""><a href="https://shopylu.com/contacto/" class="fusion-bar-highlight"><span class="menu-text">Contacto</span></a></li></ul></nav>
+ <div class="fusion-header-sticky-height" style="height: 96px;"></div>
+                <div class="fusion-header" style="">
+                    <div class="fusion-row">
+                        <div class="fusion-logo" data-margin-top="31px" data-margin-bottom="31px" data-margin-left="0px" data-margin-right="0px" style="">
+                            <a class="fusion-logo-link" href="{{route('principalComprador.index')}}">
+                                <!-- standard logo -->
+                                <img src="img/apple-icon-76x76.png" width="164" height="55" alt="Shopylu Logo" retina_logo_url="" class="fusion-standard-logo">
+                            </a>
+                        </div>
+                        <nav class="fusion-main-menu" aria-label="Main Menu" style="">
+                            <ul role="menubar" id="menu-classic-shop-main-menu" class="fusion-menu">
+                                <li role="menuitem" id="menu-item-16573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-16572 current_page_item menu-item-16573"><a href="{{route('principalComprador.index')}}" class="fusion-bar-highlight"><span class="menu-text">Inicio</span></a>
+                                </li>
+                                <li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a href="" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Producto</span>
+                                        <span class="fusion-caret"><i class="glyphicon glyphicon-menu-down"></i></span></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li role="menuitem" id="menu-item-19692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19692 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a>
+                                            <ul role="menu" class="sub-menu">
+                                                @foreach($categoria as $item)
+                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694"><a href="https://shopylu.com/categorias/maquillaje/labios" class="fusion-bar-highlight"><span>{{$item->nombreTipoProducto}}</span></a>
+                                                </li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                                
+                                 <li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a href="https://shopylu.com/categorias/maquillaje/" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Ofertas</span>
+                                        <span class="fusion-caret"><i class="glyphicon glyphicon-menu-down"></i></span></a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li role="menuitem" id="menu-item-19692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19692 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a>
+                                            <ul role="menu" class="sub-menu">
+                                                @foreach($categoria as $item)
+                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694"><a href="https://shopylu.com/categorias/maquillaje/labios" class="fusion-bar-highlight"><span>{{$item->nombreTipoProducto}}</span></a>
+                                                </li>
+                                                @endforeach
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                            
+                                <li role="menuitem" id="menu-item-19736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19736"><a href="https://shopylu.com/blog/" class="fusion-bar-highlight"><span class="menu-text">Blog</span></a></li>
+                                <li role="menuitem" id="menu-item-19735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19735"><a href="https://shopylu.com/contacto/" class="fusion-bar-highlight"><span class="menu-text">Contacto</span></a></li>
+                            </ul>
+                        </nav>
+                        <div class="fusion-mobile-menu-icons">
+                            <a href="#" class="fusion-icon fusion-icon-bars" aria-label="Toggle mobile menu"></a>
+                        </div>
+                        <nav class="fusion-mobile-nav-holder fusion-mobile-menu-text-align-left" style="display: none;">
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="fusion-clearfix"></div>
 
 			</div>
 </div>
-				</div>
-				<div class="fusion-clearfix"></div>
+			
 			</header>
 					
 		
@@ -300,7 +325,7 @@ img.emoji {
 			<div class="fusion-page-title-captions">
 
 				
-															<div class="fusion-page-title-secondary">
+							<div class="fusion-page-title-secondary">
 							<div class="fusion-breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://shopylu.com"><span itemprop="title">Inicio</span></a></span><span class="fusion-breadcrumb-sep">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://shopylu.com/categorias/maquillaje/"><span itemprop="title">Maquillaje</span></a></span><span class="fusion-breadcrumb-sep">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://shopylu.com/categorias/maquillaje/herramientas/"><span itemprop="title">Herramientas</span></a></span><span class="fusion-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Set de 10 brochas Oval</span></div>						</div>
 									
 			</div>
@@ -397,218 +422,59 @@ img.emoji {
 </div>
 </div>	</div>
 
-	
-	<div class="woocommerce-tabs wc-tabs-wrapper">
-		<ul class="tabs wc-tabs" role="tablist">
-							<li class="reviews_tab active" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
-					<a href="#tab-reviews">Valoraciones (0)</a>
-				</li>
-					</ul>
-					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews" style="display: block;">
-				<div id="reviews" class="woocommerce-Reviews">
-	<div id="comments">
-		<h3>Valoraciones</h3>
-
-		
-			<p class="woocommerce-noreviews">No hay valoraciones aún.</p>
-
-			</div>
-
-	
-		<div id="review_form_wrapper">
-			<div id="review_form">
-					<div id="respond" class="comment-respond">
-		<span id="reply-title" class="comment-reply-title">Sé el primero en valorar “Set de 10 brochas Oval” <small><a rel="nofollow" id="cancel-comment-reply-link" href="/producto/set-de-10-brochas-oval/#respond" style="display:none;">Cancelar respuesta</a></small></span>			<form action="https://shopylu.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
-				<p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> Los campos obligatorios están marcados con <span class="required">*</span></p><div class="comment-form-rating"><label for="rating">Tu puntuación</label><p class="stars selected"><span><a class="star-1" href="#">1</a><a class="star-2" href="#">2</a><a class="star-3 active" href="#">3</a><a class="star-4" href="#">4</a><a class="star-5" href="#">5</a></span></p><select name="rating" id="rating" required="" style="display: none;">
-							<option value="">Puntuar…</option>
-							<option value="5">Perfecto</option>
-							<option value="4">Bueno</option>
-							<option value="3">Normal</option>
-							<option value="2">No está tan mal</option>
-							<option value="1">Muy pobre</option>
-						</select></div><p class="comment-form-comment"><label for="comment">Tu valoración&nbsp;<span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" required=""></textarea></p><p class="comment-form-author"><label for="author">Nombre&nbsp;<span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" required=""></p>
-<p class="comment-form-email"><label for="email">Correo electrónico&nbsp;<span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" required=""></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Enviar"> <input type="hidden" name="comment_post_ID" value="20221" id="comment_post_ID">
-<input type="hidden" name="comment_parent" id="comment_parent" value="0">
-</p>			</form>
-			</div><!-- #respond -->
-				</div>
-		</div>
-
-	
-	<div class="clear"></div>
-</div>
-			</div>
-			</div>
-
-<div class="fusion-clearfix"></div>
 
 
 
 					
-	<ul class="social-share clearfix">
-		<li class="facebook">
-			<a href="http://www.facebook.com/sharer.php?m2w&amp;s=100&amp;p[url]=https://shopylu.com/producto/set-de-10-brochas-oval/&amp;p[title]=Set%20de%2010%20brochas%20Oval" target="_blank" rel="noopener noreferrer">
-				<i class="fontawesome-icon medium circle-yes fusion-icon-facebook"></i>
-				<div class="fusion-woo-social-share-text">
-					<span>Compartir en Facebook</span>
-				</div>
-			</a>
-		</li>
-		<li class="twitter">
-			<a href="https://twitter.com/share?text=Set de 10 brochas Oval&amp;url=https%3A%2F%2Fshopylu.com%2Fproducto%2Fset-de-10-brochas-oval%2F" target="_blank" rel="noopener noreferrer">
-				<i class="fontawesome-icon medium circle-yes fusion-icon-twitter"></i>
-				<div class="fusion-woo-social-share-text">
-					<span>Tweet este producto</span>
-				</div>
-			</a>
-		</li>
-		<li class="pinterest">
-						<a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fshopylu.com%2Fproducto%2Fset-de-10-brochas-oval%2F&amp;description=Set%20de%2010%20brochas%20Oval&amp;media=https%3A%2F%2Fshopylu.com%2Fwp-content%2Fuploads%2F2018%2F11%2F19.-Set-de-10-brochas-oval-1-PNG.jpg" target="_blank" rel="noopener noreferrer">
-				<i class="fontawesome-icon medium circle-yes fusion-icon-pinterest"></i>
-				<div class="fusion-woo-social-share-text">
-					<span>Pin este producto</span>
-				</div>
-			</a>
-		</li>
-		<li class="email">
-			<a href="mailto:?subject=Set%20de%2010%20brochas%20Oval&amp;body=https://shopylu.com/producto/set-de-10-brochas-oval/" target="_blank" rel="noopener noreferrer">
-				<i class="fontawesome-icon medium circle-yes fusion-icon-mail"></i>
-				<div class="fusion-woo-social-share-text">
-					<span>Enviar este producto</span>
-				</div>
-			</a>
-		</li>
-	</ul>
+	
 <div class="fusion-clearfix"></div>
 	<section class="related products">
 
 		<div class="fusion-title title sep-"><h2 class="title-heading-left">Productos relacionados</h2><div class="title-sep-container"><div class="title-sep sep- "></div></div></div>
 
-		<ul class="products clearfix products-4">
-
-			
-				<li class="post-20218 product type-product status-publish has-post-thumbnail product_cat-herramientas product_tag-brochas product_tag-brochas-de-maquillaje product_tag-herramientas-de-maquillaje product_tag-pinceles-de-maquillaje product_tag-set first instock taxable shipping-taxable purchasable product-type-simple">
-	<a href="https://shopylu.com/producto/set-de-20-brochas-de-maquilaje/" class="product-images" aria-label="Set de 20 brochas de maquilaje">
-
-<div class="featured-image">
-		<img width="500" height="500" src="https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-500x500.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="" srcset="https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-24x24.jpg 24w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-48x48.jpg 48w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-66x66.jpg 66w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-96x96.jpg 96w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-100x100.jpg 100w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-150x150.jpg 150w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-200x200.jpg 200w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-300x300.jpg 300w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-400x400.jpg 400w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-500x500.jpg 500w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-600x600.jpg 600w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-700x700.jpg 700w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-768x768.jpg 768w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-800x800.jpg 800w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355-1024x1024.jpg 1024w, https://shopylu.com/wp-content/uploads/2018/11/17.-Set-de-20-brochas-de-maquillaje-PNG-e1542079097355.jpg 1047w" sizes="(max-width: 500px) 100vw, 500px">			<div class="cart-loading"><i class="fusion-icon-spinner"></i></div>
-	</div>
-</a>
-<div class="product-details">
-	<div class="product-details-container">
-<h3 class="product-title" data-fontsize="16" data-lineheight="30">
-	<a href="https://shopylu.com/producto/set-de-20-brochas-de-maquilaje/">
-		Set de 20 brochas de maquilaje	</a>
-</h3>
-<div class="fusion-price-rating">
-
-	<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>14.99</span></span>
-		</div>
-	</div>
-</div>
-
-	<div class="product-buttons">
-		<div class="fusion-content-sep sep-double sep-solid"></div>
-		<div class="product-buttons-container clearfix">
-<a href="/producto/set-de-10-brochas-oval/?add-to-cart=20218" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="20218" data-product_sku="" aria-label="Añade “Set de 20 brochas de maquilaje” a tu carrito" rel="nofollow">Añadir al carrito</a><a href="https://shopylu.com/producto/set-de-20-brochas-de-maquilaje/" class="show_details_button">
-	Detalles</a>
-	</div>
-</div>
-<span data-content_category="[&quot;Maquillaje > Herramientas&quot;]" style="display:none;"></span></li>
-
-			
-				<li class="post-20220 product type-product status-publish has-post-thumbnail product_cat-herramientas product_tag-brochas product_tag-brochas-de-maquillaje product_tag-pinceles-de-maquillaje instock taxable shipping-taxable purchasable product-type-simple">
-	<a href="https://shopylu.com/producto/set-de-10-rochas-de-maquillaje-sirena/" class="product-images" aria-label="Set de 10 brochas de maquillaje – Sirena">
-
-<div class="featured-image">
-		<img width="500" height="500" src="https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-500x500.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="" srcset="https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-24x24.jpg 24w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-48x48.jpg 48w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-66x66.jpg 66w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-96x96.jpg 96w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-100x100.jpg 100w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-150x150.jpg 150w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-200x200.jpg 200w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-300x300.jpg 300w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-400x400.jpg 400w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-500x500.jpg 500w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-600x600.jpg 600w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-700x700.jpg 700w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-768x768.jpg 768w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-800x800.jpg 800w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG-1024x1024.jpg 1024w, https://shopylu.com/wp-content/uploads/2018/11/18.-Set-de-10-brochas-de-maquillaje-sirena-PNG.jpg 1100w" sizes="(max-width: 500px) 100vw, 500px">			<div class="cart-loading"><i class="fusion-icon-spinner"></i></div>
-	</div>
-</a>
-<div class="product-details">
-	<div class="product-details-container">
-<h3 class="product-title" data-fontsize="16" data-lineheight="30">
-	<a href="https://shopylu.com/producto/set-de-10-rochas-de-maquillaje-sirena/">
-		Set de 10 brochas de maquillaje – Sirena	</a>
-</h3>
-<div class="fusion-price-rating">
-
-	<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>14.99</span></span>
-		</div>
-	</div>
-</div>
-
-	<div class="product-buttons">
-		<div class="fusion-content-sep sep-double sep-solid"></div>
-		<div class="product-buttons-container clearfix">
-<a href="/producto/set-de-10-brochas-oval/?add-to-cart=20220" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="20220" data-product_sku="" aria-label="Añade “Set de 10 brochas de maquillaje - Sirena” a tu carrito" rel="nofollow">Añadir al carrito</a><a href="https://shopylu.com/producto/set-de-10-rochas-de-maquillaje-sirena/" class="show_details_button">
-	Detalles</a>
-	</div>
-</div>
-<span data-content_category="[&quot;Maquillaje > Herramientas&quot;]" style="display:none;"></span></li>
-
-			
-				<li class="post-20222 product type-product status-publish has-post-thumbnail product_cat-herramientas product_tag-manicure product_tag-secador-de-unas product_tag-unas instock taxable shipping-taxable purchasable product-type-simple">
-	<a href="https://shopylu.com/producto/secador-de-unas-monito/" class="product-images" aria-label="Secador de uñas – Monito">
-
-<div class="crossfade-images" style="height: 252px;">
-	<img width="500" height="500" src="https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-500x500.jpg" class="hover-image" alt="" srcset="https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-24x24.jpg 24w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-48x48.jpg 48w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-66x66.jpg 66w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-96x96.jpg 96w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-100x100.jpg 100w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-150x150.jpg 150w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-200x200.jpg 200w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-300x300.jpg 300w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-400x400.jpg 400w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-500x500.jpg 500w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-600x600.jpg 600w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-700x700.jpg 700w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-768x768.jpg 768w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-800x800.jpg 800w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG-1024x1024.jpg 1024w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-7-PNG.jpg 1100w" sizes="(max-width: 500px) 100vw, 500px">	<img width="500" height="500" src="https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-500x500.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="" srcset="https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-24x24.jpg 24w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-48x48.jpg 48w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-66x66.jpg 66w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-96x96.jpg 96w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-100x100.jpg 100w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-150x150.jpg 150w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-200x200.jpg 200w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-300x300.jpg 300w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-400x400.jpg 400w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-500x500.jpg 500w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-600x600.jpg 600w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-700x700.jpg 700w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-768x768.jpg 768w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-800x800.jpg 800w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471-1024x1024.jpg 1024w, https://shopylu.com/wp-content/uploads/2018/11/20.-Secador-de-uñas-monito-3-PNG-e1542171043471.jpg 1058w" sizes="(max-width: 500px) 100vw, 500px">			<div class="cart-loading"><i class="fusion-icon-check-square-o"></i></div>
-	</div>
-</a>
-<div class="product-details">
-	<div class="product-details-container">
-<h3 class="product-title" data-fontsize="16" data-lineheight="30">
-	<a href="https://shopylu.com/producto/secador-de-unas-monito/">
-		Secador de uñas – Monito	</a>
-</h3>
-<div class="fusion-price-rating">
-
-	<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>9.99</span></span>
-		</div>
-	</div>
-</div>
-
-	<div class="product-buttons">
-		<div class="fusion-content-sep sep-double sep-solid"></div>
-		<div class="product-buttons-container clearfix">
-<a href="/producto/set-de-10-brochas-oval/?add-to-cart=20222" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="20222" data-product_sku="" aria-label="Añade “Secador de uñas - Monito” a tu carrito" rel="nofollow">Añadir al carrito</a><a href="https://shopylu.com/producto/secador-de-unas-monito/" class="show_details_button">
-	Detalles</a>
-	</div>
-</div>
-<span data-content_category="[&quot;Maquillaje > Herramientas&quot;]" style="display:none;"></span></li>
-
-			
-				<li class="post-19804 product type-product status-publish has-post-thumbnail product_cat-herramientas product_tag-brochas product_tag-rostro instock taxable shipping-taxable purchasable product-type-variable has-default-attributes">
-	<a href="https://shopylu.com/producto/brochas-de-maquillaje-cola-de-pez/" class="product-images" aria-label="Brochas de maquillaje – Cola de pez">
-
-<div class="crossfade-images" style="height: 252px;">
-	<img width="500" height="500" src="https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-500x500.jpg" class="hover-image" alt="" srcset="https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-24x24.jpg 24w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-48x48.jpg 48w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-66x66.jpg 66w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-96x96.jpg 96w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-100x100.jpg 100w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-150x150.jpg 150w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-200x200.jpg 200w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-300x300.jpg 300w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-400x400.jpg 400w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-500x500.jpg 500w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-600x600.jpg 600w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-700x700.jpg 700w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-768x768.jpg 768w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-800x800.jpg 800w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG-1024x1024.jpg 1024w, https://shopylu.com/wp-content/uploads/2018/10/16.-Brochas-de-maquillaje-cola-de-pez-1-PNG.jpg 1100w" sizes="(max-width: 500px) 100vw, 500px">	<img width="500" height="500" src="https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-500x500.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="" srcset="https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-24x24.jpg 24w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-48x48.jpg 48w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-66x66.jpg 66w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-96x96.jpg 96w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-100x100.jpg 100w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-150x150.jpg 150w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-200x200.jpg 200w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-300x300.jpg 300w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-400x400.jpg 400w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-500x500.jpg 500w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-600x600.jpg 600w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168-700x700.jpg 700w, https://shopylu.com/wp-content/uploads/2018/10/16.-brocha-cola-de-pescado.1-e1542155583168.jpg 725w" sizes="(max-width: 500px) 100vw, 500px">			<div class="cart-loading"><i class="fusion-icon-spinner"></i></div>
-	</div>
-</a>
-<div class="product-details">
-	<div class="product-details-container">
-<h3 class="product-title" data-fontsize="16" data-lineheight="30">
-	<a href="https://shopylu.com/producto/brochas-de-maquillaje-cola-de-pez/">
-		Brochas de maquillaje – Cola de pez	</a>
-</h3>
-<div class="fusion-price-rating">
-
-	<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>5.99</span></span>
-		</div>
-	</div>
-</div>
-
-	<div class="product-buttons">
-		<div class="fusion-content-sep sep-double sep-solid"></div>
-		<div class="product-buttons-container clearfix">
-<a href="https://shopylu.com/producto/brochas-de-maquillaje-cola-de-pez/" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="19804" data-product_sku="" aria-label="Elige las opciones para “Brochas de maquillaje - Cola de pez”" rel="nofollow">Seleccionar opciones</a><a href="https://shopylu.com/producto/brochas-de-maquillaje-cola-de-pez/" class="show_details_button">
-	Detalles</a>
-	</div>
-</div>
-<span data-content_category="[&quot;Maquillaje > Herramientas&quot;]" style="display:none;"></span></li>
-
-			
-		</ul>
+		<div class="tab-content">
+                                                    <div class="tab-pane fade fusion-clearfix in active" >
+                                                        <div class="fusion-woo-product-slider fusion-woo-slider">
+                                                            <div class="fusion-carousel fusion-carousel-title-below-image" data-metacontent="yes" data-autoplay="yes" data-columns="4" data-itemmargin="10" data-itemwidth="180" data-touchscroll="no" data-imagesize="auto" data-scrollitems="1">
+                                                                <div class="fusion-carousel-positioner" style="margin-left: -10px;">
+                                                                    <div class="fusion-carousel-wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1190px; height: 460px; margin: 0px; overflow: hidden;">
+                                                                        <ul class="fusion-carousel-holder" style="text-align: left; float: none; position: absolute; top: auto; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2856px; height: 355px;">
+                                                                            
+                                                                            @foreach($producto as $item)
+                                                                            <li class="fusion-carousel-item" style="margin-left: 10px; width: 200px;">
+                                                                                <div class="fusion-classic-product-image-wrapper">
+                                                                                    <div class="fusion-carousel-item-wrapper" style="visibility: inherit;">
+                                                                                        <div class="fusion-image-wrapper" aria-haspopup="true">
+                                                                                            <img width="1058" height="1058" src="imagen\{{$item->imagenProducto}}" class="" alt="">
+                                                                                            <div class="fusion-rollover">
+                                                                                                <div class="fusion-rollover-content">
+                                                                                                   <div >
+                                                                                                        <span class="fusion-rollover-linebreak">
+                                                                                                        </span>
+                                                                                                    <i class="glyphicon glyphicon-copy">
+                                                                                                    <a href="{{route('detalleComprador.index')}}" class="">Detalles</a></i>
+                                                                                                    </div>
+                                                                                                    <a class="fusion-link-wrapper" href="{{route('detalleComprador.index')}}" aria-label="Secador de uñas – Monito"></a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <h4 class="" data-fontsize="" data-lineheight="25"><a href="" target="_self">{{$item->nombreProducto}}</a></h4>
+                                                                                        <div class="fusion-carousel-meta"><a href="https://shopylu.com/categorias/maquillaje/herramientas/" rel="tag">{{$item->categoria->nombreTipoProducto}}</a>
+                                                                                            <div class="fusion-carousel-price">
+                                                                                                <span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{$item->stock->precioVentaPublico}}</span></span>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            @endforeach
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
 	</section>
 
@@ -617,85 +483,83 @@ img.emoji {
 </div>	
 				</div>  <!-- fusion-row -->
 			</main>  <!-- #main -->
-			<div class="fusion-footer">
-						
-	<footer role="contentinfo" class="fusion-footer-widget-area fusion-widget-area">
-		<div class="fusion-row">
-			<div class="fusion-columns fusion-columns-3 fusion-widget-area">
-							<div class="fusion-column col-lg-4 col-md-4 col-sm-4">
-							<section id="text-2" class="fusion-footer-widget-column widget widget_text">			<div class="textwidget"><p><img src="https://shopylu.com/wp-content/uploads/2018/10/logo-blanco.png" class=""></p>
-</div>
-		<div style="clear:both;"></div></section><section id="text-3" class="fusion-footer-widget-column widget widget_text">			<div class="textwidget">Antonio Núñez OE 2-40 y Av. Diego Vásquez de Cepeda. Conjunto Albert Einstein. Dpto. 302 B.<br>
+<div class="fusion-footer">
+            <footer role="contentinfo" class="fusion-footer-widget-area fusion-widget-area">
+                <div class="fusion-row">
+                    <div class="fusion-columns fusion-columns-3 fusion-widget-area">
+                        <div class="fusion-column col-lg-4 col-md-4 col-sm-4">
+                            <section id="text-2" class="fusion-footer-widget-column widget widget_text">
+                                <div class="textwidget">
+                                    <p><img src="img/iconoPrincipal.png" class=""></p>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </section>
+                            <section id="text-3" class="fusion-footer-widget-column widget widget_text">
+                                @foreach($contacto as $item)
+                                <div class="textwidget">{{$item->ubicacion}}<br>
+                                    <strong>Teléfono: </strong> {{$item->telefono}}<br>
+                                    <strong>Email: </strong> {{$item->correoAdmin }}</div>
+                                <div style="clear:both;"></div>
+                                @endforeach
+                            </section>
+                            <section id="social_links-widget-2" class="fusion-footer-widget-column widget social_links">
+                                <div class="fusion-social-networks">
+                                    <div class="fusion-social-networks-wrapper">
+                                    </div>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </section>
+                        </div>
+                        <div class="fusion-column col-lg-4 col-md-4 col-sm-4">
+                            <section id="woocommerce_top_rated_products-4" class="fusion-footer-widget-column widget woocommerce widget_top_rated_products">
+                                
+                                
+                                <div style="clear:both;"></div>
+                            </section>
+                        </div>
+                        <div class="fusion-column fusion-column-last col-lg-4 col-md-4 col-sm-4">
+                            <section id="avada-vertical-menu-widget-2" class="fusion-footer-widget-column widget avada_vertical_menu">
+                                <h4 class="widget-title" data-fontsize="15" data-lineheight="22">Enlaces</h4>
+                                <style>#avada-vertical-menu-widget-2 ul.menu li a {font-size:14px;}</style>
+                                <nav id="fusion-avada-vertical-menu-widget-2" class="fusion-vertical-menu-widget fusion-menu hover left no-border">
+                                    <ul id="menu-politicas" class="menu">
+                                        <li id="menu-item-19891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19891"><a href="https://shopylu.com/terminos-y-condiciones/"><span class="link-text">Terminos y Condiciones</span><span class="arrow"></span></a></li>
+                                        <li id="menu-item-19923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19923"><a href="https://shopylu.com/quienes-somos/"><span class="link-text">Quienes Somos</span><span class="arrow"></span></a></li>
+                                    </ul>
+                                </nav>
+                                <div style="clear:both;"></div>
+                            </section>
+                            <section id="text-10" class="fusion-footer-widget-column widget widget_text">
+                                <div class="textwidget">
+                                    <p><span style="color: #e54c7c;"><i class="fa fa-shield fa- "></i>&nbsp; Envios Seguros</span><br>
+                                        <span style="color: #e54c7c;"><i class="fa fa-truck fa- "></i>&nbsp; Envios a todo el Ecuador</span><br>
+                                        <span style="color: #e54c7c;"><i class="fa fa-gift fa- "></i>&nbsp; Envios Gratis en Compras Superiores a 50.00 usd</span><br>
+                                        <span style="color: #e54c7c;"><i class="fa fa-dollar fa- "></i> Pagos Seguros Mediante&nbsp;</span><img class="alignnone size-full wp-image-20706" src="https://shopylu.com/wp-content/uploads/2018/12/logo-paymentez-png-white.png" alt="paymentez-pago-shopylu" width="155" height="50"></p>
+                                </div>
+                                <div style="clear:both;"></div>
+                            </section>
+                        </div>
+                        <div class="fusion-clearfix"></div>
+                    </div> <!-- fusion-columns -->
+                </div> <!-- fusion-row -->
+            </footer> <!-- fusion-footer-widget-area -->
+            <footer id="footer" class="fusion-footer-copyright-area fusion-footer-copyright-center">
+                <div class="fusion-row">
+                    <div class="fusion-copyright-content">
+                        <div class="fusion-copyright-notice" style="padding-bottom: 0px;">
+                            <div>
+                                © Copyright 2018 -&nbsp;<script>
+                                document.write(new Date().getFullYear());
 
-<strong>Teléfono: </strong> 02 247 7178<br>
-<strong>WhatsApp: </strong> 0983181442<br>
-<strong>Email: </strong> info@shopylu.com / atencionalcliente@shopylu.com</div>
-		<div style="clear:both;"></div></section><section id="social_links-widget-2" class="fusion-footer-widget-column widget social_links">
-		<div class="fusion-social-networks">
-
-			<div class="fusion-social-networks-wrapper">
-			</div>
-		</div>
-
-		<div style="clear:both;"></div></section>																					</div>
-							<div class="fusion-column col-lg-4 col-md-4 col-sm-4">
-							<section id="woocommerce_top_rated_products-4" class="fusion-footer-widget-column widget woocommerce widget_top_rated_products"><h4 class="widget-title" data-fontsize="15" data-lineheight="22">Productos mejor valorados</h4><ul class="product_list_widget"><li>
-	
-	<a href="https://shopylu.com/producto/blusa-mirna/">
-		<img width="500" height="500" src="https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-500x500.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-24x24.jpg 24w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-48x48.jpg 48w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-66x66.jpg 66w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-96x96.jpg 96w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-100x100.jpg 100w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-150x150.jpg 150w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-200x200.jpg 200w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-300x300.jpg 300w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-400x400.jpg 400w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-500x500.jpg 500w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-600x600.jpg 600w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-700x700.jpg 700w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-768x768.jpg 768w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia-800x800.jpg 800w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Mirna-t-M-copia.jpg 900w" sizes="(max-width: 500px) 100vw, 500px">		<span class="product-title">Blusa mirna</span>
-	</a>
-
-				
-	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>15.99</span>
-	</li>
-<li>
-	
-	<a href="https://shopylu.com/producto/blusa-tori/">
-		<img width="500" height="500" src="https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-500x500.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-24x24.jpg 24w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-48x48.jpg 48w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-66x66.jpg 66w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-96x96.jpg 96w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-100x100.jpg 100w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-150x150.jpg 150w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-200x200.jpg 200w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-300x300.jpg 300w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-400x400.jpg 400w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-500x500.jpg 500w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-600x600.jpg 600w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-700x700.jpg 700w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-768x768.jpg 768w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1-800x800.jpg 800w, https://shopylu.com/wp-content/uploads/2018/10/Blusa-Tori-XXL-copia-1.jpg 900w" sizes="(max-width: 500px) 100vw, 500px">		<span class="product-title">Blusa Tori</span>
-	</a>
-
-				
-	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>19.99</span>
-	</li>
-<li>
-	
-	<a href="https://shopylu.com/producto/vestido-larissa/">
-		<img width="500" height="500" src="https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-500x500.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" srcset="https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-24x24.jpg 24w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-48x48.jpg 48w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-66x66.jpg 66w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-96x96.jpg 96w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-100x100.jpg 100w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-150x150.jpg 150w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-200x200.jpg 200w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-300x300.jpg 300w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-400x400.jpg 400w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-500x500.jpg 500w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-600x600.jpg 600w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-700x700.jpg 700w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-768x768.jpg 768w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia-800x800.jpg 800w, https://shopylu.com/wp-content/uploads/2018/11/Vestido-beige-copia.jpg 900w" sizes="(max-width: 500px) 100vw, 500px">		<span class="product-title">Vestido Larissa</span>
-	</a>
-
-				
-	<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>19.99</span>
-	</li>
-</ul><div style="clear:both;"></div></section>																					</div>
-																										<div class="fusion-column fusion-column-last col-lg-4 col-md-4 col-sm-4">
-							<section id="avada-vertical-menu-widget-2" class="fusion-footer-widget-column widget avada_vertical_menu"><h4 class="widget-title" data-fontsize="15" data-lineheight="22">Enlaces</h4><style>#avada-vertical-menu-widget-2 ul.menu li a {font-size:14px;}</style><nav id="fusion-avada-vertical-menu-widget-2" class="fusion-vertical-menu-widget fusion-menu hover left no-border"><ul id="menu-politicas" class="menu"><li id="menu-item-19891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19891"><a href="https://shopylu.com/terminos-y-condiciones/"><span class="link-text">Terminos y Condiciones</span><span class="arrow"></span></a></li><li id="menu-item-19923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19923"><a href="https://shopylu.com/quienes-somos/"><span class="link-text">Quienes Somos</span><span class="arrow"></span></a></li></ul></nav><div style="clear:both;"></div></section><section id="text-10" class="fusion-footer-widget-column widget widget_text">			<div class="textwidget"><p><span style="color: #e54c7c;"><i class="fa fa-shield fa- "></i>&nbsp; Envios Seguros</span><br>
-<span style="color: #e54c7c;"><i class="fa fa-truck fa- "></i>&nbsp; Envios a todo el Ecuador</span><br>
-<span style="color: #e54c7c;"><i class="fa fa-gift fa- "></i>&nbsp; Envios Gratis en Compras Superiores a 50.00 usd</span><br>
-<span style="color: #e54c7c;"><i class="fa fa-dollar fa- "></i> Pagos Seguros Mediante&nbsp;</span><img class="alignnone size-full wp-image-20706" src="https://shopylu.com/wp-content/uploads/2018/12/logo-paymentez-png-white.png" alt="paymentez-pago-shopylu" width="155" height="50"></p>
-</div>
-		<div style="clear:both;"></div></section>																					</div>
-																																				
-				<div class="fusion-clearfix"></div>
-			</div> <!-- fusion-columns -->
-		</div> <!-- fusion-row -->
-	</footer> <!-- fusion-footer-widget-area -->
-
-	
-	<footer id="footer" class="fusion-footer-copyright-area fusion-footer-copyright-center">
-		<div class="fusion-row">
-			<div class="fusion-copyright-content">
-
-				<div class="fusion-copyright-notice" style="padding-bottom: 0px;">
-		<div>
-		© Copyright 2018 -&nbsp;<script>document.write(new Date().getFullYear());</script>2020&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;Shopylu&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Todos los derechos reservados&nbsp;&nbsp;&nbsp;| Desarrollado por: <a href="http://www.publikadd.com/">Publikadd</a><p><img src="https://shopylu.com/wp-content/uploads/2018/10/payment_cards_footer-2.jpg" alt="logo_footer" width="322" height="34" class=""></p>	</div>
-</div>
-
-			</div> <!-- fusion-fusion-copyright-content -->
-		</div> <!-- fusion-row -->
-	</footer> <!-- #footer -->
-				</div> <!-- fusion-footer -->
-			
-								</div> <!-- wrapper -->
+                                </script>2020&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;Shopylu&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Todos los derechos reservados&nbsp;&nbsp;&nbsp;| Desarrollado por: <a href="https://www.facebook.com/guidoadrian97">Guido Mendoza</a>/<a href="https://www.facebook.com/andyaldair.mendozaloor">Bryan Mendoza</a>
+                                <p><img src="https://shopylu.com/wp-content/uploads/2018/10/payment_cards_footer-2.jpg" alt="logo_footer" width="322" height="34" class=""></p>
+                            </div>
+                        </div>
+                    </div> <!-- fusion-fusion-copyright-content -->
+                </div> <!-- fusion-row -->
+            </footer> <!-- #footer -->
+        </div> <!-- fusion-footer -->
+    </div> <!-- wrapper -->
 
 								<a class="fusion-one-page-text-link fusion-page-load-link"></a>
 
