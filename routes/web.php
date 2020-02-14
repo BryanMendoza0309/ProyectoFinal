@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+}); 
 
 Route::get('loadmodal', 'TablaproductoController@modal');
 Route::get('loadProducto', 'TablaproductoController@load');
@@ -29,7 +29,7 @@ Route::resource('vistaContacto','VistaContactoController');
 Route::resource('principalComprador','VistaPrincipalCompradorController');
 Route::resource('detalleComprador','DetalleCompradorController');
 Route::resource('categoriaComprador','VistaCategoriaCompradorController');
-
+Route::resource('totalProductos','VistaTotalProductos');
 Route::group(['middleware' => 'auth'], function () {
     //    Route::get('/link1', function ()    {
 //        // Uses Auth Middleware

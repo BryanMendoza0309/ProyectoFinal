@@ -266,6 +266,7 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
     </style>
     <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body class="product-template-default single single-product postid-20221 woocommerce woocommerce-page woocommerce-js fusion-image-hovers fusion-body ltr fusion-sticky-header no-tablet-sticky-header no-mobile-sticky-header no-mobile-slidingbar mobile-logo-pos-left layout-wide-mode fusion-top-header menu-text-align-left fusion-woo-product-design-classic mobile-menu-design-modern fusion-hide-pagination-text fusion-header-layout-v3 avada-responsive avada-footer-fx-none fusion-search-form-classic fusion-avatar-square do-animate" style="height: auto;">
@@ -287,7 +288,7 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                 </div>
                             </div> 
                         </div>
-                
+                    
         </div>
 </div>
                 <div class="fusion-header-sticky-height" style="height: 96px;"></div>
@@ -333,26 +334,32 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                             
                                 <li role="menuitem" id="menu-item-19736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19736"><a href="https://shopylu.com/blog/" class="fusion-bar-highlight" style="text-decoration: none"><span class="menu-text">Blog</span></a></li>
                                 <li role="menuitem" id="menu-item-19735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19735"><a href="https://shopylu.com/contacto/" class="fusion-bar-highlight" style="text-decoration: none"><span class="menu-text">Contacto</span></a></li>
+                            </ul>
+                        </nav>
+                        <div class="fusion-mobile-menu-icons">
+                            <a href="#" class="fusion-icon fusion-icon-bars" aria-label="Toggle mobile menu"></a>
+                        </div>
+                        <nav class="fusion-mobile-nav-holder fusion-mobile-menu-text-align-left" style="display: none;">
                         </nav>
                     </div>
                 </div>
             </div>
             <div class="fusion-clearfix"></div>
-	</header>
-<div class="woocommerce-notices-wrapper"></div>
-<div class="catalog-ordering clearfix">
-			<div class="orderby-order-container">
-		</div>								
-	</div>
-
-<div class="fusion-page-title-bar fusion-page-title-bar-breadcrumbs fusion-page-title-bar-center">
+			</header>
+					
+		
+		<div id="sliders-container">
+					</div>
+				
+		
+					<div class="fusion-page-title-bar fusion-page-title-bar-breadcrumbs fusion-page-title-bar-center">
 	<div class="fusion-page-title-row">
 		<div class="fusion-page-title-wrapper" style="opacity: 1;">
 			<div class="fusion-page-title-captions">
 
 				
 															<div class="fusion-page-title-secondary">
-							<div class="fusion-breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://shopylu.com"><span itemprop="title">Inicio</span></a></span><span class="fusion-breadcrumb-sep">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="{{route('totalProductos.index')}}"><span itemprop="title">Productos</span></a></span><span class="fusion-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Labios</span></div>						</div>
+							<div class="fusion-breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="{{route('principalComprador.index')}}"><span itemprop="title">Inicio</span></a></span><span class="fusion-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Productos</span></div>						</div>
 									
 			</div>
 
@@ -360,36 +367,37 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
 		</div>
 	</div>
 </div>
+		
+		
+						<main id="main" role="main" class="clearfix " style="">
+			<div class="fusion-row" style="">
+		<div class="woocommerce-container">
+			<section id="content" class="full-width" style="width: 100%;">
+		<header class="woocommerce-products-header">
 	
+	</header>
+<div class="woocommerce-notices-wrapper"></div>
+
 <ul class="products clearfix products-4">
 	@foreach($producto as $item)
-<li class="post-19863 product type-product status-publish has-post-thumbnail product_cat-labios product_tag-balsamo product_tag-beauty-treats product_tag-hidratante product_tag-labios product-grid-view first instock taxable shipping-taxable purchasable product-type-simple">
+<li class="post-19779 product type-product status-publish has-post-thumbnail product_cat-city-color product_cat-rostro product_tag-city-color product_tag-fijador product_tag-fijador-de-maquillaje product_tag-rostro product_tag-shopylu product-grid-view first instock taxable shipping-taxable purchasable product-type-simple">
+	<a class="product-images" aria-label="City Color All set Setting spray">
 
-<div class="featured-image">
-		<img width="1058" height="1058" src="imagen\{{$item->imagenProducto}}" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="">	<div class="cart-loading"><i class="fusion-icon-spinner"></i></div>
+<div class="crossfade-images" style="height: 212px;">
+	<img width="500" height="500" src="imagen\{{$item->imagenProducto}}" class="hover-image" alt="" srcset="">	<img width="500" height="500" src="imagen\{{$item->imagenProducto}}" class="" alt="" srcset="">			<div class="cart-loading"><i class="fusion-icon-spinner"></i></div>
 	</div>
 </a>
 <div class="product-details">
+
 	<div class="product-details-container">
-<form action="{{route('detalleComprador.store')}}" method="post">
-    <input type="hidden" name="_token" value="{{csrf_token() }}">
-    <input type="hidden" name="idDetalle" value="{{$item->id}}">
-
-<h3 class="product-title" data-fontsize="16" data-lineheight="30">
-	<button  type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"
-     href="{{route('detalleComprador.store')}}"> <a> {{$item->nombreProducto}}</a></button>
-</h3>
-
-
 <div class="fusion-price-rating">
 
 	<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{$item->stock->precioVentaPublico}}</span></span>
 		</div>
 	</div>
 </div>
- 
-	<div style="margin-left: 150px" class="product-buttons">
-		<form action="{{route('detalleComprador.store')}}" method="post">
+<div style="margin-left: 200px">
+	<form action="{{route('detalleComprador.store')}}" method="post">
     <input type="hidden" name="_token" value="{{csrf_token() }}">
    	<input type="hidden" name="idDetalle" value="{{$item->id}}">
 		<div class="fusion-content-sep sep-double sep-solid">
@@ -399,24 +407,22 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
      type="submit" href="{{route('detalleComprador.store')}}"><a style="text-decoration: none"> Detalles</a></button>
 	</div>
 </form>
-	</div>
-<span data-content_category="[&quot;Maquillaje > Labios&quot;]" style="display:none;"></span></li>
+</div>
+<span data-content_category="[&quot;Maquillaje > City Color&quot;,&quot;Maquillaje > Rostro&quot;]" style="display:none;"></span>
 
 </li>
+
 @endforeach
 </ul>
 
 
+
 	</section>
-</div>
-					
+</div>		
 				</div>  <!-- fusion-row -->
-			</main>  <!-- #main -->
-			
-			
-			
-										
-<div class="fusion-footer">
+			</main>  <!-- #main -->				
+				
+				<div class="fusion-footer">
             <footer role="contentinfo" class="fusion-footer-widget-area fusion-widget-area">
                 <div class="fusion-row">
                     <div class="fusion-columns fusion-columns-3 fusion-widget-area">
@@ -450,14 +456,14 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                 <div style="clear:both;"></div>
                             </section>
                         </div>
-                        <div class="" style="float: right;">
+                        <div class="fusion-column fusion-column-last col-lg-4 col-md-4 col-sm-4">
                             <section id="avada-vertical-menu-widget-2" class="fusion-footer-widget-column widget avada_vertical_menu">
                                 <h4 class="widget-title" data-fontsize="15" data-lineheight="22">Enlaces</h4>
                                 <style>#avada-vertical-menu-widget-2 ul.menu li a {font-size:14px;}</style>
                                 <nav id="fusion-avada-vertical-menu-widget-2" class="fusion-vertical-menu-widget fusion-menu hover left no-border">
                                     <ul id="menu-politicas" class="menu">
                                         <li id="menu-item-19891" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19891"><a href="https://shopylu.com/terminos-y-condiciones/"><span class="link-text">Terminos y Condiciones</span><span class="arrow"></span></a></li>
-                                        <li id="menu-item-19923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19923"><a href="https://shopylu.com/quienes-somos/"><span class="link-text" style="margin-left: 100px">Quienes Somos</span><span class="arrow"></span></a></li>
+                                        <li id="menu-item-19923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19923"><a href="https://shopylu.com/quienes-somos/"><span class="link-text">Quienes Somos</span><span class="arrow"></span></a></li>
                                     </ul>
                                 </nav>
                                 <div style="clear:both;"></div>
@@ -491,7 +497,7 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                     </div> <!-- fusion-fusion-copyright-content -->
                 </div> <!-- fusion-row -->
             </footer> <!-- #footer -->
-        </div>
+        </div> <!-- fusion-footer -->
 			
 								</div> <!-- wrapper -->
 
@@ -507,7 +513,7 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
 					}
 				});
 				</script>
-				<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@graph":[{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Inicio","@id":"https:\/\/shopylu.com"}},{"@type":"ListItem","position":2,"item":{"name":"Maquillaje","@id":"https:\/\/shopylu.com\/categorias\/maquillaje\/"}},{"@type":"ListItem","position":3,"item":{"name":"Labios","@id":"https:\/\/shopylu.com\/categorias\/maquillaje\/labios\/"}}]},{"@context":"https:\/\/schema.org\/","@graph":[{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/essential-oil-hydrating-lip-care-avocado\/","name":"Essential Oil Hydrating Lip Care - Avocado","url":"https:\/\/shopylu.com\/producto\/essential-oil-hydrating-lip-care-avocado\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/exfoliante-labial-sabor-a-frutas\/","name":"Exfoliante labial sabor a frutas","url":"https:\/\/shopylu.com\/producto\/exfoliante-labial-sabor-a-frutas\/"}]}]}</script><script type="text/javascript">(function() {
+				<script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@graph":[{"@context":"https:\/\/schema.org\/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Inicio","@id":"https:\/\/shopylu.com"}},{"@type":"ListItem","position":2,"item":{"name":"Maquillaje","@id":"https:\/\/shopylu.com\/categorias\/maquillaje\/"}}]},{"@context":"https:\/\/schema.org\/","@graph":[{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/city-color-all-set-setting-spray\/","name":"City Color All set Setting spray","url":"https:\/\/shopylu.com\/producto\/city-color-all-set-setting-spray\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/primer-en-aceite-city-color\/","name":"Primer en aceite City Color","url":"https:\/\/shopylu.com\/producto\/primer-en-aceite-city-color\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/paleta-de-sombras-city-color-figtastic\/","name":"Paleta de sombras City Color Figtastic","url":"https:\/\/shopylu.com\/producto\/paleta-de-sombras-city-color-figtastic\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/primer-de-sombra-mejorado\/","name":"Primer de Sombra mejorado","url":"https:\/\/shopylu.com\/producto\/primer-de-sombra-mejorado\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/frameus-lash\/","name":"Frameus Lash","url":"https:\/\/shopylu.com\/producto\/frameus-lash\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/brochas-de-maquillaje-cola-de-pez\/","name":"Brochas de maquillaje - Cola de pez","url":"https:\/\/shopylu.com\/producto\/brochas-de-maquillaje-cola-de-pez\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/crema-de-manos\/","name":"Crema de manos 50 ml","url":"https:\/\/shopylu.com\/producto\/crema-de-manos\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/body-splash\/","name":"Body Splash 180 ml","url":"https:\/\/shopylu.com\/producto\/body-splash\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/delineador-liquido-lapiz-para-ojos-sacapuntas\/","name":"Delineador L\u00edquido +  L\u00e1piz para Ojos + sacapuntas","url":"https:\/\/shopylu.com\/producto\/delineador-liquido-lapiz-para-ojos-sacapuntas\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/bombshell-blush-illuminating-baked-blush-bombshell-bronze\/","name":"Bombshell Blush - Illuminating Baked Blush\u00a0 Bombshell Bronze","url":"https:\/\/shopylu.com\/producto\/bombshell-blush-illuminating-baked-blush-bombshell-bronze\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/aoa-wonder-skin-poreless-face-primer\/","name":"AOA Wonder Skin Poreless Face Primer","url":"https:\/\/shopylu.com\/producto\/aoa-wonder-skin-poreless-face-primer\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/aoa-wonder-skin-mattifying-face-primer\/","name":"AOA Wonder Skin Mattifying Face Primer","url":"https:\/\/shopylu.com\/producto\/aoa-wonder-skin-mattifying-face-primer\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/essential-oil-hydrating-lip-care-avocado\/","name":"Essential Oil Hydrating Lip Care - Avocado","url":"https:\/\/shopylu.com\/producto\/essential-oil-hydrating-lip-care-avocado\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/exfoliante-labial-sabor-a-frutas\/","name":"Exfoliante labial sabor a frutas","url":"https:\/\/shopylu.com\/producto\/exfoliante-labial-sabor-a-frutas\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/crema-corporal\/","name":"Crema corporal 200 ml","url":"https:\/\/shopylu.com\/producto\/crema-corporal\/"},{"@type":"Product","@id":"https:\/\/shopylu.com\/producto\/primer-de-sombras-matte-kleancolor\/","name":"Primer de sombras matte Kleancolor","url":"https:\/\/shopylu.com\/producto\/primer-de-sombras-matte-kleancolor\/"}]}]}</script><script type="text/javascript">(function() {
 		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
@@ -555,7 +561,7 @@ var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax
 <script type="text/javascript" src="https://shopylu.com/wp-includes/js/wp-embed.min.js?ver=4.9.13"></script>
 <script type="text/javascript">
 /* <![CDATA[ */
-var aepc_pixel_events = {"standard_events":{"ViewContent":[{"params":[],"delay":0},{"params":[],"delay":0}]},"custom_events":{"AdvancedEvents":[{"params":{"login_status":"not_logged_in","tax_product_cat":"Labios","object_id":89,"object_type":"tax_archive"},"delay":0}]},"css_events":{"[contact-form-7 id=\"16954\" title=\"Subscribe\"]":[{"trackType":"track","trackName":"ViewContent","trackParams":[]}],"[contact-form-7 id=\"10\" title=\"Formulario de contacto 1\"]":[{"trackType":"track","trackName":"ViewContent","trackParams":[]}]}};
+var aepc_pixel_events = {"standard_events":{"ViewContent":[{"params":[],"delay":0},{"params":[],"delay":0}]},"custom_events":{"AdvancedEvents":[{"params":{"login_status":"not_logged_in","tax_product_cat":"Maquillaje","object_id":88,"object_type":"tax_archive"},"delay":0}]},"css_events":{"[contact-form-7 id=\"16954\" title=\"Subscribe\"]":[{"trackType":"track","trackName":"ViewContent","trackParams":[]}],"[contact-form-7 id=\"10\" title=\"Formulario de contacto 1\"]":[{"trackType":"track","trackName":"ViewContent","trackParams":[]}]}};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://shopylu.com/wp-content/plugins/pixel-caffeine/build/frontend.js?ver=2.0.6"></script>
@@ -571,3 +577,4 @@ jQuery(function($) {
 </script>
 	
 
+<div class="to-top-container"><a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span><span class="screen-reader-text">Go to Top</span></a></div></body></html>

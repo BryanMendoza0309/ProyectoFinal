@@ -266,6 +266,7 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
     </style>
     <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body class="product-template-default single single-product postid-20221 woocommerce woocommerce-page woocommerce-js fusion-image-hovers fusion-body ltr fusion-sticky-header no-tablet-sticky-header no-mobile-sticky-header no-mobile-slidingbar mobile-logo-pos-left layout-wide-mode fusion-top-header menu-text-align-left fusion-woo-product-design-classic mobile-menu-design-modern fusion-hide-pagination-text fusion-header-layout-v3 avada-responsive avada-footer-fx-none fusion-search-form-classic fusion-avatar-square do-animate" style="height: auto;">
@@ -287,66 +288,7 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                 </div>
                             </div> 
                         </div>
-                <div class="fusion-alignright">
-                <nav class="fusion-secondary-menu" role="navigation" aria-label="Secondary Menu">
-                    <ul role="menubar" id="menu-classic-shop-top-secondary-menu" class="menu">
-                        <li role="menuitem" id="menu-item-16571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16571">
-                            <a href="https://shopylu.com/carrito/" class="fusion-flex-link fusion-bar-highlight">
-                                <span class="fusion-megamenu-icon">
-                                    <i class="glyphicon glyphicon-shopping-cart">
-                                        
-                                    </i>
-                                </span>
-                                <span class="menu-text">Carrito de compras</span>
-                            </a>
-                        </li>
-                        <li role="menuitem" class="menu-item fusion-dropdown-menu menu-item-has-children fusion-custom-menu-item fusion-menu-login-box">
-                            <a href="https://shopylu.com/mi-cuenta/" aria-haspopup="true" class="fusion-bar-highlight">
-                                <span class="menu-text">Cuenta
-                                </span>
-                            </a>
-                            <div class="fusion-custom-menu-item-contents" style="left: auto; right: 0px;">
-                                <form action="https://shopylu.com/wp-login.php" name="loginform" method="post">
-                                    <p>
-                                        <input type="text" class="input-text" name="log" id="username" value="" placeholder="Usuario">
-                                    </p>
-                                    <p><input type="password" class="input-text" name="pwd" id="password" value="" placeholder="Contraseña">
-                                    </p>
-                                    <p class="fusion-remember-checkbox">
-                                        <label for="fusion-menu-login-box-rememberme">
-                                            <input name="rememberme" type="checkbox" id="fusion-menu-login-box-rememberme" value="forever"> Recordarme
-                                        </label>
-                                    </p>
-                                        <input type="hidden" name="fusion_woo_login_box" value="true">
-                                        <p class="fusion-login-box-submit">
-                                            <input type="submit" name="wp-submit" id="wp-submit" class="button button-small default comment-submit" value="Ingresar">
-                                            <input type="hidden" name="redirect" value="/producto/set-de-10-brochas-oval/">
-                                        </p>
-                                    </form>
-                                    <a class="fusion-menu-login-box-register" href="https://shopylu.com/mi-cuenta/" title="Registro">Registro
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav class="fusion-mobile-nav-holder fusion-mobile-menu-text-align-left"><ul role="menubar" id="mobile-menu-classic-shop-top-secondary-menu" class="menu">
-                        <li role="menuitem" id="mobile-menu-item-16571" class="fusion-mobile-nav-item" style="">
-                            <a href="https://shopylu.com/carrito/" class="fusion-flex-link fusion-bar-highlight">
-                                <span class="fusion-megamenu-icon">
-                                    <i class="glyphicon fa-shopping-cart fas">
-                                        
-                                    </i>
-                                </span>
-                                <span class="menu-text">Carrito de compras</span>
-                            </a>
-                        </li>
-                        <li role="menuitem" class="fusion-mobile-nav-item menu-item-has-children" style="">
-                            <a href="https://shopylu.com/mi-cuenta/" aria-haspopup="true" class="fusion-bar-highlight"><span class="menu-text">Cuenta</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                    
         </div>
 </div>
                 <div class="fusion-header-sticky-height" style="height: 96px;"></div>
@@ -360,16 +302,24 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                         </div>
                         <nav class="fusion-main-menu" aria-label="Main Menu" style="">
                             <ul role="menubar" id="menu-classic-shop-main-menu" class="fusion-menu">
-                                <li role="menuitem" id="menu-item-16573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-16572 current_page_item menu-item-16573"><a href="{{route('principalComprador.index')}}" class="fusion-bar-highlight"><span class="menu-text">Inicio</span></a>
+                                <li role="menuitem" id="menu-item-16573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-16572 current_page_item menu-item-16573"><a style="text-decoration: none" href="{{route('principalComprador.index')}}" class="fusion-bar-highlight"><span class="menu-text">Inicio</span></a>
                                 </li>
-                                <li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a href="" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Producto</span>
+                                <li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a style="text-decoration: none" href="" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Producto</span>
                                         <span class="fusion-caret"><i class="glyphicon glyphicon-menu-down"></i></span></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li role="menuitem" id="menu-item-19692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19692 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a>
+                                        <li role="menuitem" id="menu-item-19692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19692 fusion-dropdown-submenu"><a style="text-decoration: none" href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a>
                                             <ul role="menu" class="sub-menu">
                                                 @foreach($categoria as $item)
-                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694"><a href="{{route('categoriaComprador.index')}}" class="fusion-bar-highlight"><span>{{$item->nombreTipoProducto}}</span></a>
+                                                <form action="{{route('categoriaComprador.store')}}" method="post">
+                                                    <input type="hidden" name="_token" value="{{csrf_token() }}">
+                                                    <input type="hidden" name="idCategoria" value="{{$item->id}}">
+                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694">
+                                                     <button type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"
+                                                    type="submit" href="{{route('categoriaComprador.store')}}">
+                                                     <a style="text-decoration: none"  class="fusion-bar-highlight"><span>{{$item->nombreTipoProducto}}</span></a>
+                                                </button>
                                                 </li>
+                                                </form>
                                                 @endforeach
                                             </ul>
                                         </li>
@@ -377,23 +327,13 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                     </ul>
                                 </li>
                                 
-                                 <li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a href="https://shopylu.com/categorias/maquillaje/" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Ofertas</span>
-                                        <span class="fusion-caret"><i class="glyphicon glyphicon-menu-down"></i></span></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li role="menuitem" id="menu-item-19692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19692 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a>
-                                            <ul role="menu" class="sub-menu">
-                                                
-                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694"><a href="https://shopylu.com/categorias/maquillaje/labios" class="fusion-bar-highlight"><span></span></a>
-                                                </li>
-                                                
-                                            </ul>
-                                        </li>
-                                        
-                                    </ul>
+                                 <li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a style="text-decoration: none" href="https://shopylu.com/categorias/maquillaje/" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Ofertas</span>
+                                        <span class="fusion-caret"><i class=""></i></span></a>
+                                    
                                 </li>
                             
-                                <li role="menuitem" id="menu-item-19736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19736"><a href="https://shopylu.com/blog/" class="fusion-bar-highlight"><span class="menu-text">Blog</span></a></li>
-                                <li role="menuitem" id="menu-item-19735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19735"><a href="https://shopylu.com/contacto/" class="fusion-bar-highlight"><span class="menu-text">Contacto</span></a></li>
+                                <li role="menuitem" id="menu-item-19736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19736"><a href="https://shopylu.com/blog/" class="fusion-bar-highlight" style="text-decoration: none"><span class="menu-text">Blog</span></a></li>
+                                <li role="menuitem" id="menu-item-19735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19735"><a href="https://shopylu.com/contacto/" class="fusion-bar-highlight" style="text-decoration: none"><span class="menu-text">Contacto</span></a></li>
                             </ul>
                         </nav>
                         <div class="fusion-mobile-menu-icons">
@@ -403,7 +343,7 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                         </nav>
                     </div>
                 </div>
-            </div>
+            </div>  
             <div class="fusion-clearfix"></div>
         </header>
         <div id="sliders-container">
@@ -708,29 +648,36 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                                                                             </div>
                                                                                             
                                                                                         </div>
-                                                                                        <h4 class="" data-fontsize="" data-lineheight="25"><a href="" target="_self">{{$item->nombreProducto}}</a></h4>
-                                                                                        <div class="fusion-carousel-meta"><a href="https://shopylu.com/categorias/maquillaje/herramientas/" rel="tag">{{$item->categoria->nombreTipoProducto}}</a>
-                                                                                            <div class="fusion-carousel-price">
-                                                                                                <span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{$item->stock->precioVentaPublico}}</span></span>
-                                                                                            </div>
-                                                                                        </div>
+                    <h4 class="" data-fontsize="" data-lineheight="25">{{$item->nombreProducto}}</h4>
+
+
+<div class="fusion-carousel-meta">
+    <form action="{{route('categoriaComprador.store')}}" method="post">
+        <input type="hidden" name="_token" value="{{csrf_token() }}">
+        <input type="hidden" name="idCategoria" value="{{$item->categoria_id}}">
+    <button type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"
+  href="{{route('categoriaComprador.store')}}" ><a>{{$item->categoria->nombreTipoProducto}}</a></button>
+</form>
+<div class="fusion-carousel-price">
+<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{$item->stock->precioVentaPublico}}</span></span>
+                                             </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </li>
+                                                                                            @endforeach
+                                                                                        </ul>
                                                                                     </div>
                                                                                 </div>
-                                                                            </li>
-                                                                            @endforeach
-                                                                        </ul>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                            </div>     
                             <div class="fusion-fullwidth fullwidth-box nonhundred-percent-fullwidth non-hundred-percent-height-scrolling fusion-equal-height-columns" style="background-color: #ffffff;background-position: left top;background-repeat: no-repeat;padding-right:30px;padding-bottom:75px;padding-left:30px;border-top-width:0px;border-bottom-width:0px;border-color:#eae9e9;border-top-style:solid;border-bottom-style:solid;">
                                 <div class="fusion-builder-row fusion-row ">
                                     <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_1  fusion-one-full fusion-column-first fusion-column-last fusion-column-no-min-height 1_1" style="margin-top:0px;margin-bottom:0px;">

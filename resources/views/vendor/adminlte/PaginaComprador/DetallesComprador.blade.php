@@ -190,66 +190,7 @@ img.emoji {
                                 </div>
                             </div> 
                         </div>
-				<div class="fusion-alignright">
-				<nav class="fusion-secondary-menu" role="navigation" aria-label="Secondary Menu">
-					<ul role="menubar" id="menu-classic-shop-top-secondary-menu" class="menu">
-						<li role="menuitem" id="menu-item-16571" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16571">
-							<a href="https://shopylu.com/carrito/" class="fusion-flex-link fusion-bar-highlight">
-								<span class="fusion-megamenu-icon">
-									<i class="glyphicon glyphicon-shopping-cart">
-										
-									</i>
-								</span>
-								<span class="menu-text">Carrito de compras</span>
-							</a>
-						</li>
-						<li role="menuitem" class="menu-item fusion-dropdown-menu menu-item-has-children fusion-custom-menu-item fusion-menu-login-box">
-							<a href="https://shopylu.com/mi-cuenta/" aria-haspopup="true" class="fusion-bar-highlight">
-								<span class="menu-text">Cuenta
-								</span>
-							</a>
-							<div class="fusion-custom-menu-item-contents" style="left: auto; right: 0px;">
-								<form action="https://shopylu.com/wp-login.php" name="loginform" method="post">
-									<p>
-										<input type="text" class="input-text" name="log" id="username" value="" placeholder="Usuario">
-									</p>
-									<p><input type="password" class="input-text" name="pwd" id="password" value="" placeholder="Contraseña">
-									</p>
-									<p class="fusion-remember-checkbox">
-										<label for="fusion-menu-login-box-rememberme">
-											<input name="rememberme" type="checkbox" id="fusion-menu-login-box-rememberme" value="forever"> Recordarme
-										</label>
-									</p>
-										<input type="hidden" name="fusion_woo_login_box" value="true">
-										<p class="fusion-login-box-submit">
-											<input type="submit" name="wp-submit" id="wp-submit" class="button button-small default comment-submit" value="Ingresar">
-											<input type="hidden" name="redirect" value="/producto/set-de-10-brochas-oval/">
-										</p>
-									</form>
-									<a class="fusion-menu-login-box-register" href="https://shopylu.com/mi-cuenta/" title="Registro">Registro
-									</a>
-								</div>
-							</li>
-						</ul>
-					</nav>
-					<nav class="fusion-mobile-nav-holder fusion-mobile-menu-text-align-left"><ul role="menubar" id="mobile-menu-classic-shop-top-secondary-menu" class="menu">
-						<li role="menuitem" id="mobile-menu-item-16571" class="fusion-mobile-nav-item" style="">
-							<a href="https://shopylu.com/carrito/" class="fusion-flex-link fusion-bar-highlight">
-								<span class="fusion-megamenu-icon">
-									<i class="glyphicon fa-shopping-cart fas">
-										
-									</i>
-								</span>
-								<span class="menu-text">Carrito de compras</span>
-							</a>
-						</li>
-						<li role="menuitem" class="fusion-mobile-nav-item menu-item-has-children" style="">
-							<a href="https://shopylu.com/mi-cuenta/" aria-haspopup="true" class="fusion-bar-highlight"><span class="menu-text">Cuenta</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
+				
 		</div>
 </div>
  <div class="fusion-header-sticky-height" style="height: 96px;"></div>
@@ -263,16 +204,24 @@ img.emoji {
                         </div>
                         <nav class="fusion-main-menu" aria-label="Main Menu" style="">
                             <ul role="menubar" id="menu-classic-shop-main-menu" class="fusion-menu">
-                                <li role="menuitem" id="menu-item-16573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-16572 current_page_item menu-item-16573"><a href="{{route('principalComprador.index')}}" class="fusion-bar-highlight"><span class="menu-text">Inicio</span></a>
+                               <li role="menuitem" id="menu-item-16573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-16572 current_page_item menu-item-16573"><a style="text-decoration: none" href="{{route('principalComprador.index')}}" class="fusion-bar-highlight"><span class="menu-text">Inicio</span></a>
                                 </li>
-                                <li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a href="" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Producto</span>
+                                <li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a style="text-decoration: none" href="" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Producto</span>
                                         <span class="fusion-caret"><i class="glyphicon glyphicon-menu-down"></i></span></a>
                                     <ul role="menu" class="sub-menu">
-                                        <li role="menuitem" id="menu-item-19692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19692 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a>
+                                        <li role="menuitem" id="menu-item-19692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19692 fusion-dropdown-submenu"><a style="text-decoration: none" href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a>
                                             <ul role="menu" class="sub-menu">
                                                 @foreach($categoria as $item)
-                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694"><a href="https://shopylu.com/categorias/maquillaje/labios" class="fusion-bar-highlight"><span>{{$item->nombreTipoProducto}}</span></a>
+                                                <form action="{{route('categoriaComprador.store')}}" method="post">
+                                                    <input type="hidden" name="_token" value="{{csrf_token() }}">
+                                                    <input type="hidden" name="idCategoria" value="{{$item->id}}">
+                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694">
+                                                     <button type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"
+                                                    type="submit" href="{{route('categoriaComprador.store')}}">
+                                                     <a style="text-decoration: none"  class="fusion-bar-highlight"><span>{{$item->nombreTipoProducto}}</span></a>
+                                                </button>
                                                 </li>
+                                                </form>
                                                 @endforeach
                                             </ul>
                                         </li>
@@ -280,23 +229,13 @@ img.emoji {
                                     </ul>
                                 </li>
                                 
-                                 <li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a href="https://shopylu.com/categorias/maquillaje/" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Ofertas</span>
-                                        <span class="fusion-caret"><i class="glyphicon glyphicon-menu-down"></i></span></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li role="menuitem" id="menu-item-19692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19692 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a>
-                                            <ul role="menu" class="sub-menu">
-                                                @foreach($categoria as $item)
-                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694"><a href="https://shopylu.com/categorias/maquillaje/labios" class="fusion-bar-highlight"><span>{{$item->nombreTipoProducto}}</span></a>
-                                                </li>
-                                                @endforeach
-                                            </ul>
-                                        </li>
-                                        
-                                    </ul>
+                                 <li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a style="text-decoration: none" href="https://shopylu.com/categorias/maquillaje/" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Ofertas</span>
+                                        <span class="fusion-caret"><i class=""></i></span></a>
+                                    
                                 </li>
                             
-                                <li role="menuitem" id="menu-item-19736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19736"><a href="https://shopylu.com/blog/" class="fusion-bar-highlight"><span class="menu-text">Blog</span></a></li>
-                                <li role="menuitem" id="menu-item-19735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19735"><a href="https://shopylu.com/contacto/" class="fusion-bar-highlight"><span class="menu-text">Contacto</span></a></li>
+                                <li role="menuitem" id="menu-item-19736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19736"><a href="https://shopylu.com/blog/" class="fusion-bar-highlight" style="text-decoration: none"><span class="menu-text">Blog</span></a></li>
+                                <li role="menuitem" id="menu-item-19735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19735"><a href="https://shopylu.com/contacto/" class="fusion-bar-highlight" style="text-decoration: none"><span class="menu-text">Contacto</span></a></li>
                             </ul>
                         </nav>
                         <div class="fusion-mobile-menu-icons">
@@ -326,7 +265,16 @@ img.emoji {
 
 				
 							<div class="fusion-page-title-secondary">
-							<div class="fusion-breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="{{route('principalComprador.index')}}"><span itemprop="title">Inicio</span></a></span><span class="fusion-breadcrumb-sep"></span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"></a></span><span class="fusion-breadcrumb-sep">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="#"><span itemprop="title">{{$producto->categoria->nombreTipoProducto}}</span></a></span><span class="fusion-breadcrumb-sep">/</span><span class="breadcrumb-leaf">{{$producto->nombreProducto}}</span></div></div>
+							<div class="fusion-breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="{{route('principalComprador.index')}}"><span itemprop="title">Inicio</span></a></span><span class="fusion-breadcrumb-sep"></span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"></a></span><span class="fusion-breadcrumb-sep">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+								<form action="{{route('categoriaComprador.store')}}" method="post">
+                             	<input type="hidden" name="_token" value="{{csrf_token() }}">
+                                 <input type="hidden" name="idCategoria" value="{{$producto->categoria->id}}">
+							<button type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"
+                                  type="submit" href="{{route('categoriaComprador.store')}}">		
+								<a itemprop="url" href="#"><span itemprop="title">{{$producto->categoria->nombreTipoProducto}}</span></a></button>
+							</form>
+
+							</span><span class="fusion-breadcrumb-sep">/</span><span class="breadcrumb-leaf">{{$producto->nombreProducto}}</span></div></div>
 									
 			</div>
 
@@ -367,72 +315,34 @@ img.emoji {
 	<p><strong>Producto: </strong>KasleGlam<br>
 <strong>Descripción:</strong> {{$producto->descipcionProducto}}</p>
 <p><span style="color: #36e600;"><i class="fa fa-truck fa- "></i> Recibe tus compras en tu domicilio o donde solicites por solo $3.</span><br>
-<span style="color: #36e600;"><i class="fa fa-shield fa- "></i> Tu información está totalmente protegida, sitio 100% seguro.</span></p>
+<span style="color: #36e600;"><i class="fa fa-shield fa- "></i> Este sitio es 100% seguro.</span></p>
 </div>
 
+ 
+<div class="product_meta">	
+	<form action="{{route('categoriaComprador.store')}}" method="post">
+    <input type="hidden" name="_token" value="{{csrf_token() }}">
+    <input type="hidden" name="idCategoria" value="{{$producto->categoria->id}}">
+	<span class="posted_in">Categoría: <button type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"
+     href="{{route('categoriaComprador.store')}}"><a>{{$producto->categoria->nombreTipoProducto}}</a></button></span>
+	</form>
 
-	<script>jQuery( document ).ready( function() {jQuery( ".single_variation_wrap" ).on( "show_variation", function ( event, variation, purchasable ) {        var container = jQuery(".single_variation .woocommerce-variation-price");        var current_object = jQuery(this);
-                                    current_object.trigger("woo_discount_rules_before_variant_strikeout");/*container.hide("slow");*/        jQuery.ajax({
-                                    url: woo_discount_rules.ajax_url,
-                                    dataType: "json",
-                                    type: "POST",
-                                    data: {action: "loadWooDiscountedPriceForVariant", id: variation.variation_id, price_html: variation.price_html},
-                                    beforeSend: function() {
-                                    },
-                                    complete: function() {
-                                    },
-                                    success: function (response) {
-                                        if(response.status == 1){
-                                            jQuery(".single_variation .woocommerce-variation-price").html(response.price_html);
-                                        }
-                                        current_object.trigger("woo_discount_rules_after_variant_strikeout");
-                                        /*container.show("slow");*/
-                                    }
-                                });    });    if(jQuery(".woo_discount_rules_variant_table").length > 0){
-                                var p_id = jQuery( ".woo_discount_rules_variant_table" ).attr("data-id");        var already_exists = 0;        var last_storage_time = "";        setTimeout(function(){
-                                    jQuery.ajax({
-                                        url: woo_discount_rules.ajax_url,
-                                        type: "POST",
-                                        data: {action: "loadWooDiscountedDiscountTable", id: p_id, loaded: already_exists, time: last_storage_time},
-                                        beforeSend: function() {
-                                        },
-                                        complete: function() {
-                                        },
-                                        success: function (response) {
-                                            responseData = jQuery.parseJSON(response);
-                                            if(responseData.cookie == "1" && already_exists){                    } else {
-                                                jQuery(".woo_discount_rules_variant_table").html(responseData.html);                    }
-                                        }
-                                    });
-                                }, 1);    }});</script>
 
-	<form class="cart" action="https://shopylu.com/producto/secador-de-unas-monito/" method="post" enctype="multipart/form-data">
-		
-			<div class="quantity buttons_added"><input type="button" value="-" class="minus">
-		<label class="screen-reader-text" for="quantity_5e46431d66979">Cantidad</label>
-		<input type="number" id="quantity_5e46431d66979" class="input-text qty text" step="1" min="1" max="2" name="quantity" value="1" title="Cantidad" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="Secador de uñas - Monito cantidad"><input type="button" value="+" class="plus">
-	</div>
-	
-		<button type="submit" name="add-to-cart" value="20222" class="single_add_to_cart_button button alt">Añadir al carrito</button>
-
-			</form>
-
-	
-<div class="product_meta">
-
-	
-	
-	<span class="posted_in">Categoría: <a href="#" rel="tag">{{$producto->categoria->nombreTipoProducto}}</a></span>
-	
+	<h3>REALICE SU PEDIDO</h3>
+	<div class="fusion-alignleft">
+                            <div class="fusion-social-links-header">
+                                <div class="fusion-social-networks"> 
+                                    <a style="color:#black; margin-right: 13px" href="https://www.facebook.com/Kasleglamstore/" target="_blank"> Facebook</a>
+                                    <a style="color:#black; margin-right: 13px  " href="https://www.instagram.com/kasleglamstore/" target="_blank"> Instagram</a>
+                                    <a style="color:#black;" href="https://wa.me/593960658325?text=Hola%20KasleGlam%20necesito%20informacion%20sobre" target="_blank" rel="noopener noreferrer" data-placement="bottom" data-title="Whatsapp" data-toggle="tooltip" title="" data-original-title="Whatsapp">Whatsapp</a>
+                                </div>
+                            </div> 
+                        </div>
 	
 </div>
-</div>	</div>
+</div>	
+</div>
 
-
-
-
-					
-	
 <div class="fusion-clearfix"></div>
 	<section class="related products">
 
@@ -462,7 +372,7 @@ img.emoji {
                                                                                                         </span>
                                                                                                     <i class="glyphicon glyphicon-copy">
                                                                                                         <button type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"
-                                                                                                        type="submit" href="{{route('detalleComprador.store')}}">
+                                                                                                         href="{{route('detalleComprador.store')}}">
                                                                                                     <a style="text-decoration: none" >Detalles</a></button></i>
                                                                                                     </div>
                                                                                                     </form>	
@@ -470,7 +380,13 @@ img.emoji {
                                                                                             </div>
                                                                                         </div>
                                                                                         <h4 class="" data-fontsize="" data-lineheight="25"><a href="" target="_self">{{$item->nombreProducto}}</a></h4>
-                                                                                        <div class="fusion-carousel-meta"><a href="https://shopylu.com/categorias/maquillaje/herramientas/" rel="tag">{{$item->categoria->nombreTipoProducto}}</a>
+
+          <div class="fusion-carousel-meta">
+          <form action="{{route('categoriaComprador.store')}}" method="post">
+        <input type="hidden" name="_token" value="{{csrf_token() }}">
+        <input type="hidden" name="idCategoria" value="{{$item->categoria_id}}"><button type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"
+  href="{{route('categoriaComprador.store')}}" ><a>{{$item->categoria->nombreTipoProducto}}</a></button>
+</form>
                                                                                             <div class="fusion-carousel-price">
                                                                                                 <span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>{{$item->stock->precioVentaPublico}}</span></span>
                                                                                             </div>

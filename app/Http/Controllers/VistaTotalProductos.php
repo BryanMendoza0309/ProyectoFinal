@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Categoria;
 use App\Producto;
+use App\Stock;
 use App\Contacto;
-class VistaPrincipalCompradorController extends Controller
+class VistaTotalProductos extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +16,10 @@ class VistaPrincipalCompradorController extends Controller
      */
     public function index()
     {
-
-        $categoria= Categoria::all()->where('eliminadolog','1');
-        $producto= Producto::all();
+        $producto=Producto::all();
+        $categoria=Categoria::all();
         $contacto=Contacto::all();
-        return view('adminlte::PaginaComprador.PrincipalComprador',compact('categoria','producto','contacto'));
+        return view('adminlte::PaginaComprador.todosProductos',compact('producto','categoria','contacto'));
     }
 
     /**

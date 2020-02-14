@@ -39,7 +39,12 @@ class VistaCategoriaCompradorController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $categoria= Categoria::all()->where('eliminadolog','1');
+        $producto= Producto::all()->where('categoria_id',$request->idCategoria);
+
+        $contacto=Contacto::all();
+        return view('adminlte::PaginaComprador.CategoriaComprador',compact('categoria','producto','contacto'));
     }
 
     /**
