@@ -50,7 +50,7 @@
         @include('adminlte::auth.partials.social_login')
 
         <a href="{{ url('/password/reset') }}">Recuperar Contraseña</a><br>
-        <a href="{{ url('/register') }}" class="text-center">Registrar un Nuevo Cliente</a><br>
+        <a href="{{ url('/register') }}" class="text-center">Registrar Administrador</a><br>
         
 
     </div><!-- /.login-box-body -->

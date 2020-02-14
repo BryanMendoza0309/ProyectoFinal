@@ -27,7 +27,7 @@ class TablaproductoController extends Controller
         if ($request->ajax()) {
                   return response()->json($product->toArray());
          }else{
-              return view('adminlte::Paginas.TablaProductos',compact('producto'));;
+              return view('adminlte::Paginas.TablaProductos',compact('product'));;
          }
         
         
@@ -66,7 +66,7 @@ $categoria = DB::table('categorias')->select('categorias.*')->where('eliminadolo
         if ($request->ajax()) {
                   return response()->json($product->toArray());
          }else{
-              return view('adminlte::Paginas.TablaProductos',compact('producto'));;
+              return view('adminlte::Paginas.TablaProductos',compact('product'));;
          }
      }
 

@@ -23,7 +23,7 @@
             @endif
 
             <div class="register-box-body">
-                <p class="login-box-msg">Registrar un Nuevo Cliente</p>
+                <p class="login-box-msg">Registrar Administrador</p>
                 <form action="{{ url('/register') }}" method="post">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="form-group has-feedback">
