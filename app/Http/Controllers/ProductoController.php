@@ -41,8 +41,9 @@ class ProductoController extends Controller
      */
     public function store(Request $request)
     {
+        
         $Tipo=Categoria::find($request->Cate1);
-        $file=$request->file('imagen');
+    $file=$request->file('imagen');
        $name=$file->getClientMimeType();
        $tipoimg=str_replace('image/','.',$name);
        $TipoImagen=uniqid();

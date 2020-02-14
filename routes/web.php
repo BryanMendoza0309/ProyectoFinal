@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('loadmodal', 'TablaproductoController@modal');
 Route::get('loadProducto', 'TablaproductoController@load');
 Route::get('loadCategoria', 'CategoriaController@load');
 Route::get('loadContactos', 'VistaContactoController@load');

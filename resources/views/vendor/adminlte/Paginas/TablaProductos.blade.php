@@ -46,34 +46,41 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                
+
                 <div class="modal-body">
+                    <form  method="post" enctype="multipart/form-data" name="formulario-envia" id="formulario-envia">
+                   
+
+                        <input type="hidden" class="form-control"  id="id" name="id" >
+
                     <div class="col-xs-6">
-                        <input type="text" class="form-control" placeholder="Codigo del Producto" id="codigoProducto" name="codigo" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Codigo del Producto" id="codigo" name="codigo" autocomplete="off">
                     </div>
                     <br>
                     <br>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Nombre del Producto" id="nombreProducto"accept="" name="nombre" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Nombre del Producto" id="nombre"accept="" name="nombre" autocomplete="off">
                     </div>
                     <br>
                     <br>
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Descripcion del Producto" name="descripcion" id="descipcionProducto" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Descripcion del Producto" name="descripcion" id="descripcion" autocomplete="off">
                     </div>
                     <br>
                     <br>
                     <div class="col-xs-6">
-                        <input type="text" class="form-control" placeholder="Marca del Producto" id="marcaProducto"  name="marca" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Marca del Producto" id="marca"  name="marca" autocomplete="off">
                     </div>
                     <br>
                     <br>
                     <div class="col-xs-6">
-                        <input type="text" class="form-control" placeholder="Modelo del Producto" id="modeloProducto" name="modelo" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Modelo del Producto" id="modelo" name="modelo" autocomplete="off">
                     </div>
                     <br>
                     <br>
                     <div class="col-xs-6">
-                        <input type="file" class="form-control" placeholder="imagen" id="imagenProducto" name="imagen" />
+                        <input type="file" class="form-control" placeholder="imagen" id="imagen" name="imagen" />
                     </div>
                     <br>
                     <br>
@@ -81,7 +88,7 @@
                         <label>Fecha de Caducidad:</label>
                         <div class="input-group date">
                             
-                            <input type="date" class="form-control pull-right" id="fecha_caducidadProducto" name="fecha" autocomplete="off">
+                            <input type="date" class="form-control pull-right" id="fecha" name="fecha" autocomplete="off">
                         </div>
                         <!-- /.input group -->
                     </div>
@@ -90,49 +97,53 @@
                     <br>
                     <br>
                     <div class="col-xs-6">
-                        <input type="text" class="form-control" placeholder="Cantidad de Producto" id="cantidadProducto" name="cantidad" autocomplete="off">
+                        <input type="text" class="form-control" placeholder="Cantidad de Producto" id="cantidad" name="cantidad" autocomplete="off">
                     </div>
                     <br>
                     <br>
                     <br>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-                        <input type="text" class="col-xs-1" id="precioVentaPublico" name="precioP" placeholder="PvP">
+                        <input type="text" class="col-xs-1" id="precioP" name="precioP" placeholder="PvP">
                     </div>
                     <br>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-                        <input type="text" class="col-xs-1" id="precioAdministrador" name="precioA" placeholder="PvA">
+                        <input type="text" class="col-xs-1" id="precioA" name="precioA" placeholder="PvA">
                     </div>
                     <br>
                     <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-                        <input type="text" class="col-xs-1" id="descuentoPublico" name="descuento" placeholder="Decuento">
+                        <input type="text" class="col-xs-1" id="descuento" name="descuento" placeholder="Decuento">
                     </div>
                     <br>
                     <br>
                     <div class="col-xs-2">
                         <label>Seleccionar Categoria</label>
-                        <select class="" name="Cate1">
-                            
+                        <select class="" id ="Cate1"name="Cate1">
+                         
                         </select>
                     </div>
                     <br>
                     <br>
                     <div class="col-xs-2">
                         <label>Seleccionar Proveedor</label>
-                        <select class="" name="proveedor2">
+                        <select class="" id="proveedor2" name="proveedor2">
                             
                         </select>
                     </div>
                     <br>
                     <br>
                     <br>
+                     <button type="submit" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <a type="button" id="actualizarcontac" class="btn btn-primary">Guardar</a>
+                    </form>
                 </div>
+                
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                    <a type="button" id="actualizarprove" class="btn btn-primary">Guardar</a>
+                   
                 </div>
+                
             </div>
         </div>
     </div>
