@@ -7,22 +7,22 @@
     <form style="margin: 0% 20% 0% 20%"  method="post" enctype="multipart/form-data" id="form2">
         <input type="hidden" name="_token" id="token" value="{{csrf_token() }}">
         <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Nombre del Proveedor" name="nombre" id="nombre">
+            <input autocomplete="off" type="text" class="form-control" placeholder="Nombre del Proveedor" name="nombre" id="nombre">
         </div>
         <br>
         <br>
         <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Telefono del Proveedor" name="tlf" id="telefono">
+            <input autocomplete="off" type="text" class="form-control" placeholder="Telefono del Proveedor" name="tlf" id="telefono">
         </div>
         <br>
         <br>
         <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Direccion del Proveedor" name="direccion" id="direccion">
+            <input autocomplete="off" type="text" class="form-control" placeholder="Direccion del Proveedor" name="direccion" id="direccion">
         </div>
         <br>
         <br>
         <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Caracteristicas del Proveedor" name="caracteristicas" id="caracteristicas">
+            <input autocomplete="off" type="text" class="form-control" placeholder="Caracteristicas del Proveedor" name="caracteristicas" id="caracteristicas">
         </div>
         <br>
         <br>

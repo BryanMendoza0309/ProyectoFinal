@@ -326,13 +326,17 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                     </ul>
                                 </li>
                                 
-                                 <li role="menuitem" id="menu-item-19691" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19691 fusion-dropdown-menu"><a style="text-decoration: none" href="https://shopylu.com/categorias/maquillaje/" class="fusion-bar-highlight" aria-haspopup="true"><span class="menu-text">Ofertas</span>
-                                        <span class="fusion-caret"><i class=""></i></span></a>
-                                    
+                                 <li>  
                                 </li>
                             
-                                <li role="menuitem" id="menu-item-19736" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19736"><a href="https://shopylu.com/blog/" class="fusion-bar-highlight" style="text-decoration: none"><span class="menu-text">Blog</span></a></li>
-                                <li role="menuitem" id="menu-item-19735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19735"><a href="https://shopylu.com/contacto/" class="fusion-bar-highlight" style="text-decoration: none"><span class="menu-text">Contacto</span></a></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                
+                                
+                                
                         </nav>
                     </div>
                 </div>
@@ -352,7 +356,7 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
 
 				
 															<div class="fusion-page-title-secondary">
-							<div class="fusion-breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="https://shopylu.com"><span itemprop="title">Inicio</span></a></span><span class="fusion-breadcrumb-sep">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="{{route('totalProductos.index')}}"><span itemprop="title">Productos</span></a></span><span class="fusion-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Labios</span></div>						</div>
+							<div class="fusion-breadcrumbs"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="{{route('principalComprador.index')}}"><span itemprop="title">Inicio</span></a></span><span class="fusion-breadcrumb-sep">/</span><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="{{route('totalProductos.index')}}"><span itemprop="title">Productos</span></a></span><span class="fusion-breadcrumb-sep">/</span><span class="breadcrumb-leaf">Labios</span></div>						</div>
 									
 			</div>
 
