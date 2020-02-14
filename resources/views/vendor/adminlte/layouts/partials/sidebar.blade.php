@@ -26,16 +26,16 @@
         <ul class="sidebar-menu">
             <li class="header">Opciones del Administrador</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="{{route('InsertProveedor.index') }}"><i class='fa fa-link'></i><span>Proveedor</span></a></li>
-            <li><a href="{{route('InsertProducto.index')}}"><i class='fa fa-link'></i> <span>Productos</span></a></li>
-            <li><a href="{{route('Categoria.index')}}"><i class='fa fa-link'></i> <span>Categoria</span></a></li>
-            <li><a href="{{route('TablaProductos.index')}}" ><i class='fa fa-link'></i> <span>Prodctos en Venta</span></a></li>
-            
+            <li class="active"><a href="{{route('InsertProveedor.index') }}"><i class='fa fa-plus-square'></i><span>Proveedor</span></a></li>
+            <li><a href="{{route('InsertProducto.index')}}"><i class='fa fa-industry'></i> <span>Productos</span></a></li>
+            <li><a href="{{route('Categoria.index')}}"><i class='fa fa-certificate'></i> <span>Categoria</span></a></li>
+            <li><a href="{{route('TablaProductos.index')}}" ><i class='fa fa-cubes'></i> <span>Prodctos en Venta</span></a></li>
+            </li>
+                   <li><a href="{{route('vistaContacto.index')}}"><i class='fa fa-link'></i> <span>Vista Contacto</span></a></li>
             <li class="treeview">
                 <a href=""><i class='fa fa-link'></i> <span>Vistas CLiente</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                   <li><a href="{{route('vistaComprador.index')}}"><i class='fa fa-link'></i> <span>Vista Principal</span></a></li>
-                   <li><a href="{{route('vistaContacto.index')}}"><i class='fa fa-link'></i> <span>Vista Contacto</span></a></li>
+                   <li><a href="{{route('vistaComprador.index')}}"><i class='fa fa-link'></i> <span>Vista Principal</span></a>
                 </ul>
 
             </li>

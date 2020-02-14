@@ -3,15 +3,15 @@
 {{ trans('adminlte_lang::message.home') }}
 @endsection
 @section('main-content')
-
-    <form  method="post" enctype="multipart/form-data" id="form2">
+<h3 style="margin: 0% 20% 0% 25%">Ingreso de Provedor</h3>
+    <form style="margin: 0% 20% 0% 20%"  method="post" enctype="multipart/form-data" id="form2">
         <input type="hidden" name="_token" id="token" value="{{csrf_token() }}">
         <div class="col-md-6">
             <input type="text" class="form-control" placeholder="Nombre del Proveedor" name="nombre" id="nombre">
         </div>
         <br>
         <br>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <input type="text" class="form-control" placeholder="Telefono del Proveedor" name="tlf" id="telefono">
         </div>
         <br>
