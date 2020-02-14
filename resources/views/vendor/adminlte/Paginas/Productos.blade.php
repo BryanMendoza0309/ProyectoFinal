@@ -1,41 +1,34 @@
 @extends('adminlte::layouts.app')
-@section('htmlheader_title')
-{{ trans('adminlte_lang::message.home') }}
-@endsection
+
 @section('main-content')
-<form action="{{route('InsertProducto.store')}}" method="post" enctype="multipart/form-data">
+<content  >
+    <h3 style="margin: 0% 20% 0% 40%">Ingreso de Productos</h3>
+<form  action="{{route('InsertProducto.store')}}" method="post" enctype="multipart/form-data">
     <input type="hidden" name="_token" value="{{csrf_token() }}">
-    <div class="col-xs-6">
-        <input type="text" class="form-control" placeholder="Codigo del Producto" name="codigo" autocomplete="off">
+    <div style="margin: 3% 20% 0% 20%" >
+        <input  type="text" class="form-control" placeholder="Codigo del Producto" name="codigo" autocomplete="off">
     </div>
-    <br>
-    <br>
-    <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Nombre del Producto" name="nombre" autocomplete="off">
+
+    <div style="margin: 1% 20% 0% 20%" >
+        <input  type="text" class="form-control" placeholder="Nombre del Producto" name="nombre" autocomplete="off">
     </div>
-    <br>
-    <br>
-    <div class="col-md-6">
+
+    <div style="margin: 1% 20% 0% 20%">
         <input type="text" class="form-control" placeholder="Descripcion del Producto" name="descripcion" autocomplete="off">
     </div>
-    <br>
-    <br>
-    <div class="col-xs-6">
+
+    <div style="margin: 1% 20% 0% 20%">
         <input type="text" class="form-control" placeholder="Marca del Producto" name="marca" autocomplete="off">
     </div>
-    <br>
-    <br>
-    <div class="col-xs-6">
+
+    <div style="margin: 1% 20% 0% 20%">
         <input type="text" class="form-control" placeholder="Modelo del Producto" name="modelo" autocomplete="off">
     </div>
-    <br>
-    <br>
-    <div class="col-xs-6">
+  
+    <div style="margin: 1% 20% 0% 20%" >
         <input type="file" class="form-control" placeholder="imagen" name="imagen" />
     </div>
-<br>
-    <br>
-    <div class="col-xs-6">
+    <div style="margin: 1% 20% 0% 20%" >
         <label>Fecha de Caducidad:</label>
         <div class="input-group date">
             <div class="input-group-addon">
@@ -45,33 +38,27 @@
         </div>
         <!-- /.input group -->
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="col-xs-6">
+
+    <div style="margin: 1% 20% 0% 20%">
         <input type="text" class="form-control" placeholder="Cantidad de Producto" name="cantidad" autocomplete="off">
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="input-group">
+    </div >
+
+    <div  style="margin: 1% 20% 0% 20%" class="input-group">
         <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-        <input type="text" class="col-xs-1" name="precioP" placeholder="PvP">
+        <input type="text" class="col-xs-3" name="precioP" placeholder="PvP">
     </div>
-    <br>
-    <div class="input-group">
+
+    <div style="margin: 1% 20% 0% 20%" class="input-group">
         <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-        <input type="text" class="col-xs-1" name="precioA" placeholder="PvA">
+        <input type="text" class="col-xs-3" name="precioA" placeholder="PvA">
     </div>
-    <br>
-    <div class="input-group">
+
+    <div style="margin: 1% 20% 0% 20%" class="input-group">
         <span class="input-group-addon"><i class="fa fa-dollar"></i></span>
-        <input type="text" class="col-xs-1" name="descuento" placeholder="Decuento">
+        <input type="text" class="col-xs-3" name="descuento" placeholder="Decuento">
     </div>
-    <br>
-    <br>
-    <div class="col-xs-2">
+
+    <div style="margin: 1% 20% 0% 20%" >
         <label>Seleccionar Categoria</label>
         <select class="" name="Cate1">
             @foreach($categoria as $item)
@@ -82,7 +69,7 @@
         <br>
         <br>
 
-    <div class="col-xs-2">
+    <div style="margin: 1% 20% 0% 20%" >
         <label>Seleccionar Proveedor</label>
         <select class="" name="proveedor2">
             @foreach($proveedor as $item)
@@ -90,17 +77,12 @@
             @endforeach
         </select>
     </div>
-    <br><br>
-    <br>
-    <br>
-    <div class="col-xs-2">
+
+    <div style="margin: 1% 20% 0% 20%" >
         <button type="submit" class="btn btn-primary">Guardar</button>
     </div>
 </form>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
+</content>
 @endsection

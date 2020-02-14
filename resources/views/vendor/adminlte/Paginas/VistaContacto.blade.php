@@ -4,7 +4,8 @@
 @endsection
 @section('main-content')
 <div class="col-md-12">
-    <form  method="post" enctype="multipart/form-data" id="form1">
+<h3 style="margin: 0% 20% 0% 20%">Ingreso de Informacion pagina "Contacto"</h3>
+    <form style="margin: 0% 20% 0% 20%"  method="post" enctype="multipart/form-data" id="form1">
         <input type="hidden" name="_token" value="{{csrf_token() }}" id="token">
         <div class="col-xs-6">
             <input type="text" class="form-control" placeholder="Ubicacion" id="ubicacionfm" name="ubicacionfm" autocomplete="off">

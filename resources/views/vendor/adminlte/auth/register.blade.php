@@ -43,13 +43,22 @@
                         <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
+<<<<<<< HEAD
                         <input autocomplete="off" type="text" class="form-control" placeholder="Direccion" name="direccion" value="{{ old('name') }}"/>
                         <span class="glyphicon glyphicon-user form-control-feedback"></span>
                     </div>
                     <div class="form-group has-feedback">
                         <input autocomplete="off" type="text" class="form-control" placeholder="Telefono/Clular" name="telefono" value="{{ old('name') }}"/>
+=======
+                        <input type="text" class="form-control" placeholder="Direccion" name="direccion" value="{{ old('direccion') }}"/>
                         <span class="glyphicon glyphicon-user form-control-feedback"></span>
                     </div>
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="Telefono/Clular" name="telefono" value="{{ old('telefono') }}"/>
+>>>>>>> efe52b9b96ba39ec76ed6afd0228b88099db848c
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>
+                    
                     <div class="row">
                         <div class="col-xs-1">
                             <label>

@@ -6,7 +6,8 @@
 
 
 @section('main-content')
-<form  method="POST" id="form1">
+<h3 style="margin: 0% 25% 0% 30%">Ingreso de Categoria</h3>
+<form style="margin: 3% 20% 10% 25%" method="POST" id="form1">
 		<input type="hidden" name="_token" value="{{csrf_token() }}" id="token">
 		<div class="col-md-6">
                   <input type="text" class="form-control" placeholder="Ingrese Categoria" id="categoria" name=" categoria" autocomplete="off">
@@ -20,9 +21,9 @@
 	<table id="example2" class="table table-bordered table-hover dataTable" role="grid" aria-describedby="example2_info" id="tabla">
         <thead>
             <tr role="row">
-                <th class="col-sm-1" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">#</th>
-                <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Id Tipo Producto</th>
-                <th class="col-sm-2" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Nombre Tipo Producto</th> 
+                <th class="col-sm-4 col-lg-3" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">#</th>
+                <th class="col-sm-4 col-lg-3" tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Id Tipo Producto</th>
+                <th class="col-sm-4 col-lg-3"  tabindex="0" aria-controls="example2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending">Nombre Tipo Producto</th> 
             </tr>
         </thead>
         <tbody id="datoscatetdb">
