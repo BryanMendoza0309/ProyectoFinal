@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Producto;
 use App\Categoria;
+use App\Producto;
 use App\Contacto;
-class DetalleCompradorController extends Controller
+class VistaCategoriaCompradorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,16 +15,13 @@ class DetalleCompradorController extends Controller
      */
     public function index()
     {
-
-        $categoria= Categoria::all()->where('eliminadolog','1');
-        $producto= Producto::all();
-        $contacto=Contacto::all();
+        $producto=Producto::all();
         $categoria=Categoria::all();
-        return view('adminlte::PaginaComprador.DetallesComprador',compact('categoria','producto','contacto'));
+        $contacto=Contacto::all();
+        return view('adminlte::PaginaComprador.CategoriaComprador',compact('producto','categoria','contacto'));
     }
 
     /**
-     * 
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -42,13 +39,7 @@ class DetalleCompradorController extends Controller
      */
     public function store(Request $request)
     {
-
-        
-        $categoria= Categoria::all()->where('eliminadolog','1');
-        $producto= Producto::find($request->idDetalle);
-        $contacto=Contacto::all();
-        $producto2=Producto::all();
-        return view('adminlte::PaginaComprador.DetallesComprador',compact('categoria','producto2','producto','contacto'));
+        //
     }
 
     /**
@@ -59,7 +50,7 @@ class DetalleCompradorController extends Controller
      */
     public function show($id)
     {
-        
+        //
     }
 
     /**

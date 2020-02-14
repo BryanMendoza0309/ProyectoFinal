@@ -28,6 +28,7 @@ Route::resource('vistaComprador','VistaCompradorController');
 Route::resource('vistaContacto','VistaContactoController');
 Route::resource('principalComprador','VistaPrincipalCompradorController');
 Route::resource('detalleComprador','DetalleCompradorController');
+Route::resource('categoriaComprador','VistaCategoriaCompradorController');
 
 Route::group(['middleware' => 'auth'], function () {
     //    Route::get('/link1', function ()    {

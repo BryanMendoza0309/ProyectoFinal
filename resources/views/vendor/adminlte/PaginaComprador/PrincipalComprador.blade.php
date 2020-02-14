@@ -24,7 +24,7 @@
     <script async="" src="../js/PaginaPrincipaljs/5Principal.js"></script>
     <script type="application/ld+json">
     { "@context": "https:\/\/schema.org", "@type": "WebSite", "@id": "#website", "url": "https:\/\/shopylu.com\/", "name": "KasleGlan", "potentialAction": { "@type": "SearchAction", "target": "https:\/\/shopylu.com\/?s={search_term_string}", "query-input": "required name=search_term_string" } }
-
+ 
     </script>
     <meta name="google-site-verification" content="UA-129580236-1">
     <!-- / Yoast SEO plugin. -->
@@ -368,7 +368,7 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                         <li role="menuitem" id="menu-item-19692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19692 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a>
                                             <ul role="menu" class="sub-menu">
                                                 @foreach($categoria as $item)
-                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694"><a href="https://shopylu.com/categorias/maquillaje/labios" class="fusion-bar-highlight"><span>{{$item->nombreTipoProducto}}</span></a>
+                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694"><a href="{{route('categoriaComprador.index')}}" class="fusion-bar-highlight"><span>{{$item->nombreTipoProducto}}</span></a>
                                                 </li>
                                                 @endforeach
                                             </ul>
@@ -382,10 +382,10 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                     <ul role="menu" class="sub-menu">
                                         <li role="menuitem" id="menu-item-19692" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-19692 fusion-dropdown-submenu"><a href="#" class="fusion-bar-highlight" aria-haspopup="true"><span>Categorías</span></a>
                                             <ul role="menu" class="sub-menu">
-                                                @foreach($categoria as $item)
-                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694"><a href="https://shopylu.com/categorias/maquillaje/labios" class="fusion-bar-highlight"><span>{{$item->nombreTipoProducto}}</span></a>
+                                                
+                                                <li role="menuitem" id="menu-item-19694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19694"><a href="https://shopylu.com/categorias/maquillaje/labios" class="fusion-bar-highlight"><span></span></a>
                                                 </li>
-                                                @endforeach
+                                                
                                             </ul>
                                         </li>
                                         
@@ -688,18 +688,25 @@ Shopylu es una Tienda Online de Venta directa de Productos Cosméticos y de Moda
                                                                                 <div class="fusion-classic-product-image-wrapper">
                                                                                     <div class="fusion-carousel-item-wrapper" style="visibility: inherit;">
                                                                                         <div class="fusion-image-wrapper" aria-haspopup="true">
-                                                                                            <img width="1058" height="1058" src="imagen\{{$item->imagenProducto}}" class="" alt="">
+                                                                                            <img width="1058" height="1058" src="imagen\{{$item->imagenProducto}}" >
+                                                                                            
                                                                                             <div class="fusion-rollover">
                                                                                                 <div class="fusion-rollover-content">
+                                                                                                    <form action="{{route('detalleComprador.store')}}" method="post">
+                                                                                            <input type="hidden" name="_token" value="{{csrf_token() }}">
+                                                                                            <input type="hidden" name="idDetalle" value="{{$item->id}}">
                                                                                                    <div >
                                                                                                         <span class="fusion-rollover-linebreak">
                                                                                                         </span>
                                                                                                     <i class="glyphicon glyphicon-copy">
-                                                                                                    <a href="{{route('detalleComprador.index')}}" class="">Detalles</a></i>
+                                                                                                        <button type="submit" style="color: transparent; background-color: transparent; border-color: transparent; cursor: default;"
+                                                                                                        type="submit" href="{{route('detalleComprador.store')}}">
+                                                                                                    <a style="text-decoration: none" >Detalles</a></button></i>
                                                                                                     </div>
-                                                                                                    <a class="fusion-link-wrapper" href="{{route('detalleComprador.index')}}" aria-label="Secador de uñas – Monito"></a>
+                                                                                                    </form>
                                                                                                 </div>
                                                                                             </div>
+                                                                                            
                                                                                         </div>
                                                                                         <h4 class="" data-fontsize="" data-lineheight="25"><a href="" target="_self">{{$item->nombreProducto}}</a></h4>
                                                                                         <div class="fusion-carousel-meta"><a href="https://shopylu.com/categorias/maquillaje/herramientas/" rel="tag">{{$item->categoria->nombreTipoProducto}}</a>
